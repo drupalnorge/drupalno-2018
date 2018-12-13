@@ -1,0 +1,32 @@
+<header class="l-header" role="banner">
+  {{ page.navigation|without('views_block__header_cta_block_1') }}
+</header>
+
+<main role="main" class="{{ (node.bundle == 'organisation') ? '-bg-main-gray -p-bottom -p-top' }}">
+  {{ page.navigation.views_block__header_cta_block_1 }}
+  {{ page.highlighted }}
+  {{ page.help }}
+
+  <div class="l-content">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    {{ page.content|without('drupal_nl_page_title') }}
+  </div>{# /.layout-content #}
+
+</main>
+
+<footer role="contentinfo" class="footer l-footer clearfix">
+  <div class="l-container">
+    <div class="footer-block footer-menu">
+      <h3 class="footer-menu__title">Links</h3>
+      {{ page.footer.drupal_nl_footer }}
+    </div>
+    <div class="footer-block footer-copyright">
+      <p>&copy; {{ "now"|date('Y') }} Stichting Drupal Nederland<br/>Alle content is beschikbaar onder <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Naamsvermelding 4.0 Internationaal-licentie</a>.
+      </p>
+    </div>
+    <div class="footer-block footer-social">
+      <p>Drupal is een geregistreerd <a href="https://drupal.com/trademark">trademark</a> van Dries Buytaert</p>
+      {{ page.footer.socialmenu }}
+    </div>
+  </div>
+</footer>

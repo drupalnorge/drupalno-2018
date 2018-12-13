@@ -1,0 +1,5 @@
+name: Drupal.nl Helper
+type: module
+description: Contains specific site alterations.
+core: 8.x
+package: Drupal.nl

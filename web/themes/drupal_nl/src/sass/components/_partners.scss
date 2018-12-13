@@ -1,0 +1,57 @@
+.partner-item {
+  background: #FFF;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $b-large) {
+    width: 32%;
+  }
+}
+
+.individual-partners {
+  margin-bottom: 50px;
+
+  > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+
+    > li {
+      flex-direction: column;
+      margin: 1%;
+
+      @media screen and (min-width: $b-large) {
+        width: 31%;
+      }
+
+      a {
+        color: #333;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 1em;
+      }
+    }
+
+  }
+}
+
+.partner {
+  .field--name-field-image,
+  .field--name-field-level {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+}
+.partner__description {
+  margin-bottom: 20px;
+}
+.partner__services {
+  margin-bottom: 20px;
+}
+.partner__uri {
+  font-weight: bold;
+}

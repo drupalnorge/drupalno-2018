@@ -1,0 +1,16 @@
+.section-title {
+  display: inline-block;
+  font-size: 2.5rem;
+  line-height: 4.25rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 30px;
+
+  + .link-wrapper {
+    @media screen and (min-width: $b-large) {
+      float: right;
+      margin-top: 50px;
+      margin-right: 15px;
+    }
+  }
+}

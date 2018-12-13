@@ -1,0 +1,7 @@
+{
+    "name": "sqndr/drupal_nl",
+    "description": "A custom theme for Drupal.nl",
+    "type": "drupal-theme",
+    "license": "MIT",
+    "minimum-stability": "dev"
+}

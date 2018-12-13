@@ -1,0 +1,9 @@
+{
+  "name": "drupal/drupalnl_helper",
+  "type": "drupal-module",
+  "description": "Drupal.nl Helper",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "require": { }
+}

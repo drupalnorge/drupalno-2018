@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Contains cta.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_help().
+ */
+function cta_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cta module.
+    case 'help.page.cta':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Call to Action and Header') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function cta_theme() {
+  return array(
+    'cta' => array(
+      'render element' => 'elements',
+    ),
+  );
+}
+
+function template_preprocess_cta(&$variables) {
+  // Helpful $content variable for templates.
+  $variables += array('content' => array());
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}

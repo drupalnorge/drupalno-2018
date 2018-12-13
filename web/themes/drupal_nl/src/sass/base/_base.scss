@@ -1,0 +1,32 @@
+a {
+  color: $summer-blue;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-default;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-book;
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+

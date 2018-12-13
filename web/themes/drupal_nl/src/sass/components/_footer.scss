@@ -1,0 +1,27 @@
+.footer {
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+  font-family: $font-book;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer-block {
+  @media screen and (min-width: $b-medium) {
+    float: left;
+    width: 30%;
+    margin-right: 2%;
+  }
+}
+
+.footer-menu {
+
+}
+
+.footer-copyright {
+
+}
+
+.footer-social {
+
+}

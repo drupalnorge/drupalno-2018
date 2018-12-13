@@ -1,0 +1,51 @@
+.cta {
+  background-color: $summer-blue;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 24px;
+  .btn--cta {
+    @media screen and (min-width: $b-large) {
+      text-align: right;
+      float: right;
+    }
+  }
+}
+
+.cta__text {
+  padding: 10px 15px;
+  @media screen and (min-width: $b-large) {
+    display: inline-block;
+    float: left;
+    padding-left: 5px;
+  }
+}
+
+.cta__home-link {
+  display: block;
+  position: absolute;
+  top: 20px;
+  background: url('../../logo.png') 0 0;
+  width: 42px;
+  height: 50px;
+  @media screen and (min-width: $b-large) {
+    top: 80px;
+    background: url('../../logo-large.png') 0 0;
+    background-size: cover;
+    height: 300px;
+    width: 360px;
+    .toolbar-tray-open & {
+      top: 40px;
+    }
+  }
+}
+
+.field--name-field-cta-image {
+  > img {
+    width: 100%;
+  }
+}
+
+.field--name-field-cta-button {
+  width: 100%;
+  text-align: right;
+}

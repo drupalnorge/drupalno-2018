@@ -1,0 +1,5 @@
+entity.cta.add_form:
+  route_name: entity.cta.add_form
+  title: 'Add Call to Action'
+  appears_on:
+    - entity.cta.collection

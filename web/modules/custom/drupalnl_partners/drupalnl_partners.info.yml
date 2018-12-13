@@ -1,0 +1,5 @@
+name: Partners
+description: Handle SDN partner features.
+type: module
+core: 8.x
+package: Drupal.nl

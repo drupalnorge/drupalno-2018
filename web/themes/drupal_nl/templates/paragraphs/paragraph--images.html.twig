@@ -1,0 +1,13 @@
+{% set classes = [
+'paragraph',
+'paragraph--type--' ~ paragraph.bundle|clean_class,
+view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+] %}
+<section{{ attributes.addClass(classes) }}>
+  <div class="l-container">
+    {{ content.field_title }}
+    <div class="l-gallery">
+      {{ content.field_image_paragraphs }}
+    </div>
+  </div>
+</section>

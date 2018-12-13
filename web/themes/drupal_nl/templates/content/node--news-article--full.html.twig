@@ -1,0 +1,15 @@
+<article{{ attributes.addClass('news') }}>
+  <div class="l-container">
+    {{ title_prefix }}
+    {% if not page %}
+      <h2{{ title_attributes }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+    {{ title_suffix }}
+
+    <div{{ content_attributes }}>
+      {{ content|without('field_header_cta') }}
+    </div>
+  </div>
+</article>

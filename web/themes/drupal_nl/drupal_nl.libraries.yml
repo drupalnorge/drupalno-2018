@@ -1,0 +1,16 @@
+base:
+  css:
+    component:
+      dist/css/styles.css: {}
+
+responsive-nav:
+  css:
+    component:
+      dist/css/responsive-nav.css: {}
+  js:
+    vendor/responsive-nav/responsive-nav.min.js: {}
+    vendor/responsive-nav/responsive-nav.init.js: {}
+
+fonts-com:
+  js:
+    //fast.fonts.net/jsapi/fa54029e-acb9-4cae-afda-519fe2ddbc1a.js: { type: external, minified: true }

@@ -1,0 +1,26 @@
+.m-social {
+  .menu__item {
+    display: inline-block;
+  }
+}
+
+.social-link {
+  display: block;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  width: 60px;
+  height: 60px;
+  background-size: 60px;
+}
+
+.social-link--twitter {
+  background-image: url('../../img/social/social-twitter.png');
+}
+.social-link--youtube {
+  background-image: url('../../img/social/social-youtube.png');
+}
+.social-link--meetup {
+  background-image: url('../../img/social/social-meetup.png');
+}

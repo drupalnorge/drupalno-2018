@@ -1,0 +1,11 @@
+{
+  "name": "drupal/drupalnl_meetup",
+  "type": "drupal-module",
+  "description": "Imports meetups from Meetup.com.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev",
+  "require": {
+    "guzzlehttp/guzzle": "~6.0"
+  }
+}

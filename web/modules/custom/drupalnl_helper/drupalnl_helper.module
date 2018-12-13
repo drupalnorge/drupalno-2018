@@ -1,0 +1,187 @@
+<?php
+
+/**
+ * @file
+ * Drupal.nl Helper module.
+ *
+ * Contains specific site alterations.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function drupalnl_helper_entity_extra_field_info() {
+  $extra = array();
+
+  $extra['node']['organisation']['display']['quality_level'] = array(
+    'label' => t('Quality level (badge)'),
+    'description' => t('Displays a badge that represents the quality level of the organization.'),
+    'weight' => 100,
+    'visible' => FALSE,
+  );
+
+  return $extra;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view() for entity type 'taxonomy_term'.
+ *
+ * Denies access for all taxonomy term pages.
+ */
+function drupalnl_helper_taxonomy_term_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($view_mode == 'full') {
+    throw new AccessDeniedHttpException();
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view() for entity type 'taxonomy_term'.
+ *
+ * Denies access for node pages organisation/individuals.
+ * Denies access for node pages meetup_event.
+ */
+function drupalnl_helper_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($view_mode == 'full') {
+    if ($entity->bundle() == 'meetup_event') {
+      throw new NotFoundHttpException();
+    }
+  }
+
+  if ($display->getComponent('quality_level')) {
+    if ($entity->bundle() == 'organisation' && isset($entity->field_qualities)) {
+      // Count number of terms applied.
+      $quality_count = count($entity->field_qualities);
+
+      if (!empty($quality_count)) {
+        $build['quality_level'] = [
+          '#type' => 'container',
+          '#attributes' => [
+            'class' => [
+              'quality-badge',
+              'quality-badge--level-' . $quality_count,
+            ],
+          ],
+          'text' => [
+            '#type' => 'markup',
+            '#markup' => t('Quality level @number out of 12', [ //@todo It's a kind of magic..
+              '@number' => $quality_count,
+            ]),
+          ],
+        ];
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function drupalnl_helper_paragraph_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  $callback = __FUNCTION__ . '_' . $entity->bundle();
+
+  if (function_exists($callback)) {
+    return $callback($build, $entity, $display, $view_mode);
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function drupalnl_helper_paragraph_view_partners(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  $type = $entity->field_partner_view_type->value;
+  $level = $entity->field_partner_level->value;
+
+  switch ($level) {
+    case 'goud':
+      switch ($type) {
+        case 'limit_images':
+          $view = 'organisations_frontpage';
+          break;
+
+        case 'all_images':
+          $view = 'organisations_gold';
+          break;
+      }
+      break;
+
+    case 'zilver':
+      $view = 'organisations_silver';
+      break;
+
+    case 'individueel':
+      $view = 'organisations_individuals';
+      break;
+
+    default:
+      return;
+  }
+
+  $build['partners'] = views_embed_view($view, 'default');
+  $build['partners']['#weight'] = 100;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function drupalnl_helper_paragraph_view_news(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  $type = $entity->field_news_view_type->value;
+  $mapping = array(
+    'all' => 'news',
+    'limit' => 'news_frontpage',
+  );
+
+  if (empty($type) || empty($mapping[$type])) {
+    return;
+  }
+
+  $build['news'] = views_embed_view($mapping[$type], 'default');
+  $build['news']['#weight'] = 100;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function drupalnl_helper_paragraph_view_events(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  $type = $entity->field_events_view_type->value;
+  $mapping = array(
+    'all' => 'events',
+    'archive' => 'events_archief',
+    'limit' => 'events_frontpage',
+    'meetup' => 'meetup_events',
+  );
+
+  if (empty($type) || empty($mapping[$type])) {
+    return;
+  }
+
+  $build['events'] = views_embed_view($mapping[$type], 'default');
+  $build['events']['#weight'] = 100;
+}
+
+/**
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter() for text_textarea_with_summary widgets.
+ */
+function drupalnl_helper_field_widget_text_textarea_with_summary_form_alter(&$element, FormStateInterface $form_state, $context) {
+  $element['#after_build'][] = '_drupalnl_helper_remove_textarea_help';
+}
+
+/**
+ * #after_build callback.
+ */
+function _drupalnl_helper_remove_textarea_help($element, FormStateInterface $form_state) {
+  if (isset($element['format'])) {
+    unset($element['format']['guidelines']);
+    unset($element['format']['help']);
+    if (isset($element['format']['format']['#access']) && !$element['format']['format']['#access']) {
+      unset($element['format']['#theme_wrappers']);
+    }
+  }
+
+  return $element;
+}

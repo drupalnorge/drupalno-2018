@@ -1,0 +1,19 @@
+<article{{ attributes.addClass('partner') }}>
+  <div class="l-container">
+    {{ title_prefix }}
+    {% if page %}
+      <h1{{ title_attributes }}>
+        {{ label }}
+      </h1>
+    {% else %}
+      <h2{{ title_attributes }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+    {{ title_suffix }}
+
+    <div{{ content_attributes }}>
+      {{ content }}
+    </div>
+  </div>
+</article>

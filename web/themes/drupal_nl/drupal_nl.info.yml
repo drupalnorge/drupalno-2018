@@ -1,0 +1,22 @@
+name: Drupal NL
+type: theme
+description: 'A custom theme for Drupal.nl'
+package: Drupal NL
+core: '8.x'
+
+regions:
+  navigation: 'Navigation'
+  header: 'Header'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  footer: 'Footer'
+
+libraries:
+  - 'drupal_nl/base'
+  - 'drupal_nl/fonts-com'
+  - 'drupal_nl/responsive-nav'
+  - 'core/normalize'
+
+ckeditor_stylesheets:
+  - dist/css/ckeditor.css

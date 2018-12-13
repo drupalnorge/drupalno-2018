@@ -1,0 +1,7 @@
+name: Call to Actions
+type: module
+description: Call to Action and Header
+core: 8.x
+package: Drupal.nl
+dependencies:
+  - entity_reference

@@ -1,0 +1,13 @@
+# Call to Action menu items definition
+entity.cta.collection:
+  title: 'Call to Action list'
+  route_name: entity.cta.collection
+  description: 'List Call to Action entities'
+  parent: system.admin_structure
+  weight: 100
+
+cta.admin.structure.settings:
+  title: Call to Action settings
+  description: 'Configure Call to Action entities'
+  route_name: cta.settings
+  parent: system.admin_structure

@@ -1,0 +1,20 @@
+forum_redirect.forum:
+  path: '/forum'
+  defaults:
+    _controller: '\Drupal\forum_redirect\Controller\ForumRedirectController::forumRedirect'
+  requirements:
+    _permission: 'access content'
+      
+forum_redirect.forums:
+  path: '/forums/{forum}'
+  defaults:
+    _controller: '\Drupal\forum_redirect\Controller\ForumRedirectController::forumRedirect'
+  requirements:
+    _permission: 'access content'
+
+forum_redirect.forum_:
+  path: '/forum/{forum}'
+  defaults:
+    _controller: '\Drupal\forum_redirect\Controller\ForumRedirectController::forumRedirect'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function drupalnl_partners_install() {
+  _drupalnl_partners_partner_default_field_access();
+}
+
+/**
+ * Create default terms for voc partner_level.
+ */
+function _drupalnl_partners_partner_default_field_access() {
+  $field_access_mapping = [
+    'Goud' => [
+      'title',
+      'body',
+      'field_services',
+      'field_image',
+      'field_qualities',
+      'field_partner_uri',
+    ],
+    'Zilver' => [
+      'title',
+      'field_image',
+      'field_partner_uri',
+    ],
+    'Individueel' => [
+      'title',
+      'field_partner_uri',
+    ],
+  ];
+
+  /** @var \Drupal\taxonomy\TermStorageInterface $term_storage */
+  $term_storage = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
+
+  foreach ($field_access_mapping as $term_name => $field_access_values) {
+    /** @var \Drupal\taxonomy\TermInterface $term */
+    $terms = $term_storage->loadByProperties(['name' => $term_name]);
+    if (empty($terms)) {
+      $terms[] = \Drupal\taxonomy\Entity\Term::create([
+        'vid' => 'partner_level',
+        'name' => $term_name,
+      ]);
+    }
+
+    foreach ($terms as $term) {
+      foreach ($field_access_values as $value) {
+        if (in_array($value, $term->get('field_access')->getValue())) {
+          continue;
+        }
+        $term->get('field_access')->setValue($field_access_values);
+      }
+
+      $term->save();
+    }
+  }
+}
+
+/**
+ * Set field_access values for partner_level terms.
+ */
+function drupalnl_partners_update_8001() {
+  _drupalnl_partners_partner_default_field_access();
+}

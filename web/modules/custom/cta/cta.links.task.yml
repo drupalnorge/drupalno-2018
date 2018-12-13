@@ -1,0 +1,21 @@
+# Call to Action routing definition
+cta.settings_tab:
+  route_name: cta.settings
+  title: 'Settings'
+  base_route: cta.settings
+entity.cta.canonical:
+  route_name: entity.cta.canonical
+  base_route: entity.cta.canonical
+  title: 'View'
+
+entity.cta.edit_form:
+  route_name: entity.cta.edit_form
+  base_route: entity.cta.canonical
+  title: Edit
+
+entity.cta.delete_form:
+  route_name:  entity.cta.delete_form
+  base_route:  entity.cta.canonical
+  title: Delete
+  weight: 10
+

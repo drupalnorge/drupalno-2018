@@ -1,0 +1,19 @@
+add call to action entities:
+  title: 'Create new Call to Action entities'
+
+administer call to action entities:
+  title: 'Administer Call to Action entities'
+  description: 'Allow to access the administration form to configure Call to Action entities.'
+  restrict access: true
+
+delete call to action entities:
+  title: 'Delete Call to Action entities'
+
+edit call to action entities:
+  title: 'Edit Call to Action entities'
+
+view published call to action entities:
+  title: 'View published Call to Action entities'
+
+view unpublished call to action entities:
+  title: 'View unpublished Call to Action entities'

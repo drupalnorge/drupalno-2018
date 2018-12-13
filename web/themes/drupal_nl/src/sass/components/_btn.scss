@@ -1,0 +1,34 @@
+.btn {
+  display: inline-block;
+}
+
+.btn--cta {
+  > a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #FFF;
+    background-color: #FD9827;
+    text-decoration: none;
+    transition: background-color .35s;
+    font-family: $font-heavy;
+
+    &:hover,
+    &:focus {
+      background-color: darken(#FD9827, 10%);
+    }
+  }
+}
+
+.button {
+  font-family: $font-heavy;
+  border: none;
+  padding: 10px 15px;
+  color: #FFF;
+  background-color: #FD9827;
+  text-decoration: none;
+  transition: background-color .35s;
+  &:hover,
+  &:focus {
+    background-color: darken(#FD9827, 10%);
+  }
+}

@@ -1,0 +1,6 @@
+{% if site_logo %}
+  <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home"
+     class="site-logo">
+    <img src="/{{ directory }}/logo.png" alt="{{ 'Home'|t }}"/>
+  </a>
+{% endif %}

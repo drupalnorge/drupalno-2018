@@ -1,0 +1,18 @@
+.form-wrapper {
+  margin: 10px 0;
+}
+
+.field--type-string,
+.field--type-link {
+  label {
+    display: block;
+    font-family: $font-book;
+  }
+  input {
+    border: 1px solid #ccc;
+  }
+  .description {
+    font-family: $font-light;
+  }
+}
+

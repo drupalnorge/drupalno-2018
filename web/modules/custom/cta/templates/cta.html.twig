@@ -1,0 +1,27 @@
+{#
+/**
+ * @file cta.html.twig
+ * Default theme implementation to present Call to Action data.
+ *
+ * This template is used when viewing Call to Action pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_cta()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('cta clearfix') }}>
+  {{ content.field_cta_image }}
+  <div class="l-container">
+    <a href="/" class="cta__home-link"></a>
+  </div>
+  <div class="l-container">
+    {{ content.field_cta_button }}
+    {{ content.field_cta_text }}
+  </div>
+</div>

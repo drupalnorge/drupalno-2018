@@ -1,0 +1,8 @@
+<div class="partner__services">
+  <h2>{{ label }}</h2>
+  <ul class="services">
+    {% for item in items %}
+    <li{{ item.attributes.addClass('field__item') }}>{{ item.content }}</li>
+    {% endfor %}
+  </ul>
+</div>
