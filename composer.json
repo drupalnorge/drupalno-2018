@@ -90,6 +90,25 @@
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        "up-db": [
+            "./vendor/bin/drush sql-drop --yes",
+            "wget --no-check-certificate https://drupal.no/sanitized.db",
+            "./vendor/bin/drush sql-cli < /app/sanitized.db",
+            "rm /app/sanitized.db",
+            "./vendor/bin/drush cr"
+        ],
+        "install-site": [
+            "@composer install",
+            "@composer up-db"
+        ],
+        "up-lock": [
+            "@composer update --lock"
+        ],
+        "up-nothing": [
+            "@composer update nothing"
+        ],
+        "resetadmin": [
+            "./vendor/bin/drush uli"
         ]
     },
     "extra": {
