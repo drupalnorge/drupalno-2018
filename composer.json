@@ -92,7 +92,7 @@
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         "up-db": [
             "./vendor/bin/drush sql-drop --yes",
-            "wget --no-check-certificate https://drupal.no/sanitized.db",
+            "wget --no-check-certificate http://dev.drupal.no/sanitized.db",
             "./vendor/bin/drush sql-cli < /app/sanitized.db",
             "rm /app/sanitized.db",
             "./vendor/bin/drush cr"
