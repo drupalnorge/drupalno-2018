@@ -103,7 +103,7 @@
         },
         "patches": {
             "drupal/core" : {
-                "Restricted are for robots to drupal.no until we released the website (https://www.drupal.org/files/issues/2019-02-13/drupal_norway-3032672-2.patch)": "https://www.drupal.org/files/issues/2019-02-13/drupal_norway-3032672-2.patch"
+                "Restricted area for robots to drupal.no until we released the website (https://www.drupal.org/files/issues/2019-02-13/drupal_norway-3032672-2.patch)": "https://www.drupal.org/files/issues/2019-02-13/drupal_norway-3032672-2.patch"
             },
             "drupal/menu_block": {
                 "Add option to make the starting level follow the active menu item (https://www.drupal.org/files/issues/2018-07-02/menu_block-follow-2756675-51.patch)": "https://www.drupal.org/files/issues/2018-07-02/menu_block-follow-2756675-51.patch"
