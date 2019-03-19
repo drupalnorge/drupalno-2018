@@ -21,6 +21,8 @@ mysql:
 before_install:
   # Set php memory limit to -1 so composer update will not fail
   - export COMPOSER_MEMORY_LIMIT=-1
+  # Installing hirak/prestissimo allows composer to parallelise downloads which speeds up the composer install.
+  - composer global require hirak/prestissimo
 
 install:
   - composer install
