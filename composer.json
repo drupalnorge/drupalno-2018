@@ -22,6 +22,7 @@
         "drupal/admin_toolbar": "^1.25",
         "drupal/better_exposed_filters": "^3.0@alpha",
         "drupal/cer": "^4.0@alpha",
+        "drupal/coffee": "^1.0@beta",
         "drupal/config_ignore": "^2.1",
         "drupal/config_split": "^1.0",
         "drupal/console": "^1.0.2",
@@ -118,9 +119,6 @@
         },
         "patches": {
             "drupal/core" : {
-                "Restricted area for robots to drupal.no until we released the website": "https://www.drupal.org/files/issues/2019-02-13/drupal_norway-3032672-2.patch"
-            },
-            "drupal/core": {
                 "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
             },
             "drupal/menu_block": {
