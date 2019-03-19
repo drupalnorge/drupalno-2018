@@ -1,10 +1,10 @@
 uuid: 85a56531-ccda-4493-82d1-91d82ce9104c
-langcode: nl
+langcode: nb
 status: true
 dependencies: {  }
 _core:
   default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
 id: main
-label: Hoofdnavigatie
-description: 'Sectielinks van de site'
+label: Hovedmeny
+description: 'Hovedmeny for nettsiden'
 locked: true
