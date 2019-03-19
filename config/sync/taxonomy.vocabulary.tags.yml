@@ -1,0 +1,11 @@
+uuid: f7d5a5b4-ad72-4e6d-8cbc-0a798d3aadf6
+langcode: nb
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: lO5ziR5dVI1PpEeHZsSOfQ-Y7NWihSDKW8-MMf6uoms
+name: Labels
+vid: tags
+description: 'Tags på artikler'
+hierarchy: 0
+weight: 0

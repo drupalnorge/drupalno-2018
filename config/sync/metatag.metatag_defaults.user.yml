@@ -1,0 +1,11 @@
+uuid: 22288024-a110-4df1-8e00-5716069ea151
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: O0NfJbzQmkMg1brwA-gUw8v59V0Ana1YKTeRfb-okGI
+id: user
+label: Bruker
+tags:
+  title: '[user:name] | [site:name]'
+  description: '[site:name]'

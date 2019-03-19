@@ -1,0 +1,14 @@
+uuid: 2d9dda14-6745-4a34-8bd8-9476a37f856f
+langcode: nl
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: UZKKXICGchnADTPv-5pvOkpw0ndQUE_bndwxDUk317w
+id: likert_agreement
+label: 'Likertschaal: Overeenstemming'
+category: Likert
+likert: true
+options: "1: Veel slechter\r\n2: Slechter\r\n3: Hetzelfde\r\n4: Beter\r\n5: Veel beter\n"

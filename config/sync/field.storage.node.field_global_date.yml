@@ -1,0 +1,21 @@
+uuid: 450e214a-27df-4c3a-8462-a25e9e6fda70
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_global_date
+field_name: field_global_date
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

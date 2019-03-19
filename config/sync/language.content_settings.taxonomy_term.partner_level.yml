@@ -1,0 +1,11 @@
+uuid: 5bc5d020-26d7-4909-822d-dc800a862f66
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.partner_level
+id: taxonomy_term.partner_level
+target_entity_type_id: taxonomy_term
+target_bundle: partner_level
+default_langcode: site_default
+language_alterable: false

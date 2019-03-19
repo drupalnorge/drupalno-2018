@@ -1,0 +1,22 @@
+uuid: 0ee8c33f-8963-444f-a7bf-52d4041e8c5b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.meetup_event
+id: node.meetup_event.promote
+field_name: promote
+entity_type: node
+bundle: meetup_event
+label: 'Aangeraden op de voorpagina'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

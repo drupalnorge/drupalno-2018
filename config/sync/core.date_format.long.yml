@@ -1,0 +1,10 @@
+uuid: 05cdc889-52b8-4ac0-89cd-1f24da7807ed
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: og8sWXhBuHbLMw3CoiBEZjgqSyhFBFmcbUW_wLcfNbo
+id: long
+label: 'Standaarddatum - lang'
+locked: false
+pattern: 'l j F Y - H:i'

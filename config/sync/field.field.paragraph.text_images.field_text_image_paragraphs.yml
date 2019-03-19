@@ -1,0 +1,45 @@
+uuid: 2a6ce78b-f105-4865-817c-d30d55c58db5
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_image_paragraphs
+    - paragraphs.paragraphs_type.text_image
+    - paragraphs.paragraphs_type.text_images
+  module:
+    - entity_reference_revisions
+id: paragraph.text_images.field_text_image_paragraphs
+field_name: field_text_image_paragraphs
+entity_type: paragraph
+bundle: text_images
+label: 'Tekst met afbeeldingen'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text_image: text_image
+    target_bundles_drag_drop:
+      text_image:
+        enabled: true
+        weight: 7
+      image:
+        weight: 8
+        enabled: false
+      images:
+        weight: 9
+        enabled: false
+      intro:
+        weight: 10
+        enabled: false
+      text:
+        weight: 11
+        enabled: false
+      text_images:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

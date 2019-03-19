@@ -1,0 +1,14 @@
+uuid: 9c071e7f-a239-4d6e-aec7-d9a920a3e7bb
+langcode: nl
+status: true
+dependencies:
+  config:
+    - user.role.partner
+  module:
+    - user
+id: user_remove_role_action.partner
+label: 'Verwijder de rol partner van de geselecteerde gebruikers'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: partner

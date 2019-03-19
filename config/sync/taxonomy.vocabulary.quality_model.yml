@@ -1,0 +1,9 @@
+uuid: 1a1a9a50-fa03-4be7-b7aa-6562f2bbf001
+langcode: nl
+status: true
+dependencies: {  }
+name: Kwaliteitschecklist
+vid: quality_model
+description: ''
+hierarchy: 0
+weight: 0

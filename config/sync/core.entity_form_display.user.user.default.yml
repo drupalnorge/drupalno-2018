@@ -1,0 +1,50 @@
+uuid: 0c0ab40e-8d59-4b3e-b82b-f41d278f7f3e
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.inline_form
+    - field.field.user.user.field_organisation
+  module:
+    - inline_entity_form
+    - user
+_core:
+  default_config_hash: LLAieeozVsoZDb-2PbFxRJpQqnKmpR7-4OoRJnduz-U
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  contact:
+    weight: 5
+    region: content
+  field_organisation:
+    weight: 1
+    settings:
+      form_mode: inline_form
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      collapsible: false
+      collapsed: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  google_analytics:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  language: true
+  path: true
+  timezone: true

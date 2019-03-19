@@ -1,0 +1,28 @@
+uuid: 8f30d607-4962-43c0-b4ea-c527f26a4f1d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_services
+    - node.type.organisation
+    - taxonomy.vocabulary.partner_services
+id: node.organisation.field_services
+field_name: field_services
+entity_type: node
+bundle: organisation
+label: Tjenester
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      partner_services: partner_services
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

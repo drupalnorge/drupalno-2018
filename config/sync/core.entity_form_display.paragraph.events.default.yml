@@ -1,0 +1,49 @@
+uuid: 1e084a0a-20e8-4d6d-84d3-68be98526b37
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.events.field_events_view_type
+    - field.field.paragraph.events.field_link
+    - field.field.paragraph.events.field_main_type
+    - field.field.paragraph.events.field_title
+    - paragraphs.paragraphs_type.events
+  module:
+    - link
+id: paragraph.events.default
+targetEntityType: paragraph
+bundle: events
+mode: default
+content:
+  field_events_view_type:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_main_type:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

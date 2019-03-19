@@ -1,0 +1,35 @@
+uuid: 1f1c2211-a782-4707-97ff-8be185a52c3c
+langcode: nl
+status: true
+dependencies:
+  module:
+    - image_effects
+name: partner_logo
+label: 'Partner logo'
+effects:
+  5818851a-2502-46ec-9f38-c2bba12ed2be:
+    uuid: 5818851a-2502-46ec-9f38-c2bba12ed2be
+    id: image_effects_set_canvas
+    weight: -9
+    data:
+      canvas_size: exact
+      exact:
+        width: '406'
+        height: '230'
+        placement: center-center
+        x_offset: 0
+        y_offset: 0
+      relative:
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+      canvas_color: '#FFFFFFFF'
+  65103520-23a9-4774-b1ac-1fefcaba16b2:
+    uuid: 65103520-23a9-4774-b1ac-1fefcaba16b2
+    id: image_scale
+    weight: -10
+    data:
+      width: 386
+      height: 210
+      upscale: false

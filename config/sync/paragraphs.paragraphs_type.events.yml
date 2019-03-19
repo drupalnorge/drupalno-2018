@@ -1,0 +1,6 @@
+uuid: 8f2bb968-4bef-40dd-9ecd-ff868de82da6
+langcode: nl
+status: true
+dependencies: {  }
+id: events
+label: Evenementen

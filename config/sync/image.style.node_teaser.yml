@@ -1,0 +1,15 @@
+uuid: 38f3cd19-118a-4850-9ffc-bb768e6e14f7
+langcode: nl
+status: true
+dependencies: {  }
+name: node_teaser
+label: 'Node Teaser'
+effects:
+  c1fde650-09ff-4d13-8fe1-d2b1e9f7464a:
+    uuid: c1fde650-09ff-4d13-8fe1-d2b1e9f7464a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 406
+      height: 230
+      anchor: center-center

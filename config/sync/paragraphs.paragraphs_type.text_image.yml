@@ -1,0 +1,6 @@
+uuid: d5d33ea4-bdb2-49ec-b778-670c49f742ac
+langcode: nl
+status: true
+dependencies: {  }
+id: text_image
+label: 'Tekst met afbeelding'

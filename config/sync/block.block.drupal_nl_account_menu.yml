@@ -1,0 +1,26 @@
+uuid: df0d5208-2695-4079-bab4-2fe4d2402c5c
+langcode: nl
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - drupal_nl
+_core:
+  default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
+id: drupal_nl_account_menu
+theme: drupal_nl
+region: navigation
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: Gebruikersmenu
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

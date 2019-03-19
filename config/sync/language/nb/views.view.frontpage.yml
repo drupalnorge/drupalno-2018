@@ -1,0 +1,31 @@
+label: Forside
+description: 'Alt innhold som er forfremmet til forsiden'
+display:
+  default:
+    display_options:
+      empty:
+        title:
+          title: 'Velkommen til [site:name]'
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér etter'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
+          tags:
+            previous: '‹ Forrige'
+            next: 'Neste ›'
+            first: '« Første'
+            last: 'Siste »'
+    display_title: Hoved
+  feed_1:
+    display_title: Strøm
+  page_1:
+    display_title: Side

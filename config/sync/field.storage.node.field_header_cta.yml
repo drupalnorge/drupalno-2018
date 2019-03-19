@@ -1,0 +1,20 @@
+uuid: d4a108fc-1546-42a6-8f3d-e551a305e0b5
+langcode: nl
+status: true
+dependencies:
+  module:
+    - cta
+    - node
+id: node.field_header_cta
+field_name: field_header_cta
+entity_type: node
+type: entity_reference
+settings:
+  target_type: cta
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

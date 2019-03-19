@@ -1,0 +1,36 @@
+uuid: 398b7a80-4cdf-43db-8fe8-d1f5f599c50d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.intro.field_body
+    - field.field.paragraph.intro.field_button
+    - paragraphs.paragraphs_type.intro
+  module:
+    - link
+    - text
+id: paragraph.intro.default
+targetEntityType: paragraph
+bundle: intro
+mode: default
+content:
+  field_body:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_button:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

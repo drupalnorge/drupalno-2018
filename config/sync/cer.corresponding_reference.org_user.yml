@@ -1,0 +1,14 @@
+uuid: 40a2b86e-4b93-440e-9857-bdc77d774dec
+langcode: nl
+status: true
+dependencies: {  }
+id: org_user
+label: 'Org - User'
+enabled: true
+first_field: field_administrators
+second_field: field_organisation
+bundles:
+  node:
+    - organisation
+  user:
+    - user

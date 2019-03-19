@@ -1,0 +1,6 @@
+uuid: 8c1c4307-3ebd-4102-aac1-2267fa052f5e
+langcode: nl
+status: true
+dependencies: {  }
+id: text
+label: Tekst

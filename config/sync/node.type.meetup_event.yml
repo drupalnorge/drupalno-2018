@@ -1,0 +1,17 @@
+uuid: 0cfb57fc-b1bd-4ba1-9152-54bb11f997a6
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Meetup event'
+type: meetup_event
+description: 'Evenementen komende vanaf Meetup.com'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

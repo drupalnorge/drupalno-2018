@@ -1,0 +1,46 @@
+uuid: 2392caa8-c9fe-4d53-b331-276ee8991043
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.meetup_event.field_datetime
+    - field.field.node.meetup_event.field_hash
+    - field.field.node.meetup_event.field_meetup_id
+    - field.field.node.meetup_event.field_source
+    - node.type.meetup_event
+  module:
+    - datetime
+    - link
+    - user
+id: node.meetup_event.teaser
+targetEntityType: node
+bundle: meetup_event
+mode: teaser
+content:
+  field_datetime:
+    type: datetime_default
+    weight: 0
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: short
+    third_party_settings: {  }
+    region: content
+  field_source:
+    type: link
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_hash: true
+  field_meetup_id: true
+  langcode: true
+  links: true

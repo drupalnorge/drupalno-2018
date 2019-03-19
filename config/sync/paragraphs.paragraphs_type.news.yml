@@ -1,0 +1,6 @@
+uuid: a7f18d3f-d590-4cd2-ac7b-27baade2afef
+langcode: nl
+status: true
+dependencies: {  }
+id: news
+label: Nieuwsberichten

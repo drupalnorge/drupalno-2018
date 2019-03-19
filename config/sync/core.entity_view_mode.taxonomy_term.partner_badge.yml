@@ -1,0 +1,10 @@
+uuid: ac3d11b6-9dde-49b8-bde1-eb8e5d96f8d2
+langcode: nl
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.partner_badge
+label: 'Partner Badge'
+targetEntityType: taxonomy_term
+cache: true

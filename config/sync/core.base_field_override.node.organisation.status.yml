@@ -1,0 +1,22 @@
+uuid: ce4ad643-1288-4d16-9ac2-4e4ca1c2bc71
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.organisation
+id: node.organisation.status
+field_name: status
+entity_type: node
+bundle: organisation
+label: Publicatiestatus
+description: 'Een binaire waarde die aangeeft of de node is gepubliceerd.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

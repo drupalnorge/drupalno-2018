@@ -1,0 +1,9 @@
+uuid: c56dd13f-cc69-4a6e-acbd-42cb12a8f98f
+langcode: nl
+status: true
+dependencies: {  }
+name: 'Partner service'
+vid: partner_services
+description: 'Partner services'
+hierarchy: 0
+weight: 0

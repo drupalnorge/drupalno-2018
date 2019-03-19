@@ -1,0 +1,10 @@
+uuid: e68e48a5-d7c2-4a1e-9510-7e6b6aae905c
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: node.overview
+label: Overzicht
+targetEntityType: node
+cache: true

@@ -1,0 +1,22 @@
+uuid: 4a42b328-8714-40ff-bc55-2bbbdc132f7d
+langcode: nl
+status: true
+dependencies: {  }
+id: development
+label: Development
+folder: ../config/dev
+module:
+  devel: 0
+  kint: 0
+  stage_file_proxy: 0
+  styleguide: 0
+theme: {  }
+blacklist:
+  - devel.settings
+  - devel.toolbar.settings
+  - stage_file_proxy.settings
+  - 'webform.webform.*'
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

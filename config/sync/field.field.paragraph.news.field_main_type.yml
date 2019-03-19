@@ -1,0 +1,23 @@
+uuid: 803d0362-9d1e-4288-a08a-875ea0d157de
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_main_type
+    - paragraphs.paragraphs_type.news
+  module:
+    - options
+id: paragraph.news.field_main_type
+field_name: field_main_type
+entity_type: paragraph
+bundle: news
+label: Type
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: gray
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,25 @@
+uuid: b09a4435-cf71-4339-8d96-fc2e7d34d639
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_cta
+    - node.type.page
+id: node.page.field_header_cta
+field_name: field_header_cta
+entity_type: node
+bundle: page
+label: 'Header / Call to Action'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:cta'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

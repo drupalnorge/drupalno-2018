@@ -1,0 +1,62 @@
+uuid: af8a4106-28c6-4c89-ad4b-2a7928c08f5a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_images.field_item_type
+    - field.field.paragraph.text_images.field_link
+    - field.field.paragraph.text_images.field_main_type
+    - field.field.paragraph.text_images.field_text_image_paragraphs
+    - field.field.paragraph.text_images.field_title
+    - paragraphs.paragraphs_type.text_images
+  module:
+    - link
+    - paragraphs
+id: paragraph.text_images.default
+targetEntityType: paragraph
+bundle: text_images
+mode: default
+content:
+  field_item_type:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_main_type:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_text_image_paragraphs:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+    region: content
+  field_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

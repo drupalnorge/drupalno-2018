@@ -1,0 +1,39 @@
+uuid: e94ec188-76a1-41f5-843c-dc731d9bbd1f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.organisation.body
+    - field.field.node.organisation.field_image
+    - field.field.node.organisation.field_level
+    - field.field.node.organisation.field_partner_uri
+    - field.field.node.organisation.field_services
+    - image.style.partner_logo_greyscale
+    - node.type.organisation
+  module:
+    - image
+    - user
+id: node.organisation.teaser
+targetEntityType: node
+bundle: organisation
+mode: teaser
+content:
+  field_image:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: partner_logo_greyscale
+      image_link: content
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  field_level: true
+  field_partner_uri: true
+  field_qualities: true
+  field_services: true
+  langcode: true
+  links: true
+  quality_level: true

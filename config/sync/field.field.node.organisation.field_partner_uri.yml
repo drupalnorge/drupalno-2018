@@ -1,0 +1,23 @@
+uuid: 4d49679f-9594-47af-84d3-8ce03a6655b9
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partner_uri
+    - node.type.organisation
+  module:
+    - link
+id: node.organisation.field_partner_uri
+field_name: field_partner_uri
+entity_type: node
+bundle: organisation
+label: Website
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

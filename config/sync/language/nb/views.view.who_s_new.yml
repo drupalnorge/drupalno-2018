@@ -1,0 +1,20 @@
+label: 'Nye brukere'
+description: 'Viser en liste over de sist registrerte brukerkontoene på nettstedet.'
+display:
+  default:
+    display_title: Hoved
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér etter'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      title: 'Nye brukere'
+  block_1:
+    display_title: 'Nye brukere'
+    display_options:
+      display_description: 'En liste med nye brukere'
+      block_description: 'Nye brukere'
+      block_category: Bruker

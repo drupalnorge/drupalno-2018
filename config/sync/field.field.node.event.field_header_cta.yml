@@ -1,0 +1,25 @@
+uuid: 872de84e-99a0-45d9-bbdd-4bf40ac6b2db
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_cta
+    - node.type.event
+id: node.event.field_header_cta
+field_name: field_header_cta
+entity_type: node
+bundle: event
+label: 'Header / Call to Action'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:cta'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference
