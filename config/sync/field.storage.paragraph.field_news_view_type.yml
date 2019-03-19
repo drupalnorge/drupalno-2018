@@ -1,0 +1,27 @@
+uuid: 260da567-0c7f-4e88-90da-64f4a355704a
+langcode: nl
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_news_view_type
+field_name: field_news_view_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: limit
+      label: '3 berichten voor op homepage'
+    -
+      value: all
+      label: 'Alle nieuwsberichten'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,15 @@
+uuid: 47b468c7-4e3b-41f4-9bf4-d51d1b814773
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yBqw6UD3j0MM1yoDSVDif7nw4SNdoS2e385nw--3ysk
+id: front
+label: 'Front page'
+tags:
+  canonical_url: '[site:url]'
+  description: 'Drupal is het open source platform voor het creëeren van veelzijdige online toepassingen'
+  referrer: unsafe-url
+  shortlink: '[site:url]'
+  title: '[site:name] | [site:slogan]'
+  google: 6CmbOWuDNL7pDc9VkpbxKxBNuSXb2813i-SB7utI96s

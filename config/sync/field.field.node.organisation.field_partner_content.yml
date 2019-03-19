@@ -1,0 +1,29 @@
+uuid: c716b7ef-2d17-4196-ab02-20835ca13542
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partner_content
+    - node.type.event
+    - node.type.organisation
+id: node.organisation.field_partner_content
+field_name: field_partner_content
+entity_type: node
+bundle: organisation
+label: Innhold
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      event: event
+    sort:
+      field: title
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: page
+field_type: entity_reference

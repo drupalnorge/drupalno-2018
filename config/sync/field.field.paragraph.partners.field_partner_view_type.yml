@@ -1,0 +1,21 @@
+uuid: e2eea6e6-103e-49c9-ac96-242b15e3cd2f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_partner_view_type
+    - paragraphs.paragraphs_type.partners
+  module:
+    - options
+id: paragraph.partners.field_partner_view_type
+field_name: field_partner_view_type
+entity_type: paragraph
+bundle: partners
+label: 'Item type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

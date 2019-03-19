@@ -1,0 +1,11 @@
+uuid: e69ea6a6-f43e-44b7-99f5-2c5c26f249f5
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.organisation
+id: node.organisation
+target_entity_type_id: node
+target_bundle: organisation
+default_langcode: nl
+language_alterable: false

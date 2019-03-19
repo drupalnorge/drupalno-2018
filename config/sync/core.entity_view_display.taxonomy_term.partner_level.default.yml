@@ -1,0 +1,42 @@
+uuid: dd405236-3e81-4e18-8af0-0ef35cc1dfe7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.partner_level.field_access
+    - field.field.taxonomy_term.partner_level.field_partner_badge
+    - taxonomy.vocabulary.partner_level
+  module:
+    - image
+    - text
+id: taxonomy_term.partner_level.default
+targetEntityType: taxonomy_term
+bundle: partner_level
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_access:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_partner_badge:
+    type: image
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

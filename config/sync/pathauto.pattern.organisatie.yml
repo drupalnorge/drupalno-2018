@@ -1,0 +1,22 @@
+uuid: 7b493525-a681-466b-b44c-48469f2ef914
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: organisatie
+label: Organisatie
+type: 'canonical_entities:node'
+pattern: 'partner/[node:title]'
+selection_criteria:
+  d64b511d-1506-4fa1-b784-f650690f8bc6:
+    id: node_type
+    bundles:
+      organisation: organisation
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d64b511d-1506-4fa1-b784-f650690f8bc6
+selection_logic: and
+weight: -5
+relationships: {  }

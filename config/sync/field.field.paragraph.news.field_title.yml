@@ -1,0 +1,19 @@
+uuid: 4988ce17-d605-4bb6-bfd6-93074e0c632e
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.news
+id: paragraph.news.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: news
+label: Titel
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

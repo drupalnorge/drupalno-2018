@@ -1,0 +1,15 @@
+uuid: 7114064b-8778-45ea-8098-2e3fcb041305
+langcode: nl
+status: true
+dependencies: {  }
+name: node_detailpagina
+label: 'Node detailpagina'
+effects:
+  8988e8e8-69bb-4e89-b5da-d14c8685efb3:
+    uuid: 8988e8e8-69bb-4e89-b5da-d14c8685efb3
+    id: image_scale
+    weight: 1
+    data:
+      width: 406
+      height: null
+      upscale: false

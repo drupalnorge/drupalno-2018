@@ -1,0 +1,7 @@
+uuid: 855d0f31-380f-4b7c-97ff-03c7b56eb7f6
+langcode: nl
+status: true
+dependencies: {  }
+formId: user_register_form
+captchaType: default
+label: null

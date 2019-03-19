@@ -1,0 +1,9 @@
+uuid: 33a9745e-47be-47d1-ae12-78dcdd42c66d
+langcode: nl
+status: true
+dependencies: {  }
+name: 'Partner level'
+vid: partner_level
+description: 'Partner levels'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,14 @@
+uuid: 6da6904b-3e8d-4b7b-b281-f5569c46797e
+langcode: nl
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: qPRrt65zzS_W14Bit5-RKffxG727FpmnYd1uMWkGkNY
+id: likert_importance
+label: 'Likertschaal: Belangrijkheid'
+category: Likert
+likert: true
+options: "1: Totaal niet belangrijk\r\n2: Beetje belangrijk\r\n3: Neutraal\r\n4: Belangrijk\r\n5: Zeer belangrijk\n"

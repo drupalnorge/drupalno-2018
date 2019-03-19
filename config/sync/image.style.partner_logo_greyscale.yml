@@ -1,0 +1,40 @@
+uuid: f9077522-ac6c-406c-96a0-51239baa7b23
+langcode: nl
+status: true
+dependencies:
+  module:
+    - image_effects
+name: partner_logo_greyscale
+label: 'Partner logo greyscale'
+effects:
+  405f62f4-65e4-463e-9bba-dcefe720502b:
+    uuid: 405f62f4-65e4-463e-9bba-dcefe720502b
+    id: image_desaturate
+    weight: -8
+    data: {  }
+  f025e993-0129-4a0b-a31b-7b41a4ff30bc:
+    uuid: f025e993-0129-4a0b-a31b-7b41a4ff30bc
+    id: image_effects_set_canvas
+    weight: -9
+    data:
+      canvas_size: exact
+      exact:
+        width: '406'
+        height: '230'
+        placement: center-center
+        x_offset: 0
+        y_offset: 0
+      relative:
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+      canvas_color: '#FFFFFFFF'
+  bdc45522-ca4e-41da-bcc5-b3b96d487239:
+    uuid: bdc45522-ca4e-41da-bcc5-b3b96d487239
+    id: image_scale
+    weight: -10
+    data:
+      width: 386
+      height: 210
+      upscale: false

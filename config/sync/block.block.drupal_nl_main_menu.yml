@@ -1,0 +1,26 @@
+uuid: 83b38fe9-0339-4b38-8a59-5973bdb56f38
+langcode: nl
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - drupal_nl
+_core:
+  default_config_hash: rx9IrdDv7Ldc4kpalZAxdhIPZfYIeOMh1N-qKoQZwHo
+id: drupal_nl_main_menu
+theme: drupal_nl
+region: navigation
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: Hoofdnavigatie
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

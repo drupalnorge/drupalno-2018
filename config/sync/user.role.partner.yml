@@ -1,0 +1,11 @@
+uuid: a27f8187-2758-4a35-a166-edf3a49407d2
+langcode: nl
+status: true
+dependencies: {  }
+id: partner
+label: Partner
+weight: 3
+is_admin: null
+permissions:
+  - 'use text format partner_html'
+  - 'view the administration theme'

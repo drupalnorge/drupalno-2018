@@ -1,0 +1,19 @@
+uuid: 3766e97c-aee4-4761-8af7-005db008df5f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meetup_id
+    - node.type.meetup_event
+id: node.meetup_event.field_meetup_id
+field_name: field_meetup_id
+entity_type: node
+bundle: meetup_event
+label: Meetup_id
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

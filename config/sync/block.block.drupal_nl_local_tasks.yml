@@ -1,0 +1,22 @@
+uuid: b9a37116-7e28-4bcc-a1ab-511a83b82c47
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - drupal_nl
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: drupal_nl_local_tasks
+theme: drupal_nl
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabbladen
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,33 @@
+uuid: 13138535-75ab-467b-be85-43dd9bef3c57
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.organisation.body
+    - field.field.node.organisation.field_administrators
+    - field.field.node.organisation.field_image
+    - field.field.node.organisation.field_level
+    - field.field.node.organisation.field_partner_content
+    - field.field.node.organisation.field_partner_uri
+    - field.field.node.organisation.field_qualities
+    - field.field.node.organisation.field_services
+    - node.type.organisation
+  module:
+    - user
+id: node.organisation.default
+targetEntityType: node
+bundle: organisation
+mode: default
+content: {  }
+hidden:
+  body: true
+  field_administrators: true
+  field_image: true
+  field_level: true
+  field_partner_content: true
+  field_partner_uri: true
+  field_qualities: true
+  field_services: true
+  langcode: true
+  links: true
+  quality_level: true

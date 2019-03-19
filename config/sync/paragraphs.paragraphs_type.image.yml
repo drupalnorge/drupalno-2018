@@ -1,0 +1,9 @@
+uuid: 9f524f39-7e43-4db6-98d0-f82b877f6478
+langcode: nl
+status: true
+dependencies: {  }
+id: image
+label: Afbeelding
+icon_uuid: null
+description: null
+behavior_plugins: {  }

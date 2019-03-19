@@ -1,0 +1,14 @@
+uuid: f2a1a219-b68b-4cf6-a709-391c7cb2efa3
+langcode: nl
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: bbCoEdZNq8D9o0aVTSwPR63PVzjEiqnFFsPEWWlLcOE
+id: yes_no
+label: Ja/Nee
+category: General
+likert: false
+options: "Ja: Ja\r\nNee: Nee\n"

@@ -1,0 +1,30 @@
+uuid: fce12fb2-04ea-4132-a476-3d16bf640b7e
+langcode: nl
+status: true
+dependencies:
+  module:
+    - cta
+    - file
+    - image
+id: cta.field_cta_image
+field_name: field_cta_image
+entity_type: cta
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

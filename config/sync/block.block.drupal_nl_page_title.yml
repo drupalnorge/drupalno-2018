@@ -1,0 +1,20 @@
+uuid: 5d176f6c-8522-4433-8abd-7963bc5d2773
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - drupal_nl
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: drupal_nl_page_title
+theme: drupal_nl
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Paginatitel
+  provider: core
+  label_display: '0'
+visibility: {  }

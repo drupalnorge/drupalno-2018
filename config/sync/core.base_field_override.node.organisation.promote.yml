@@ -1,0 +1,22 @@
+uuid: 29721bcc-256d-4265-9e54-f5c4ad0b30d3
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.organisation
+id: node.organisation.promote
+field_name: promote
+entity_type: node
+bundle: organisation
+label: 'Aangeraden op de voorpagina'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

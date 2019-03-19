@@ -1,0 +1,10 @@
+uuid: d31ab036-f307-4c8b-9527-8bd28c05c454
+langcode: nl
+status: true
+dependencies:
+  module:
+    - cta
+id: cta.token
+label: Token
+targetEntityType: cta
+cache: true

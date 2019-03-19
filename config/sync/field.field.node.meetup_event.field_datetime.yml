@@ -1,0 +1,21 @@
+uuid: ea3a4f6f-19a4-4ee1-9447-9deca93fdef3
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_datetime
+    - node.type.meetup_event
+  module:
+    - datetime
+id: node.meetup_event.field_datetime
+field_name: field_datetime
+entity_type: node
+bundle: meetup_event
+label: Dato
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -46,6 +46,9 @@ function _drupalnl_partners_partner_default_field_access() {
 
     foreach ($terms as $term) {
       foreach ($field_access_values as $value) {
+        if (!$term->hasField('field_access')) {
+          continue;
+        }
         if (in_array($value, $term->get('field_access')->getValue())) {
           continue;
         }

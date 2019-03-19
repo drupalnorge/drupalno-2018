@@ -1,0 +1,43 @@
+uuid: a3d263b1-4d88-4871-90e8-f3bdac758119
+langcode: nl
+status: true
+dependencies:
+  config:
+    - filter.format.partner_html
+  module:
+    - ckeditor
+format: partner_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Opmaak
+          items:
+            - Format
+            - Bold
+            - Italic
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lijsten
+          items:
+            - BulletedList
+            - NumberedList
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

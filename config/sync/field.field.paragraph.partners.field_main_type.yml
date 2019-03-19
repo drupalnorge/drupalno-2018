@@ -1,0 +1,23 @@
+uuid: b4ec709b-443f-4460-8ce3-0e154bc6ba8f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_main_type
+    - paragraphs.paragraphs_type.partners
+  module:
+    - options
+id: paragraph.partners.field_main_type
+field_name: field_main_type
+entity_type: paragraph
+bundle: partners
+label: Type
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: gray
+default_value_callback: ''
+settings: {  }
+field_type: list_string

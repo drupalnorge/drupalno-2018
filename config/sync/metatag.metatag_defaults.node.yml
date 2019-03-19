@@ -1,0 +1,12 @@
+uuid: dd90c783-95f1-4ee5-8ad7-1a9d71d8586f
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ydpmSCtxLjO9xqkBxObkeYx0Bf2dkW-d8bB_6Q1Ggjs
+id: node
+label: Innhold
+tags:
+  description: '[node:summary][node:field_teaser][node:field_content:0]'
+  referrer: no-referrer
+  title: '[node:title] | [site:name]'

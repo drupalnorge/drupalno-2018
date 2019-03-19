@@ -1,0 +1,21 @@
+uuid: 4e9dc5cd-e340-42a3-bf4b-52f9f5ee8fb7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_events_view_type
+    - paragraphs.paragraphs_type.events
+  module:
+    - options
+id: paragraph.events.field_events_view_type
+field_name: field_events_view_type
+entity_type: paragraph
+bundle: events
+label: 'Item type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

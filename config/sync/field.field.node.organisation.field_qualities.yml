@@ -1,0 +1,28 @@
+uuid: 8cfe844e-c50e-4e15-8304-ee9889a7d07c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_qualities
+    - node.type.organisation
+    - taxonomy.vocabulary.quality_model
+id: node.organisation.field_qualities
+field_name: field_qualities
+entity_type: node
+bundle: organisation
+label: 'Poengsum i kvalitetsmodell'
+description: 'Sjekk her punktene som du som en organisasjon møtes. Les først <a href="/kwaliteit"> forklaringen av punktene </a> før du fyller ut listen. Vær ærlig og kritisk. Besøkende til nettsiden vet ikke hvilke poeng som er og ikke oppnås, bare totalpoenget (maks 12 poeng).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      quality_model: quality_model
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

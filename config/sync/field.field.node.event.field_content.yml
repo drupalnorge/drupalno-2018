@@ -1,0 +1,46 @@
+uuid: fe5d86e1-2ecf-44e0-9e09-ac44747897df
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.event
+  module:
+    - entity_reference_revisions
+id: node.event.field_content
+field_name: field_content
+entity_type: node
+bundle: event
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    target_bundles_drag_drop:
+      image:
+        weight: 8
+        enabled: false
+      images:
+        weight: 9
+        enabled: false
+      intro:
+        weight: 10
+        enabled: false
+      partners:
+        weight: 11
+        enabled: false
+      text:
+        weight: 12
+        enabled: false
+      text_image:
+        weight: 13
+        enabled: false
+      text_images:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,13 @@
+protect_all_forms: false
+log: false
+element_name: url
+time_limit: 3
+form_settings:
+  user_register_form: true
+  user_pass: true
+  contact_message_feedback_form: true
+  contact_message_partner_program_form: true
+  contact_message_personal_form: true
+  node_type_node_form: false
+  comment_comment_form: false
+langcode: nl

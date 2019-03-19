@@ -1,0 +1,12 @@
+uuid: 6590774e-9005-4c1e-8b1a-44f1fa64c435
+langcode: nl
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 6GCOQ-jP2RbdbHA5YWQ6bT8CfGbqrBYKOSC_XY4E3ZM
+id: node.search_result
+label: 'Invoer van zoekresultaatmarkering'
+targetEntityType: node
+cache: true

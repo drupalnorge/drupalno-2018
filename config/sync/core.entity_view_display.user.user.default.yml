@@ -1,0 +1,26 @@
+uuid: f1220ced-52da-46c5-9a62-587becaf1215
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_organisation
+  module:
+    - drupalnl_partners
+    - user
+_core:
+  default_config_hash: L2mtwGWH_7wDRCMIR4r_Iu_jmvQ10DV1L8ht8iNZ5qY
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_organisation:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: entity_reference_partner
+    region: content
+hidden:
+  langcode: true
+  member_for: true

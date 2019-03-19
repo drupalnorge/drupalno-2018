@@ -1,0 +1,56 @@
+uuid: 25e0cc03-ac41-464c-a9db-b9b61d228502
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.overview
+    - field.field.node.organisation.body
+    - field.field.node.organisation.field_administrators
+    - field.field.node.organisation.field_image
+    - field.field.node.organisation.field_level
+    - field.field.node.organisation.field_partner_content
+    - field.field.node.organisation.field_partner_uri
+    - field.field.node.organisation.field_qualities
+    - field.field.node.organisation.field_services
+    - image.style.partner_logo
+    - node.type.organisation
+  module:
+    - image
+    - link
+    - user
+id: node.organisation.overview
+targetEntityType: node
+bundle: organisation
+mode: overview
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: partner_logo
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_partner_uri:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  body: true
+  field_administrators: true
+  field_level: true
+  field_partner_content: true
+  field_qualities: true
+  field_services: true
+  langcode: true
+  links: true
+  quality_level: true
