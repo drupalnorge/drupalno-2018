@@ -18,6 +18,10 @@ mysql:
   username: $DB_USERNAME
   encoding: $DB_ENCODE
 
+before_install:
+  # Set php memory limit to -1 so composer update will not fail
+  - export COMPOSER_MEMORY_LIMIT=-1
+
 install:
   - composer install
   - touch web/sites/default/settings.local.php
