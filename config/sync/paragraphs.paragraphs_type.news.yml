@@ -4,3 +4,6 @@ status: true
 dependencies: {  }
 id: news
 label: Nieuwsberichten
+icon_uuid: null
+description: null
+behavior_plugins: {  }

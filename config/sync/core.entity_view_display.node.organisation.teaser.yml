@@ -30,7 +30,9 @@ content:
     region: content
 hidden:
   body: true
+  field_administrators: true
   field_level: true
+  field_partner_content: true
   field_partner_uri: true
   field_qualities: true
   field_services: true

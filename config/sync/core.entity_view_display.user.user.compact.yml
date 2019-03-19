@@ -14,5 +14,6 @@ bundle: user
 mode: compact
 content: {  }
 hidden:
+  field_organisation: true
   langcode: true
   member_for: true

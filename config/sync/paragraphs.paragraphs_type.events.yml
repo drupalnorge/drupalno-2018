@@ -4,3 +4,6 @@ status: true
 dependencies: {  }
 id: events
 label: Evenementen
+icon_uuid: null
+description: null
+behavior_plugins: {  }

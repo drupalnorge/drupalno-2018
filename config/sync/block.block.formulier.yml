@@ -1,0 +1,31 @@
+uuid: 71eb2178-17fc-4047-be15-4b956276573d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - webform.webform.contact
+  module:
+    - system
+    - webform
+  theme:
+    - drupal_nl
+id: formulier
+theme: drupal_nl
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Word partner'
+  provider: webform
+  label_display: visible
+  webform_id: contact
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /partners/ons-partnerprogramma
+    negate: false
+    context_mapping: {  }

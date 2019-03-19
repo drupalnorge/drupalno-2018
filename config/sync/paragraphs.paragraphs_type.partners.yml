@@ -4,3 +4,6 @@ status: true
 dependencies: {  }
 id: partners
 label: Partners
+icon_uuid: null
+description: null
+behavior_plugins: {  }

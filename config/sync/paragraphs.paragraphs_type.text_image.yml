@@ -4,3 +4,6 @@ status: true
 dependencies: {  }
 id: text_image
 label: 'Tekst met afbeelding'
+icon_uuid: null
+description: null
+behavior_plugins: {  }

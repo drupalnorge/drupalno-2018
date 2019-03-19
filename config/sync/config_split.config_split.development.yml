@@ -4,12 +4,12 @@ status: true
 dependencies: {  }
 id: development
 label: Development
+description: ''
 folder: ../config/dev
 module:
   devel: 0
   kint: 0
   stage_file_proxy: 0
-  styleguide: 0
 theme: {  }
 blacklist:
   - devel.settings
