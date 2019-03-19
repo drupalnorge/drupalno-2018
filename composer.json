@@ -117,11 +117,14 @@
             ]
         },
         "patches": {
+            "drupal/core" : {
+                "Restricted area for robots to drupal.no until we released the website": "https://www.drupal.org/files/issues/2019-02-13/drupal_norway-3032672-2.patch"
+            },
             "drupal/core": {
                 "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
             },
             "drupal/menu_block": {
-                "Add option to make the starting level follow the active menu item (https://www.drupal.org/files/issues/2018-07-02/menu_block-follow-2756675-51.patch)": "https://www.drupal.org/files/issues/2018-07-02/menu_block-follow-2756675-51.patch"
+                "Add option to make the starting level follow the active menu item": "https://www.drupal.org/files/issues/2018-07-02/menu_block-follow-2756675-51.patch"
             },
             "drupal/ds": {
                 "Fix layout warning (https://www.drupal.org/project/ds/issues/2904575)": "https://www.drupal.org/files/issues/invalid_argument_in_ds_module-2904575-2.patch"
