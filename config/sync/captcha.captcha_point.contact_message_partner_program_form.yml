@@ -1,0 +1,7 @@
+uuid: d2c2d715-ee30-4e4e-bf74-93fa95f2e39d
+langcode: nl
+status: true
+dependencies: {  }
+formId: contact_message_partner_program_form
+captchaType: default
+label: contact-message-partner-program-form

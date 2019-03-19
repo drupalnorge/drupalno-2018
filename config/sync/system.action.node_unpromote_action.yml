@@ -1,0 +1,13 @@
+uuid: 0cd06981-97ca-472d-adc0-84c1cd00eb4c
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: JBptjnfuOMtsdKygklXxoOgeOCTMtQxlkymjnnj-cC0
+id: node_unpromote_action
+label: 'Inhoud van de voorpagina verwijderen'
+type: node
+plugin: node_unpromote_action
+configuration: {  }

@@ -1,0 +1,23 @@
+uuid: a3a63c18-c711-4af2-bd96-373360facc74
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_item_type
+    - paragraphs.paragraphs_type.text_images
+  module:
+    - options
+id: paragraph.text_images.field_item_type
+field_name: field_item_type
+entity_type: paragraph
+bundle: text_images
+label: 'Item type'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: white
+default_value_callback: ''
+settings: {  }
+field_type: list_string

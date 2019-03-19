@@ -1,0 +1,26 @@
+language: php
+php:
+  - 7.1
+
+sudo: false
+
+addons:
+  chrome: stable
+
+env:
+  global:
+    - DATABASE='drupal'
+    - DB_USERNAME='root'
+    - DB_ENCODE='utf8'
+
+mysql:
+  database: $DATABASE
+  username: $DB_USERNAME
+  encoding: $DB_ENCODE
+
+install:
+  - composer install
+  - touch web/sites/default/settings.local.php
+  - ./vendor/bin/drush si minimal --db-url="mysql://$DB_USERNAME@127.0.0.1/$DATABASE" -y
+  - ./vendor/bin/drush cset system.site uuid c431d00d-fe18-4aeb-9140-5e439ac2f365 -y
+  - ./vendor/bin/drush cim -y

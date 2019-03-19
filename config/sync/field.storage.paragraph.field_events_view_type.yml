@@ -1,0 +1,33 @@
+uuid: c0e0d1ff-8d5c-4b9c-b01e-4adcbbd96597
+langcode: nl
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_events_view_type
+field_name: field_events_view_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: all
+      label: 'Alle evenementen in de toekomst'
+    -
+      value: archive
+      label: 'Archief van evenementen'
+    -
+      value: limit
+      label: 'Evenementen op homepage'
+    -
+      value: meetup
+      label: 'Meetup events'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -18,19 +18,19 @@ class CallToActionAccessControlHandler extends EntityAccessControlHandler {
    */
   protected function checkAccess(EntityInterface $entity, $operation, AccountInterface $account) {
     /** @var \Drupal\cta\CallToActionInterface $entity */
-//    switch ($operation) {
-//      case 'view':
-//        if (!$entity->isPublished()) {
-//          return AccessResult::allowedIfHasPermission($account, 'view unpublished call to action entities');
-//        }
-//        return AccessResult::allowedIfHasPermission($account, 'view published call to action entities');
-//
-//      case 'update':
-//        return AccessResult::allowedIfHasPermission($account, 'edit call to action entities');
-//
-//      case 'delete':
-//        return AccessResult::allowedIfHasPermission($account, 'delete call to action entities');
-//    }
+    switch ($operation) {
+      case 'view':
+        if (!$entity->isPublished()) {
+          return AccessResult::allowedIfHasPermission($account, 'view unpublished call to action entities');
+        }
+        return AccessResult::allowedIfHasPermission($account, 'view published call to action entities');
+
+      case 'update':
+        return AccessResult::allowedIfHasPermission($account, 'edit call to action entities');
+
+      case 'delete':
+        return AccessResult::allowedIfHasPermission($account, 'delete call to action entities');
+    }
 
     // Unknown operation, no opinion.
     return AccessResult::neutral();

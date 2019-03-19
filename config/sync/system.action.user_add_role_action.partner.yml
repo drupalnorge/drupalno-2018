@@ -1,0 +1,14 @@
+uuid: c8a57804-4a58-4bf0-9c8f-fed980ca014f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - user.role.partner
+  module:
+    - user
+id: user_add_role_action.partner
+label: 'Voeg de rol partner toe aan de geselecteerde gebruikers'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: partner

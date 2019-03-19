@@ -1,0 +1,24 @@
+uuid: 3b1cb5ee-4931-47aa-b3c4-39cb37d3204c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.header_cta
+  module:
+    - views
+  theme:
+    - drupal_nl
+id: views_block__header_cta_block_1
+theme: drupal_nl
+region: navigation
+weight: -5
+provider: null
+plugin: 'views_block:header_cta-block_1'
+settings:
+  id: 'views_block:header_cta-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

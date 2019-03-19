@@ -1,0 +1,22 @@
+uuid: 13601eb0-0534-478c-9cbb-45ceddb100a3
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.organisation
+  module:
+    - text
+id: node.organisation.body
+field_name: body
+entity_type: node
+bundle: organisation
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

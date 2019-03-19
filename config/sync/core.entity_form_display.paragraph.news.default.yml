@@ -1,0 +1,49 @@
+uuid: c7dbfde1-654c-4bb7-bd87-ad0ba9dd80d0
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news.field_link
+    - field.field.paragraph.news.field_main_type
+    - field.field.paragraph.news.field_news_view_type
+    - field.field.paragraph.news.field_title
+    - paragraphs.paragraphs_type.news
+  module:
+    - link
+id: paragraph.news.default
+targetEntityType: paragraph
+bundle: news
+mode: default
+content:
+  field_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_main_type:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_news_view_type:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

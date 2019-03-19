@@ -1,0 +1,51 @@
+uuid: e8282a19-56c8-42fd-be7c-b88f16a06bfb
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.images.field_image_paragraphs
+    - field.field.paragraph.images.field_link
+    - field.field.paragraph.images.field_main_type
+    - field.field.paragraph.images.field_title
+    - paragraphs.paragraphs_type.images
+  module:
+    - entity_reference_revisions
+    - link
+id: paragraph.images.default
+targetEntityType: paragraph
+bundle: images
+mode: default
+content:
+  field_image_paragraphs:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  created: true
+  field_main_type: true
+  uid: true

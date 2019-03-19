@@ -1,0 +1,19 @@
+uuid: 3d84f643-4861-4172-82da-8afcb62e9b21
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Geverifieerde gebruiker'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'access toolbar'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'view published call to action entities'

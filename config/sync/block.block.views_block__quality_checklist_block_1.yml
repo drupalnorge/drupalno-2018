@@ -1,0 +1,30 @@
+uuid: b0090cbd-209d-49c0-b3a3-6c539d68915f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.quality_checklist
+  module:
+    - system
+    - views
+  theme:
+    - drupal_nl
+id: views_block__quality_checklist_block_1
+theme: drupal_nl
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:quality_checklist-block_1'
+settings:
+  id: 'views_block:quality_checklist-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /kwaliteit
+    negate: false
+    context_mapping: {  }

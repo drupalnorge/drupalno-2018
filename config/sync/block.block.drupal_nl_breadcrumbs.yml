@@ -1,0 +1,22 @@
+uuid: 17505d3b-f26a-462a-9a1a-2f85a68b5b93
+langcode: nl
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_nl
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: drupal_nl_breadcrumbs
+theme: drupal_nl
+region: navigation
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Kruimelpad
+  provider: system
+  label_display: '0'
+visibility: {  }

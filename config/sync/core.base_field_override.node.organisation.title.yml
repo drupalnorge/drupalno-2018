@@ -1,0 +1,18 @@
+uuid: 89ae9700-54bb-498c-af42-aa671f67aaaa
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.organisation
+id: node.organisation.title
+field_name: title
+entity_type: node
+bundle: organisation
+label: Partnernaam
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

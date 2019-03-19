@@ -1,0 +1,51 @@
+uuid: b765ffc5-3350-405e-9dc4-e63dc35054ce
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.news_article
+    - paragraphs.paragraphs_type.images
+    - paragraphs.paragraphs_type.intro
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.text_images
+  module:
+    - entity_reference_revisions
+id: node.news_article.field_content
+field_name: field_content
+entity_type: node
+bundle: news_article
+label: Content
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      intro: intro
+      text: text
+      images: images
+      text_images: text_images
+    target_bundles_drag_drop:
+      intro:
+        enabled: true
+        weight: -13
+      text:
+        enabled: true
+        weight: -12
+      images:
+        enabled: true
+        weight: -11
+      text_images:
+        enabled: true
+        weight: -10
+      image:
+        weight: -9
+        enabled: false
+      text_image:
+        weight: -8
+        enabled: false
+field_type: entity_reference_revisions

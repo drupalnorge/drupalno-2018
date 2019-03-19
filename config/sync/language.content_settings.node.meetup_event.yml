@@ -1,0 +1,11 @@
+uuid: e1bfdef6-3a44-4115-9544-a508605db263
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.meetup_event
+id: node.meetup_event
+target_entity_type_id: node
+target_bundle: meetup_event
+default_langcode: site_default
+language_alterable: false

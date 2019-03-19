@@ -1,0 +1,56 @@
+uuid: ad4f057e-7893-4c61-b56f-165895101975
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.partners.field_link
+    - field.field.paragraph.partners.field_main_type
+    - field.field.paragraph.partners.field_partner_level
+    - field.field.paragraph.partners.field_partner_view_type
+    - field.field.paragraph.partners.field_title
+    - paragraphs.paragraphs_type.partners
+  module:
+    - link
+id: paragraph.partners.default
+targetEntityType: paragraph
+bundle: partners
+mode: default
+content:
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_main_type:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_partner_level:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_partner_view_type:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

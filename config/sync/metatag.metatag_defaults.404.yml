@@ -1,0 +1,11 @@
+uuid: df5030fd-c8c3-4e92-b0ee-e85365c50e4a
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2kicQdvATyyopu46qRVU05GXfiAM__sHPaEUa26xegM
+id: '404'
+label: '404 pagina niet gevonden'
+tags:
+  canonical_url: '[site:url]'
+  shortlink: '[site:url]'

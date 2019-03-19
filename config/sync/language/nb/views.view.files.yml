@@ -1,0 +1,89 @@
+label: Filer
+description: 'Finn og administrer filer.'
+display:
+  default:
+    display_title: Hoved
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér etter'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      pager:
+        options:
+          tags:
+            previous: '‹ Forrige'
+            next: 'Neste ›'
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
+      fields:
+        fid:
+          label: Fid
+        filename:
+          label: Navn
+          separator: ', '
+        filemime:
+          label: MIME-type
+        filesize:
+          label: Størrelse
+        status:
+          label: Status
+          settings:
+            format_custom_false: Midlertidig
+            format_custom_true: Permanent
+        created:
+          label: Opplastingsdato
+        changed:
+          label: 'Endret dato'
+        count:
+          label: 'Brukt i'
+      filters:
+        filename:
+          expose:
+            label: Filnavn
+        filemime:
+          expose:
+            label: MIME-type
+        status:
+          expose:
+            label: Status
+      title: Filer
+      empty:
+        area_text_custom:
+          content: 'Ingen filer tilgjengelig.'
+  page_1:
+    display_title: 'Oversikt over filer'
+    display_options:
+      menu:
+        title: Filer
+  page_2:
+    display_title: Filbruk
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: '‹ Forrige'
+            next: 'Neste ›'
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
+      fields:
+        entity_label:
+          label: Entitet
+        type:
+          label: Entitetstype
+        module:
+          label: 'Registrerer modul'
+        count:
+          label: 'Antall ganger brukt'
+      title: Filbruk
+      arguments:
+        fid:
+          exception:
+            title: Alle
+          title: 'Brukinformasjon for file for {{ arguments.fid }}'

@@ -1,0 +1,14 @@
+uuid: 2cf149e3-66b6-400c-82a2-ad10e7474a33
+langcode: nl
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: YF5xykRm4rhXVM9dWXjN5gycyLRGx8uarZVm4nuYeJQ
+id: size
+label: Størrelse
+category: General
+likert: false
+options: "Extra Small: Extra Small\r\nSmall: Small\r\nMedium: Medium\r\nLarge: Large\r\nExtra Large: Extra Large\n"

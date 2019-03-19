@@ -1,0 +1,30 @@
+uuid: f8ee171e-b252-4a5c-a612-d97ae8487349
+langcode: nl
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_partner_level
+field_name: field_partner_level
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: goud
+      label: Goud
+    -
+      value: zilver
+      label: Zilver
+    -
+      value: individueel
+      label: Individueel
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

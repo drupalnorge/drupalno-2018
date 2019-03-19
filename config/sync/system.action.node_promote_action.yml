@@ -1,0 +1,13 @@
+uuid: cbd2fbf4-81a4-4697-9139-c2a13f93f19d
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: N0RDBTqiK4dKoN4p4oW2j0SGWycdHyALUe9M-Ofp89U
+id: node_promote_action
+label: 'Inhoud op de voorpagina zichtbaar maken'
+type: node
+plugin: node_promote_action
+configuration: {  }

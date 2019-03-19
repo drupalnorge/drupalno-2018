@@ -1,0 +1,30 @@
+uuid: 16fc0004-d4e8-4534-9872-85e609abf837
+langcode: nl
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_partner_view_type
+field_name: field_partner_view_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: all_images
+      label: 'Afbeeldingen, alle'
+    -
+      value: limit_images
+      label: 'Afbeeldingen, 6'
+    -
+      value: list
+      label: 'Lijst, alle'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

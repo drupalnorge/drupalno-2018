@@ -1,0 +1,30 @@
+label: 'Blokk som viser hvem er pålogget'
+description: 'Viser brukernavnene til de sist aktive brukere, og det totale antallet aktive brukere.'
+display:
+  default:
+    display_title: Hoved
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Bruk
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér etter'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      filters:
+        access:
+          expose:
+            label: 'Sist tilkoblet'
+            description: 'Tiden en bruker regnes som tilkoblet etterat siste side ble åpnet.'
+      title: 'Tilkoblede brukere'
+      header:
+        result:
+          content: 'Det er totalt @total brukere innlogget.'
+      empty:
+        area_text_custom:
+          content: 'Ingen brukere er innlogget.'
+  who_s_online_block:
+    display_title: 'Tilkoblede brukere'
+    display_options:
+      block_description: 'Tilkoblede brukere'
+      display_description: 'En liste over brukere som er logget på.'

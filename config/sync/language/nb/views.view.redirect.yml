@@ -1,0 +1,42 @@
+label: Videresending
+display:
+  default:
+    display_title: Hoved
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér etter'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      pager:
+        options:
+          tags:
+            previous: '‹ forrige'
+            next: 'neste ›'
+            first: '« første'
+            last: 'siste »'
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
+      fields:
+        redirect_source__path:
+          label: Fra
+          separator: ', '
+        created:
+          label: Opprettet
+      filters:
+        redirect_source__path:
+          expose:
+            label: Fra
+        redirect_redirect__uri:
+          expose:
+            label: Til
+        language:
+          expose:
+            label: Originalspråk
+      title: Videresending
+  page_1:
+    display_title: Side

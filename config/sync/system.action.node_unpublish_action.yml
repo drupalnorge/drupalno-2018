@@ -1,0 +1,13 @@
+uuid: 0bca5b45-3d61-4d77-9a32-93f51f9377aa
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: gGQXiSspwGl0lyOS6w_HCPpvGAPDciqDNLFwWOydVtI
+id: node_unpublish_action
+label: 'Avpubliser innhold'
+type: node
+plugin: 'entity:unpublish_action:node'
+configuration: {  }

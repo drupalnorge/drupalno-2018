@@ -1,0 +1,22 @@
+uuid: 0f482ed2-5e8f-4613-8d37-a2d90cab6d3b
+langcode: nl
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_nl
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: drupal_nl_powered
+theme: drupal_nl
+region: navigation
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Gebouwd met Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

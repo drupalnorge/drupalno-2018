@@ -1,0 +1,23 @@
+uuid: f5b42345-c12b-4ea6-936e-f80559535299
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_main_type
+    - paragraphs.paragraphs_type.text
+  module:
+    - options
+id: paragraph.text.field_main_type
+field_name: field_main_type
+entity_type: paragraph
+bundle: text
+label: Type
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: white
+default_value_callback: ''
+settings: {  }
+field_type: list_string

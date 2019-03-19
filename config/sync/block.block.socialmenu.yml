@@ -1,0 +1,24 @@
+uuid: a7a7b432-3ab9-4f34-8cbc-20726054a896
+langcode: nl
+status: true
+dependencies:
+  config:
+    - system.menu.social-menu
+  module:
+    - system
+  theme:
+    - drupal_nl
+id: socialmenu
+theme: drupal_nl
+region: footer
+weight: -7
+provider: null
+plugin: 'system_menu_block:social-menu'
+settings:
+  id: 'system_menu_block:social-menu'
+  label: 'Social menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

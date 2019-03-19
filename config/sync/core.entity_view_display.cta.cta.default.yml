@@ -1,0 +1,50 @@
+uuid: 19b4653f-133a-4f11-b193-983ef57a7d6a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.cta.cta.field_cta_button
+    - field.field.cta.cta.field_cta_image
+    - field.field.cta.cta.field_cta_text
+    - image.style.header_image
+  module:
+    - cta
+    - image
+    - link
+id: cta.cta.default
+targetEntityType: cta
+bundle: cta
+mode: default
+content:
+  field_cta_button:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_cta_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: header_image
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_cta_text:
+    type: string
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  name: true
+  user_id: true

@@ -1,0 +1,19 @@
+uuid: efdd59c6-00dd-4714-9209-342af84fe9b7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_access
+    - taxonomy.vocabulary.partner_level
+id: taxonomy_term.partner_level.field_access
+field_name: field_access
+entity_type: taxonomy_term
+bundle: partner_level
+label: 'Veld toegang'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

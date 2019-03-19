@@ -1,0 +1,23 @@
+uuid: 7ff3a57b-54ee-4513-8d21-6d8f35b7b661
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_main_type
+    - paragraphs.paragraphs_type.events
+  module:
+    - options
+id: paragraph.events.field_main_type
+field_name: field_main_type
+entity_type: paragraph
+bundle: events
+label: Type
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: gray
+default_value_callback: ''
+settings: {  }
+field_type: list_string

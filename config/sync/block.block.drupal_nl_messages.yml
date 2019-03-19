@@ -1,0 +1,22 @@
+uuid: ba825c60-3962-4f6c-98ef-7eca5e659982
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_nl
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: drupal_nl_messages
+theme: drupal_nl
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Statusberichten
+  provider: system
+  label_display: '0'
+visibility: {  }

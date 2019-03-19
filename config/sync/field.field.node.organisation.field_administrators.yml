@@ -1,0 +1,32 @@
+uuid: d408739e-49a5-4827-b398-b45902bb6962
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_administrators
+    - node.type.organisation
+id: node.organisation.field_administrators
+field_name: field_administrators
+entity_type: node
+bundle: organisation
+label: Administrators
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        partner: partner
+        administrator: '0'
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: true
+field_type: entity_reference

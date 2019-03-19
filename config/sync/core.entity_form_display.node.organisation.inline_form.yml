@@ -1,0 +1,105 @@
+uuid: 7ccf36d1-7ede-46b2-8617-708bd137b675
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.inline_form
+    - field.field.node.organisation.body
+    - field.field.node.organisation.field_administrators
+    - field.field.node.organisation.field_image
+    - field.field.node.organisation.field_level
+    - field.field.node.organisation.field_partner_content
+    - field.field.node.organisation.field_partner_uri
+    - field.field.node.organisation.field_qualities
+    - field.field.node.organisation.field_services
+    - image.style.thumbnail
+    - node.type.organisation
+  module:
+    - field_group
+    - image
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_information:
+      children:
+        - title
+        - field_image
+        - body
+        - field_partner_uri
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: true
+        required_fields: true
+      label: Informatie
+id: node.organisation.inline_form
+targetEntityType: node
+bundle: organisation
+mode: inline_form
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 3
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_level:
+    type: options_buttons
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_partner_uri:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 121
+    third_party_settings: {  }
+    region: content
+  title:
+    type: string_textfield
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_administrators: true
+  field_partner_content: true
+  field_qualities: true
+  field_services: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

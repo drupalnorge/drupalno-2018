@@ -1,0 +1,11 @@
+uuid: 09050e36-1758-49bd-970b-51d65d55e8da
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.partner_services
+id: taxonomy_term.partner_services
+target_entity_type_id: taxonomy_term
+target_bundle: partner_services
+default_langcode: site_default
+language_alterable: false

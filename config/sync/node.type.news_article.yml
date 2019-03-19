@@ -1,0 +1,17 @@
+uuid: 3521594d-2662-4395-9c45-c3371b5158a4
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Nyhet
+type: news_article
+description: 'En nyhet'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

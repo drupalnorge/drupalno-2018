@@ -27,3 +27,6 @@
 
 #Ignore mac system files
 .DS_Store
+
+#Ignore npm folders
+node_modules/

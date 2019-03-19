@@ -1,0 +1,11 @@
+uuid: 4357e3f9-b0f2-4ed0-a9bf-11a5e4084155
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.quality_model
+id: taxonomy_term.quality_model
+target_entity_type_id: taxonomy_term
+target_bundle: quality_model
+default_langcode: site_default
+language_alterable: false

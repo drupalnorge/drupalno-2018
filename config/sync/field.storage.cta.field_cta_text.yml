@@ -1,0 +1,21 @@
+uuid: 4a22738c-6049-4586-8bd4-0b9c2201ae66
+langcode: nl
+status: true
+dependencies:
+  module:
+    - cta
+id: cta.field_cta_text
+field_name: field_cta_text
+entity_type: cta
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,26 @@
+uuid: 1cbfc167-3fa1-4b48-8c24-70543daa2143
+langcode: nl
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - drupal_nl
+_core:
+  default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
+id: drupal_nl_tools
+theme: drupal_nl
+region: navigation
+weight: -6
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Hulpmiddelen
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

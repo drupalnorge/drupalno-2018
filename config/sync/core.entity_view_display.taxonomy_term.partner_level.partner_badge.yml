@@ -1,0 +1,29 @@
+uuid: 457959f9-673c-4afe-95af-c2984c38fa10
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.partner_badge
+    - field.field.taxonomy_term.partner_level.field_partner_badge
+    - image.style.partner_logo
+    - taxonomy.vocabulary.partner_level
+  module:
+    - image
+id: taxonomy_term.partner_level.partner_badge
+targetEntityType: taxonomy_term
+bundle: partner_level
+mode: partner_badge
+content:
+  field_partner_badge:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: partner_logo
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  description: true
+  field_access: true
+  langcode: true

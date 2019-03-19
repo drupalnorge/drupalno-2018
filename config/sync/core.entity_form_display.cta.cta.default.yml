@@ -1,0 +1,95 @@
+uuid: 9e726264-c74f-460e-ad83-f478b9bd29b0
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.cta.cta.field_cta_button
+    - field.field.cta.cta.field_cta_image
+    - field.field.cta.cta.field_cta_text
+    - image.style.thumbnail
+  module:
+    - cta
+    - field_group
+    - image
+    - link
+third_party_settings:
+  field_group:
+    group_cta_cta:
+      children:
+        - field_cta_text
+        - field_cta_button
+      parent_name: ''
+      weight: 2
+      label: 'Call to Action'
+      format_type: fieldset
+      format_settings:
+        description: ''
+        classes: ''
+        id: ''
+        required_fields: true
+    group_cta_banner:
+      children:
+        - field_cta_image
+      parent_name: ''
+      weight: 1
+      label: Banner
+      format_type: fieldset
+      format_settings:
+        description: ''
+        classes: ''
+        id: ''
+        required_fields: true
+id: cta.cta.default
+targetEntityType: cta
+bundle: cta
+mode: default
+content:
+  field_cta_button:
+    weight: 7
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_cta_image:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_cta_text:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 4
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

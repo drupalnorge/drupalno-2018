@@ -1,0 +1,19 @@
+uuid: b56ec87c-8f71-4bc7-b2c8-b0b711b1648d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_global_date
+    - node.type.event
+id: node.event.field_global_date
+field_name: field_global_date
+entity_type: node
+bundle: event
+label: 'Global dato'
+description: 'Hvis det er fylt, vises det på teaser. Den virkelige datoen brukes som sorteringskriterium.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
