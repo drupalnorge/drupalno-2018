@@ -54,7 +54,6 @@ img {
 }
 
 .l-cards {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -62,13 +61,10 @@ img {
 }
 
 .l-cards .card {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   margin: .5rem;
 }
 
@@ -85,13 +81,10 @@ img {
 }
 
 .l-cards .card-small {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   margin: .5rem;
 }
 
@@ -108,7 +101,6 @@ img {
 }
 
 .l-gallery {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -116,13 +108,10 @@ img {
 }
 
 .l-gallery .gallery-item {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   margin: .5rem;
 }
 
@@ -152,7 +141,6 @@ img {
   color: #FFF;
   background-color: #FD9827;
   text-decoration: none;
-  -webkit-transition: background-color .35s;
   transition: background-color .35s;
   font-family: "Avenir LT W01_85 Heavy1475544", sans-serif;
 }
@@ -168,7 +156,6 @@ img {
   color: #FFF;
   background-color: #FD9827;
   text-decoration: none;
-  -webkit-transition: background-color .35s;
   transition: background-color .35s;
 }
 
@@ -227,12 +214,8 @@ img {
 }
 
 .card__img:hover a img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: -webkit-transform .25s ease-out;
-  transition: -webkit-transform .25s ease-out;
+  transform: scale(1.1);
   transition: transform .25s ease-out;
-  transition: transform .25s ease-out, -webkit-transform .25s ease-out;
 }
 
 .card__content {
@@ -271,7 +254,9 @@ img {
   display: block;
   position: absolute;
   top: 20px;
-  background: url("../../logo.png") 0 0;
+  background-image: url("../../logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 42px;
   height: 50px;
 }
@@ -279,8 +264,7 @@ img {
 @media screen and (min-width: 960px) {
   .cta__home-link {
     top: 80px;
-    background: url("../../logo-large.png") 0 0;
-    background-size: cover;
+    background-image: url("../../logo-large.png");
     height: 300px;
     width: 360px;
   }
@@ -358,7 +342,6 @@ img {
   background-color: #34AADE;
   color: #FFF;
   padding: 13px;
-  -webkit-transition: background-color .25s ease-in;
   transition: background-color .25s ease-in;
   font-weight: 900;
 }
@@ -375,7 +358,6 @@ img {
 nav.tabs ul {
   padding: 0;
   list-style: none;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
@@ -445,7 +427,6 @@ nav.tabs ul li a:hover, nav.tabs ul li a:focus {
   display: inline-block;
   padding: 15px 30px 16px;
   color: #898989;
-  -webkit-transition: background-color .25s, color .15s;
   transition: background-color .25s, color .15s;
   font-weight: 800;
   font-size: 14px;
@@ -504,6 +485,7 @@ nav.tabs ul li a:hover, nav.tabs ul li a:focus {
 .partner-item {
   background: #FFF;
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
   margin-bottom: 20px;
@@ -521,7 +503,6 @@ nav.tabs ul li a:hover, nav.tabs ul li a:focus {
 
 .individual-partners > ul {
   list-style: none;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -531,10 +512,8 @@ nav.tabs ul li a:hover, nav.tabs ul li a:focus {
 }
 
 .individual-partners > ul > li {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   margin: 1%;
 }
 
