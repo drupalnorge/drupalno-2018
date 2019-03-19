@@ -22,6 +22,7 @@
         "drupal/admin_toolbar": "^1.25",
         "drupal/better_exposed_filters": "^3.0@alpha",
         "drupal/cer": "^4.0@alpha",
+        "drupal/coffee": "^1.0@beta",
         "drupal/config_ignore": "^2.1",
         "drupal/config_split": "^1.0",
         "drupal/console": "^1.0.2",

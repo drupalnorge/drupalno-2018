@@ -5,7 +5,7 @@ dependencies: {  }
 _core:
   default_config_hash: ydpmSCtxLjO9xqkBxObkeYx0Bf2dkW-d8bB_6Q1Ggjs
 id: node
-label: Innhold
+label: Inhoud
 tags:
   description: '[node:summary][node:field_teaser][node:field_content:0]'
   referrer: no-referrer

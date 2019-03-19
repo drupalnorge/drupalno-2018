@@ -25,5 +25,4 @@ content:
     region: content
 hidden:
   description: true
-  field_access: true
   langcode: true

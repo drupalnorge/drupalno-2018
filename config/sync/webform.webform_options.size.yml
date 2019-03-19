@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: YF5xykRm4rhXVM9dWXjN5gycyLRGx8uarZVm4nuYeJQ
 id: size
-label: Størrelse
+label: Size
 category: General
 likert: false
 options: "Extra Small: Extra Small\r\nSmall: Small\r\nMedium: Medium\r\nLarge: Large\r\nExtra Large: Extra Large\n"
