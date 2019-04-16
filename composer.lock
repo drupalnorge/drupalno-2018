@@ -289,16 +289,16 @@
         },
         {
             "name": "composer/semver",
-            "version": "1.4.2",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573"
+                "reference": "46d9139568ccb8d9e7cdd4539cab7347568a5e2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/c7cb9a2095a074d131b65a8a0cd294479d785573",
-                "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573",
+                "url": "https://api.github.com/repos/composer/semver/zipball/46d9139568ccb8d9e7cdd4539cab7347568a5e2e",
+                "reference": "46d9139568ccb8d9e7cdd4539cab7347568a5e2e",
                 "shasum": ""
             },
             "require": {
@@ -347,7 +347,7 @@
                 "validation",
                 "versioning"
             ],
-            "time": "2016-08-30T16:08:34+00:00"
+            "time": "2019-03-19T17:25:45+00:00"
         },
         {
             "name": "consolidation/annotated-command",
@@ -1698,22 +1698,22 @@
         },
         {
             "name": "drupal-composer/drupal-scaffold",
-            "version": "2.5.4",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-composer/drupal-scaffold.git",
-                "reference": "fc6bf4ceecb5d47327f54d48d4d4f67b17da956d"
+                "reference": "13c1ffc7dd4925cb03707759128b85c0cd6276f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/fc6bf4ceecb5d47327f54d48d4d4f67b17da956d",
-                "reference": "fc6bf4ceecb5d47327f54d48d4d4f67b17da956d",
+                "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/13c1ffc7dd4925cb03707759128b85c0cd6276f8",
+                "reference": "13c1ffc7dd4925cb03707759128b85c0cd6276f8",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0.0",
                 "composer/semver": "^1.4",
-                "php": ">=5.4.5"
+                "php": "^5.5.9|>=7.0.8"
             },
             "require-dev": {
                 "composer/composer": "dev-master",
@@ -1738,7 +1738,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core",
-            "time": "2018-07-27T10:07:07+00:00"
+            "time": "2019-03-30T10:41:38+00:00"
         },
         {
             "name": "drupal/admin_toolbar",
