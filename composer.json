@@ -94,6 +94,15 @@
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "import": [
+            "./vendor/bin/drush --root=$(pwd)/web cc drush",
+            "./vendor/bin/drush --root=$(pwd)/web cim -y",
+            "./vendor/bin/drush cr"
+        ],
+        "export": [
+            "./vendor/bin/drush --root=$(pwd)/web cex -y",
+            "./vendor/bin/drush cr"
         ]
     },
     "extra": {
