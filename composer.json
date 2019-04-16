@@ -151,7 +151,7 @@
         },
         "patches": {
             "drupal/core": {
-                "Restricted area for robots to drupal.no until we released the website": "https://www.drupal.org/files/issues/2019-03-19/drupal_norway-3032672-7.patch",
+                "Restricted area for robots to drupal.no until we released the website": "https://www.drupal.org/files/issues/2019-04-16/drupal_norway-3032672-8.patch",
                 "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
             },
             "drupal/menu_block": {
