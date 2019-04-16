@@ -103,6 +103,9 @@
         "export": [
             "./vendor/bin/drush --root=$(pwd)/web cex -y",
             "./vendor/bin/drush cr"
+        ],
+        "dl-files": [
+            "scp -rv deploy@dev.drupal.no:public_html/dev.drupal.no/web/sites/default/files ./web/sites/default"
         ]
     },
     "extra": {
