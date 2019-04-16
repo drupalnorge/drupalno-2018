@@ -3,8 +3,10 @@ session:
 url:
   source: path_prefix
   prefixes:
+    nl: nl
     nb: nb
   domains:
+    nl: ''
     nb: ''
 selected_langcode: site_default
 _core:
