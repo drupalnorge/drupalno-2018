@@ -95,6 +95,18 @@
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ],
+        "import": [
+            "./vendor/bin/drush --root=$(pwd)/web cc drush",
+            "./vendor/bin/drush --root=$(pwd)/web cim -y",
+            "./vendor/bin/drush cr"
+        ],
+        "export": [
+            "./vendor/bin/drush --root=$(pwd)/web cex -y",
+            "./vendor/bin/drush cr"
+        ],
+        "dl-files": [
+            "scp -rv deploy@dev.drupal.no:public_html/dev.drupal.no/web/sites/default/files ./web/sites/default"
+        ],
         "up-db": [
             "./vendor/bin/drush sql-drop --yes",
             "wget --no-check-certificate http://dev.drupal.no/sanitized.db",
@@ -106,10 +118,10 @@
             "@composer install",
             "@composer up-db"
         ],
-        "up-lock": [
+        "uplock": [
             "@composer update --lock"
         ],
-        "up-nothing": [
+        "upnothing": [
             "@composer update nothing"
         ],
         "resetadmin": [
@@ -139,7 +151,7 @@
         },
         "patches": {
             "drupal/core": {
-                "Restricted area for robots to drupal.no until we released the website": "https://www.drupal.org/files/issues/2019-03-19/drupal_norway-3032672-5.patch",
+                "Restricted area for robots to drupal.no until we released the website": "https://www.drupal.org/files/issues/2019-03-19/drupal_norway-3032672-7.patch",
                 "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
             },
             "drupal/menu_block": {
