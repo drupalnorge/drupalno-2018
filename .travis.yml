@@ -36,3 +36,4 @@ install:
   - ./vendor/bin/drush si minimal --db-url="mysql://$DB_USERNAME@127.0.0.1/$DATABASE" -y
   - ./vendor/bin/drush cset system.site uuid c431d00d-fe18-4aeb-9140-5e439ac2f365 -y
   - ./vendor/bin/drush cim -y
+  - ./vendor/bin/drush updb -y
