@@ -36,7 +36,7 @@
         "drupal/field_group": "^1.0",
         "drupal/google_analytics": "^3.0",
         "drupal/honeypot": "^1.23",
-        "drupal/image_effects": "^1.0",
+        "drupal/image_effects": "^2.0",
         "drupal/inline_entity_form": "^1.0@beta",
         "drupal/menu_block": "^1.5",
         "drupal/menu_link_attributes": "^1.0@beta",
