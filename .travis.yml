@@ -18,6 +18,18 @@ mysql:
   username: $DB_USERNAME
   encoding: $DB_ENCODE
 
+before_install:
+  # Composer Configurations.
+  # Make sure have latest composer
+  - composer self-update --verbose
+  - composer --version
+  # Set php memory limit to -1 so composer update will not fail
+  - export COMPOSER_MEMORY_LIMIT=-1
+  # To enforce throwing an error and stopping package installation/update immediately
+  - export COMPOSER_EXIT_ON_PATCH_FAILURE=1
+  # Installing hirak/prestissimo allows composer to parallelise downloads which speeds up the composer install.
+  - composer global require hirak/prestissimo
+
 install:
   - composer install
   - touch web/sites/default/settings.local.php

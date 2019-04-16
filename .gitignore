@@ -37,3 +37,6 @@
 
 #Ignore npm folders
 node_modules/
+
+# Ingore Lando-files
+/app
