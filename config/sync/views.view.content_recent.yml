@@ -42,7 +42,7 @@ display:
         options:
           submit_button: Apply
           reset_button: false
-          reset_button_label: Herstel
+          reset_button_label: Nullstill
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc

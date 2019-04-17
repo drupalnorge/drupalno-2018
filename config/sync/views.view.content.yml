@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: YIwhIF9MSP1E_HMam6MrYeti_UqMXQiLDMjDsPFKK8s
 id: content
-label: Innhold
+label: Inhoud
 module: node
 description: 'Finne og behandle innhold.'
 tag: default
@@ -32,19 +32,19 @@ display:
           submit_button: Filtrer
           reset_button: true
           reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér etter'
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
+          sort_asc_label: Asc
+          sort_desc_label: Desc
       pager:
         type: full
         options:
           items_per_page: 50
           tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
-            first: '« Første'
-            last: 'Siste »'
+            previous: '‹ Vorige'
+            next: 'Volgende ›'
+            first: '« First'
+            last: 'Last »'
       style:
         type: table
         options:
@@ -580,14 +580,14 @@ display:
           entity_type: node
           entity_field: langcode
       sorts: {  }
-      title: Innhold
+      title: Inhoud
       empty:
         area_text_custom:
           id: area_text_custom
           table: views
           field: area_text_custom
           empty: true
-          content: 'Intet innhold tilgjengelig.'
+          content: 'No content available.'
           plugin_id: text_custom
       arguments: {  }
       relationships:
@@ -605,7 +605,7 @@ display:
           1: AND
       display_extenders: {  }
     display_plugin: default
-    display_title: Hoved
+    display_title: Master
     id: default
     position: 0
     cache_metadata:
@@ -624,20 +624,20 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Innhold
+        title: Inhoud
         description: ''
         menu_name: admin
         weight: -10
         context: ''
       tab_options:
         type: normal
-        title: Innhold
+        title: Inhoud
         description: 'Finn og administrer innhold'
         menu_name: admin
         weight: -10
       display_extenders: {  }
     display_plugin: page
-    display_title: Side
+    display_title: Page
     id: page_1
     position: 1
     cache_metadata:
