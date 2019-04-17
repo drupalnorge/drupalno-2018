@@ -18,6 +18,29 @@ mysql:
   username: $DB_USERNAME
   encoding: $DB_ENCODE
 
+stages:
+  - installation checks
+  - deploy
+
+jobs:
+  include:
+    - stage: installation checks
+      name: Verify installation
+      install:
+        - ./vendor/bin/drush cset system.site uuid c431d00d-fe18-4aeb-9140-5e439ac2f365 -y
+        - ./vendor/bin/drush cim -y
+    - stage: installation checks
+      name: Verify updating
+      before_install:
+        - composer dl-db
+      install:
+        - ./vendor/bin/drush sql-cli < sanitized.db
+        - ./vendor/bin/drush updb -y
+    - stage: deploy
+      name: Verify deploying
+      install:
+        - composer build
+
 before_install:
   # Composer Configurations.
   # Make sure have latest composer
@@ -33,7 +56,4 @@ before_install:
 install:
   - composer install
   - touch web/sites/default/settings.local.php
-  - ./vendor/bin/drush si minimal --db-url="mysql://$DB_USERNAME@127.0.0.1/$DATABASE" -y
-  - ./vendor/bin/drush cset system.site uuid c431d00d-fe18-4aeb-9140-5e439ac2f365 -y
-  - ./vendor/bin/drush cim -y
-  - ./vendor/bin/drush updb -y
+  - ./vendor/bin/drush si minimal --db-url="mysql://$DB_USERNAME@127.0.0.1/$DATABASE" -y --verbose
