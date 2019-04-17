@@ -114,6 +114,9 @@
         "dl-files": [
             "scp -rv deploy@dev.drupal.no:public_html/dev.drupal.no/web/sites/default/files ./web/sites/default"
         ],
+        "dl-db": [
+            "wget --no-check-certificate http://dev.drupal.no/sanitized.db"
+        ],
         "up-db": [
             "./vendor/bin/drush sql-drop --yes",
             "wget --no-check-certificate http://dev.drupal.no/sanitized.db",

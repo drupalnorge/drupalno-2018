@@ -29,11 +29,35 @@ before_install:
   - export COMPOSER_EXIT_ON_PATCH_FAILURE=1
   # Installing hirak/prestissimo allows composer to parallelise downloads which speeds up the composer install.
   - composer global require hirak/prestissimo
+  - composer dl-db
 
-install:
-  - composer install
-  - touch web/sites/default/settings.local.php
-  - ./vendor/bin/drush si minimal --db-url="mysql://$DB_USERNAME@127.0.0.1/$DATABASE" -y
-  - ./vendor/bin/drush cset system.site uuid c431d00d-fe18-4aeb-9140-5e439ac2f365 -y
-  - ./vendor/bin/drush cim -y
-  - ./vendor/bin/drush updb -y
+stages:
+  - installation checks
+  - Ready to deploy without dev
+
+jobs:
+  include:
+    - stage: installation checks
+      name: Verify installation
+      install:
+        - composer install
+        - touch web/sites/default/settings.local.php
+        - ./vendor/bin/drush si minimal --db-url="mysql://$DB_USERNAME@127.0.0.1/$DATABASE" -y --verbose
+        - ./vendor/bin/drush cset system.site uuid c431d00d-fe18-4aeb-9140-5e439ac2f365 -y
+        - composer import
+    - stage: installation checks
+      name: Verify update
+      install:
+        - composer install
+        - touch web/sites/default/settings.local.php
+        - ./vendor/bin/drush si minimal --db-url="mysql://$DB_USERNAME@127.0.0.1/$DATABASE" -y --verbose
+        - ./vendor/bin/drush sql-cli < sanitized.db
+        - ./vendor/bin/drush updb -y
+    - stage: deploy
+      name: Verify deploying
+      install:
+        - composer install --no-dev
+        - touch web/sites/default/settings.local.php
+        - ./vendor/bin/drush si minimal --db-url="mysql://$DB_USERNAME@127.0.0.1/$DATABASE" -y --verbose
+        - ./vendor/bin/drush sql-cli < sanitized.db
+        - composer build
