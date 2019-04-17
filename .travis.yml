@@ -33,7 +33,7 @@ before_install:
 
 stages:
   - installation checks
-  - deploy
+  - Ready to deploy without dev
 
 jobs:
   include:
@@ -46,7 +46,7 @@ jobs:
         - ./vendor/bin/drush cset system.site uuid c431d00d-fe18-4aeb-9140-5e439ac2f365 -y
         - composer import
     - stage: installation checks
-      name: Verify updating
+      name: Verify update
       install:
         - composer install
         - touch web/sites/default/settings.local.php
