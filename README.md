@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.com/drupalnorge/drupalno.svg?branch=master)](https://travis-ci.com/drupalnorge/drupalno)
 [![Violinist enabled](https://img.shields.io/badge/violinist-enabled-brightgreen.svg)](https://violinist.io)
+[![Codeship Status for drupalnorge/drupalno](https://app.codeship.com/projects/6ff02ba0-602c-0137-b932-3e71eeafec30/status?branch=master)](https://app.codeship.com/projects/343995)
 
 # Drupal.no
 
