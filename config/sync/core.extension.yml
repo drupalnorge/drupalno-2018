@@ -55,6 +55,7 @@ module:
   rdf: 0
   recaptcha: 0
   redirect: 0
+  reroute_email: 0
   seckit: 0
   simple_sitemap: 0
   site_verify: 0
