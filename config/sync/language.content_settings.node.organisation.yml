@@ -7,5 +7,5 @@ dependencies:
 id: node.organisation
 target_entity_type_id: node
 target_bundle: organisation
-default_langcode: nl
-language_alterable: false
+default_langcode: site_default
+language_alterable: true

@@ -27,7 +27,7 @@ third_party_settings:
         - body
         - field_partner_uri
       parent_name: ''
-      weight: 1
+      weight: 2
       format_type: details
       format_settings:
         id: ''
@@ -50,7 +50,7 @@ content:
     third_party_settings: {  }
     region: content
   field_administrators:
-    weight: 5
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60
@@ -67,13 +67,13 @@ content:
     type: image_image
     region: content
   field_level:
-    weight: 0
+    type: options_select
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_partner_content:
-    weight: 4
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
@@ -90,22 +90,29 @@ content:
     type: link_default
     region: content
   field_qualities:
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_services:
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
+  langcode:
+    type: language_select
+    weight: 0
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 121
+    weight: 8
     third_party_settings: {  }
     region: content
   title:
@@ -117,13 +124,12 @@ content:
     third_party_settings: {  }
     region: content
   url_redirects:
-    weight: 50
+    weight: 7
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
-  langcode: true
   path: true
   promote: true
   sticky: true
