@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed3356db1e9edbf531005d25f22e8e21",
+    "content-hash": "bb8872791a3c35e5d7a4fec83d67a482",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2121,7 +2121,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.27",
-                    "datestamp": "1558552081",
+                    "datestamp": "1558553350",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4909,7 +4909,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/site_verify.git",
-                "reference": "71734971a819fd537737c8d47c5a96b047b6a541"
+                "reference": "011b68dbbf2efd79c9f00582328de37656c3baec"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4921,7 +4921,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1520402885",
+                    "datestamp": "1520408585",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4973,9 +4973,9 @@
             "description": "Verifies ownership of a site for use with search engines.",
             "homepage": "https://www.drupal.org/project/site_verify",
             "support": {
-                "source": "http://cgit.drupalcode.org/site_verify"
+                "source": "https://git.drupalcode.org/project/site_verify"
             },
-            "time": "2015-11-19T12:44:25+00:00"
+            "time": "2018-03-07T07:39:48+00:00"
         },
         {
             "name": "drupal/smtp",

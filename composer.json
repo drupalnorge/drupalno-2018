@@ -51,7 +51,7 @@
         "drupal/reroute_email": "^1.1",
         "drupal/seckit": "^1.0@alpha",
         "drupal/simple_sitemap": "^3.0",
-        "drupal/site_verify": "1.x-dev#71734971a819fd537737c8d47c5a96b047b6a541",
+        "drupal/site_verify": "1.x-dev",
         "drupal/smtp": "^1.0@beta",
         "drupal/stage_file_proxy": "^1.0@alpha",
         "drupal/webform": "^5.0@beta",
