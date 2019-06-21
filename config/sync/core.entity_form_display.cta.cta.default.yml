@@ -27,6 +27,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: content
     group_cta_banner:
       children:
         - field_cta_image
@@ -39,6 +40,7 @@ third_party_settings:
         classes: ''
         id: ''
         required_fields: true
+      region: content
 id: cta.cta.default
 targetEntityType: cta
 bundle: cta

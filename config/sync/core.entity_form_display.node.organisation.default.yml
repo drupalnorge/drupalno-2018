@@ -35,6 +35,7 @@ third_party_settings:
         open: true
         required_fields: true
       label: Informatie
+      region: content
 id: node.organisation.default
 targetEntityType: node
 bundle: organisation
