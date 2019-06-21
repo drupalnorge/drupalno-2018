@@ -28,11 +28,11 @@
         "drupal/console": "^1.0.2",
         "drupal/contact_ajax": "^1.4@RC",
         "drupal/contact_block": "^1.4",
-        "drupal/core": "8.6.15",
+        "drupal/core": "~8.7.0",
         "drupal/ctools": "^3.0",
-        "drupal/devel": "^1.2",
+        "drupal/devel": "^2.1",
         "drupal/ds": "^3.1",
-        "drupal/entity_browser": "2.1.0",
+        "drupal/entity_browser": "^2.1.0",
         "drupal/field_group": "^1.0",
         "drupal/google_analytics": "^3.0",
         "drupal/honeypot": "^1.23",
@@ -51,7 +51,7 @@
         "drupal/reroute_email": "^1.1",
         "drupal/seckit": "^1.0@alpha",
         "drupal/simple_sitemap": "^3.0",
-        "drupal/site_verify": "1.x-dev#71734971a819fd537737c8d47c5a96b047b6a541",
+        "drupal/site_verify": "^1.x-dev",
         "drupal/smtp": "^1.0@beta",
         "drupal/stage_file_proxy": "^1.0@alpha",
         "drupal/webform": "^5.0@beta",
@@ -63,7 +63,7 @@
         "drupal/drupal-extension": "~3.0",
         "drupal/stage_file_proxy": "^1.0@alpha",
         "eiriksm/wait-for-listen": "^1.0",
-        "webflo/drupal-core-require-dev": "8.6.15"
+        "webflo/drupal-core-require-dev": "~8.7.0"
     },
     "conflict": {
         "drupal/drupal": "*"

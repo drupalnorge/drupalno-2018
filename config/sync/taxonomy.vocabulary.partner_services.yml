@@ -5,5 +5,4 @@ dependencies: {  }
 name: 'Partner service'
 vid: partner_services
 description: 'Partner services'
-hierarchy: 0
 weight: 0
