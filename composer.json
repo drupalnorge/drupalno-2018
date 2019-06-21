@@ -54,7 +54,7 @@
         "drupal/site_verify": "1.x-dev",
         "drupal/smtp": "^1.0@beta",
         "drupal/stage_file_proxy": "^1.0@alpha",
-        "drupal/webform": "^5.0@beta",
+        "drupal/webform": "^5.0",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0"
