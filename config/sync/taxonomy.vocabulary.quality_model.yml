@@ -5,5 +5,4 @@ dependencies: {  }
 name: Kwaliteitschecklist
 vid: quality_model
 description: ''
-hierarchy: 0
 weight: 0
