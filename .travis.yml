@@ -63,4 +63,5 @@ jobs:
         - touch web/sites/default/settings.local.php
         - ./vendor/bin/drush si minimal --db-url="mysql://$DB_USERNAME@127.0.0.1/$DATABASE" -y --verbose
         - ./vendor/bin/drush sql-cli < sanitized.db
+      script:
         - composer build
