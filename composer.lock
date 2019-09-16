@@ -160,16 +160,16 @@
         },
         {
             "name": "chi-teck/drupal-code-generator",
-            "version": "1.29.2",
+            "version": "1.30.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chi-teck/drupal-code-generator.git",
-                "reference": "0d2cb5299e5b1361bab6c8b9ee6531e95d68df95"
+                "reference": "8b7ae331e21e58088e3e52688823692ed6471ec3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/0d2cb5299e5b1361bab6c8b9ee6531e95d68df95",
-                "reference": "0d2cb5299e5b1361bab6c8b9ee6531e95d68df95",
+                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/8b7ae331e21e58088e3e52688823692ed6471ec3",
+                "reference": "8b7ae331e21e58088e3e52688823692ed6471ec3",
                 "shasum": ""
             },
             "require": {
@@ -177,7 +177,7 @@
                 "php": ">=5.5.9",
                 "symfony/console": "^3.4 || ^4.0",
                 "symfony/filesystem": "^2.7 || ^3.4 || ^4.0",
-                "twig/twig": "^1.35"
+                "twig/twig": "^1.38.2 || ^2.10"
             },
             "bin": [
                 "bin/dcg"
@@ -201,7 +201,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal code generator",
-            "time": "2019-06-02T07:36:18+00:00"
+            "time": "2019-08-25T06:39:56+00:00"
         },
         {
             "name": "composer/installers",
@@ -824,16 +824,16 @@
         },
         {
             "name": "consolidation/robo",
-            "version": "1.4.9",
+            "version": "1.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/Robo.git",
-                "reference": "5c6b3840a45afda1cbffbb3bb1f94dd5f9f83345"
+                "reference": "e5a6ca64cf1324151873672e484aceb21f365681"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/Robo/zipball/5c6b3840a45afda1cbffbb3bb1f94dd5f9f83345",
-                "reference": "5c6b3840a45afda1cbffbb3bb1f94dd5f9f83345",
+                "url": "https://api.github.com/repos/consolidation/Robo/zipball/e5a6ca64cf1324151873672e484aceb21f365681",
+                "reference": "e5a6ca64cf1324151873672e484aceb21f365681",
                 "shasum": ""
             },
             "require": {
@@ -928,7 +928,7 @@
                 }
             ],
             "description": "Modern task runner",
-            "time": "2019-03-19T18:07:19+00:00"
+            "time": "2019-07-29T15:40:50+00:00"
         },
         {
             "name": "consolidation/self-update",
@@ -1054,16 +1054,16 @@
         },
         {
             "name": "consolidation/site-process",
-            "version": "2.0.3",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/site-process.git",
-                "reference": "e25265f4a48c13284ebb6f9e0906ecd415d451df"
+                "reference": "f3211fa4c60671c6f068184221f06f932556e443"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/site-process/zipball/e25265f4a48c13284ebb6f9e0906ecd415d451df",
-                "reference": "e25265f4a48c13284ebb6f9e0906ecd415d451df",
+                "url": "https://api.github.com/repos/consolidation/site-process/zipball/f3211fa4c60671c6f068184221f06f932556e443",
+                "reference": "f3211fa4c60671c6f068184221f06f932556e443",
                 "shasum": ""
             },
             "require": {
@@ -1113,16 +1113,16 @@
             ],
             "authors": [
                 {
-                    "name": "Moshe Weitzman",
-                    "email": "weitzman@tejasa.com"
-                },
-                {
                     "name": "Greg Anderson",
                     "email": "greg.1.anderson@greenknowe.org"
+                },
+                {
+                    "name": "Moshe Weitzman",
+                    "email": "weitzman@tejasa.com"
                 }
             ],
             "description": "A thin wrapper around the Symfony Process Component that allows applications to use the Site Alias library to specify the target for a remote call.",
-            "time": "2019-06-04T22:23:52+00:00"
+            "time": "2019-09-10T17:56:24+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -5308,16 +5308,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "9.7.0",
+            "version": "9.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "ed1314a88f7ef947b56f0c9da9ca7a0f4aeef40e"
+                "reference": "6f9a8d235daec06fd6f47b2d84da675750566479"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/ed1314a88f7ef947b56f0c9da9ca7a0f4aeef40e",
-                "reference": "ed1314a88f7ef947b56f0c9da9ca7a0f4aeef40e",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/6f9a8d235daec06fd6f47b2d84da675750566479",
+                "reference": "6f9a8d235daec06fd6f47b2d84da675750566479",
                 "shasum": ""
             },
             "require": {
@@ -5329,7 +5329,7 @@
                 "consolidation/output-formatters": "^3.3.1",
                 "consolidation/robo": "^1.4.6",
                 "consolidation/site-alias": "^3.0.0@stable",
-                "consolidation/site-process": "^2.0.2",
+                "consolidation/site-process": "^2.0.3",
                 "ext-dom": "*",
                 "grasmash/yaml-expander": "^1.1.1",
                 "league/container": "~2",
@@ -5453,7 +5453,7 @@
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2019-06-04T16:01:18+00:00"
+            "time": "2019-06-30T19:46:39+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
