@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.organisation.body
     - field.field.node.organisation.field_administrators
+    - field.field.node.organisation.field_e_post
     - field.field.node.organisation.field_image
     - field.field.node.organisation.field_level
     - field.field.node.organisation.field_partner_content
     - field.field.node.organisation.field_partner_uri
     - field.field.node.organisation.field_qualities
     - field.field.node.organisation.field_services
+    - field.field.node.organisation.field_telefon
     - node.type.organisation
   module:
     - user
@@ -18,7 +20,21 @@ id: node.organisation.default
 targetEntityType: node
 bundle: organisation
 mode: default
-content: {  }
+content:
+  field_e_post:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_telefon:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
 hidden:
   body: true
   field_administrators: true

@@ -5,24 +5,29 @@ dependencies:
   config:
     - field.field.node.organisation.body
     - field.field.node.organisation.field_administrators
+    - field.field.node.organisation.field_e_post
     - field.field.node.organisation.field_image
     - field.field.node.organisation.field_level
     - field.field.node.organisation.field_partner_content
     - field.field.node.organisation.field_partner_uri
     - field.field.node.organisation.field_qualities
     - field.field.node.organisation.field_services
+    - field.field.node.organisation.field_telefon
     - image.style.thumbnail
     - node.type.organisation
   module:
     - field_group
     - image
     - link
+    - telephone
     - text
 third_party_settings:
   field_group:
     group_information:
       children:
         - title
+        - field_telefon
+        - field_e_post
         - field_image
         - body
         - field_partner_uri
@@ -43,7 +48,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 3
+    weight: 5
     settings:
       rows: 9
       summary_rows: 3
@@ -59,8 +64,16 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
+  field_e_post:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
   field_image:
-    weight: 2
+    weight: 4
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -83,7 +96,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_partner_uri:
-    weight: 4
+    weight: 6
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -101,6 +114,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
+    region: content
+  field_telefon:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
     region: content
   langcode:
     type: language_select
