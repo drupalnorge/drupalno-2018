@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.organisation.field_partner_content
     - field.field.node.organisation.field_partner_uri
     - field.field.node.organisation.field_qualities
+    - field.field.node.organisation.field_region
     - field.field.node.organisation.field_services
     - field.field.node.organisation.field_telefon
     - image.style.thumbnail
@@ -28,6 +29,7 @@ third_party_settings:
         - title
         - field_telefon
         - field_e_post
+        - field_region
         - field_image
         - body
         - field_partner_uri
@@ -48,7 +50,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 5
+    weight: 6
     settings:
       rows: 9
       summary_rows: 3
@@ -73,7 +75,7 @@ content:
     type: email_default
     region: content
   field_image:
-    weight: 4
+    weight: 5
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -96,7 +98,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_partner_uri:
-    weight: 6
+    weight: 7
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -104,6 +106,12 @@ content:
     type: link_default
     region: content
   field_qualities:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_region:
     weight: 4
     settings: {  }
     third_party_settings: {  }
