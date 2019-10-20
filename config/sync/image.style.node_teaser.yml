@@ -5,11 +5,11 @@ dependencies: {  }
 name: node_teaser
 label: 'Node Teaser'
 effects:
-  c1fde650-09ff-4d13-8fe1-d2b1e9f7464a:
-    uuid: c1fde650-09ff-4d13-8fe1-d2b1e9f7464a
-    id: image_scale_and_crop
-    weight: 1
+  095e5d35-fc0d-4e45-80d4-60ac1503d2b7:
+    uuid: 095e5d35-fc0d-4e45-80d4-60ac1503d2b7
+    id: image_scale
+    weight: 2
     data:
       width: 406
       height: 230
-      anchor: center-center
+      upscale: false
