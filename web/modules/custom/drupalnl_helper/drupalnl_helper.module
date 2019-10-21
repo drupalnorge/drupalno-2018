@@ -98,7 +98,7 @@ function drupalnl_helper_paragraph_view_partners(array &$build, EntityInterface 
   $level = $entity->field_partner_level->value;
 
   switch ($level) {
-    case 'goud':
+    case 'Firmamedlem':
       switch ($type) {
         case 'limit_images':
           $view = 'organisations_frontpage';
@@ -110,18 +110,19 @@ function drupalnl_helper_paragraph_view_partners(array &$build, EntityInterface 
       }
       break;
 
-    case 'zilver':
-      $view = 'organisations_silver';
-      break;
-
-    case 'individueel':
-      $view = 'organisations_individuals';
-      break;
-
+//    case 'zilver':
+//      $view = 'organisations_silver';
+//      break;
+//
+//    case 'individueel':
+//      $view = 'organisations_individuals';
+//      break;
+//
     default:
+      $view = 'organisations_gold';
       return;
   }
-
+//
   $build['partners'] = views_embed_view($view, 'default');
   $build['partners']['#weight'] = 100;
 }
