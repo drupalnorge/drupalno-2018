@@ -2,3 +2,4 @@ variants:
   default:
     label: Default
     weight: 0
+langcode: nb

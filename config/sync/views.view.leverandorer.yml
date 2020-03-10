@@ -3,7 +3,7 @@ langcode: nb
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.overview
     - node.type.organisation
   module:
     - node
@@ -58,7 +58,8 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: overview
       fields:
         title:
           id: title
@@ -140,6 +141,20 @@ display:
           exposed: false
           expose:
             label: ''
+          plugin_id: standard
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: title
           plugin_id: standard
       title: Leverandører
       header: {  }

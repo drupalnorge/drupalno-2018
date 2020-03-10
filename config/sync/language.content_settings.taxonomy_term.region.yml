@@ -1,0 +1,11 @@
+uuid: fe2e9ff3-3421-4a67-adf0-1ab2f718b1d8
+langcode: nb
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.region
+id: taxonomy_term.region
+target_entity_type_id: taxonomy_term
+target_bundle: region
+default_langcode: site_default
+language_alterable: false

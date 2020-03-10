@@ -1,0 +1,19 @@
+uuid: a1208375-5327-4415-920b-772f0ab8e308
+langcode: nb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_e_post
+    - node.type.organisation
+id: node.organisation.field_e_post
+field_name: field_e_post
+entity_type: node
+bundle: organisation
+label: E-post
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email
