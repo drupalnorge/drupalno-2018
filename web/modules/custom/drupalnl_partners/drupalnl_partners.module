@@ -1,7 +1,7 @@
 <?php
 
 define('DRUPALNL_PARTNER_ADMIN_ROLE', 'partner');
-define('DRUPALNL_PARTNER_GOLD_NAME', 'Goud');
+define('DRUPALNL_PARTNER_GOLD_NAME', 'Firmamedlem');
 
 /**
  * Implements hook_ENTITY_TYPE_access().
@@ -20,14 +20,14 @@ function drupalnl_partners_node_access(\Drupal\Core\Entity\EntityInterface $enti
 
 
   if ($entity->bundle() == 'organisation' && $operation == 'view') {
-    $terms = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadByProperties([
-      'vid' => 'partner_level',
-      'name' => DRUPALNL_PARTNER_GOLD_NAME,
-    ]);
-    $term = reset($terms);
-    if ($term && $entity->field_level->target_id != $term->id() && !$entity->access('update', $account, FALSE)) {
-      return \Drupal\Core\Access\AccessResult::forbidden('No edit rights for individual.');
-    }
+//    $terms = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadByProperties([
+//      'vid' => 'partner_level',
+//      'name' => DRUPALNL_PARTNER_GOLD_NAME,
+//    ]);
+//    $term = reset($terms);
+//    if ($term && $entity->field_level->target_id != $term->id() && !$entity->access('update', $account, FALSE)) {
+//      return \Drupal\Core\Access\AccessResult::forbidden('No edit rights for individual.');
+//    }
   }
 
   return \Drupal\Core\Access\AccessResult::neutral();
@@ -66,17 +66,17 @@ function drupalnl_partners_entity_field_access($operation, \Drupal\Core\Field\Fi
   /** @var \Drupal\taxonomy\TermInterface $term */
   $term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($term_id);
 
-  if (!$term) {
-    return \Drupal\Core\Access\AccessResult::forbidden('Not an existing partner level.')->addCacheContexts(['user']);;
-  }
+//  if (!$term) {
+//    return \Drupal\Core\Access\AccessResult::forbidden('Not an existing partner level.')->addCacheContexts(['user']);;
+//  }
 
-  foreach ($term->get('field_access')->getValue() as $value) {
-    if ($value['value'] == $field_definition->getName()) {
-      return \Drupal\Core\Access\AccessResult::neutral()->addCacheContexts(['user']);
-    }
-  }
+//  foreach ($term->get('field_access')->getValue() as $value) {
+//    if ($value['value'] == $field_definition->getName()) {
+//      return \Drupal\Core\Access\AccessResult::neutral()->addCacheContexts(['user']);
+//    }
+//  }
 
-  return \Drupal\Core\Access\AccessResult::forbidden()->addCacheContexts(['user']);
+  return \Drupal\Core\Access\AccessResult::neutral()->addCacheContexts(['user']);
 }
 
 /**
@@ -104,20 +104,22 @@ function drupalnl_partners_form_alter(&$form, \Drupal\Core\Form\FormStateInterfa
  */
 function drupalnl_partners_form_node_organisation_edit_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
   /** @var \Drupal\taxonomy\TermStorageInterface $term_storage */
-  $term_storage = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
 
-  /** @var \Drupal\taxonomy\TermInterface[] $terms */
-  $terms = $term_storage->loadTree('partner_level', 0, NULL, TRUE);
-  foreach ($terms as $term) {
-    foreach ($term->get('field_access')->getValue() as $key => $value) {
-      $value = $value['value'];
-      if (isset($form[$value])) {
-        $name = empty($form_id) ? 'field_organisation[form][inline_entity_form][entities][0][form][field_level]' : 'field_level';
-        $form[$value]['#states']['visible'][':input[name="' . $name . '"]'][] = ['value' => $term->id()];
-      }
-
-    }
-  }
+  // I don't think we need this functionality.
+  //  $term_storage = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
+//
+//  /** @var \Drupal\taxonomy\TermInterface[] $terms */
+//  $terms = $term_storage->loadTree('partner_level', 0, NULL, TRUE);
+//  foreach ($terms as $term) {
+//    foreach ($term->get('field_access')->getValue() as $key => $value) {
+//      $value = $value['value'];
+//      if (isset($form[$value])) {
+//        $name = empty($form_id) ? 'field_organisation[form][inline_entity_form][entities][0][form][field_level]' : 'field_level';
+//        $form[$value]['#states']['visible'][':input[name="' . $name . '"]'][] = ['value' => $term->id()];
+//      }
+//
+//    }
+//  }
 }
 
 /**

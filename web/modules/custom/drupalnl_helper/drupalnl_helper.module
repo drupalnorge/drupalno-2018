@@ -94,35 +94,7 @@ function drupalnl_helper_paragraph_view(array &$build, EntityInterface $entity, 
  * Implements hook_ENTITY_TYPE_view().
  */
 function drupalnl_helper_paragraph_view_partners(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
-  $type = $entity->field_partner_view_type->value;
-  $level = $entity->field_partner_level->value;
-
-  switch ($level) {
-    case 'goud':
-      switch ($type) {
-        case 'limit_images':
-          $view = 'organisations_frontpage';
-          break;
-
-        case 'all_images':
-          $view = 'organisations_gold';
-          break;
-      }
-      break;
-
-    case 'zilver':
-      $view = 'organisations_silver';
-      break;
-
-    case 'individueel':
-      $view = 'organisations_individuals';
-      break;
-
-    default:
-      return;
-  }
-
-  $build['partners'] = views_embed_view($view, 'default');
+  $build['partners'] = views_embed_view('organisations_frontpage', 'default');
   $build['partners']['#weight'] = 100;
 }
 
