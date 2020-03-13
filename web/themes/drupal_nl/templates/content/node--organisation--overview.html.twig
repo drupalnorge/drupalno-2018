@@ -1,7 +1,12 @@
-{{ content.field_e_post }}
-{{ content.field_image }}
-{{ content.field_level }}
-{{ content.field_partner_uri }}
-{{ content.field_region }}
-{{ content.field_services }}
-{{ content.field_telefon }}
+<div class="leverandor"><div class="leverandor-logo">{{ content.field_image }}</div>
+<div class="leverandor-detaljer">
+  <h2 class="leverandor-navn">{{ node.title.value }}</h2>
+  {{ content.field_partner_uri }}
+  {{ content.field_telefon }}
+  {{ content.field_e_post }}
+</div>
+<div class="leverandor-region">{{ content.field_region }}</div>
+{% if content.field_level[0] is not empty %}
+<div class="leverandor-medlem">{{ content.field_level }}</div>
+{% endif %}
+</div>

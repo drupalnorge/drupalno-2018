@@ -4,8 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.taxonomy_term.partner_badge
+    - field.field.taxonomy_term.partner_level.field_access
     - field.field.taxonomy_term.partner_level.field_partner_badge
-    - image.style.partner_logo
     - taxonomy.vocabulary.partner_level
   module:
     - image
@@ -18,11 +18,12 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: partner_logo
+      image_style: ''
       image_link: ''
     third_party_settings: {  }
     type: image
     region: content
 hidden:
   description: true
+  field_access: true
   langcode: true

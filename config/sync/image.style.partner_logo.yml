@@ -14,8 +14,8 @@ effects:
     data:
       canvas_size: exact
       exact:
-        width: '406'
-        height: '230'
+        width: '200'
+        height: '200'
         placement: center-center
         x_offset: 0
         y_offset: 0
@@ -30,6 +30,6 @@ effects:
     id: image_scale
     weight: -10
     data:
-      width: 386
-      height: 210
+      width: 200
+      height: 200
       upscale: false
