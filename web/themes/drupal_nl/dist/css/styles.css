@@ -549,6 +549,92 @@ nav.tabs ul li a:hover, nav.tabs ul li a:focus {
   font-weight: bold;
 }
 
+.leverandor {
+  position: relative;
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: 1px solid #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.leverandor .leverandor-logo {
+  text-align: center;
+}
+
+.leverandor .leverandor-detaljer {
+  margin-bottom: 20px;
+}
+
+.leverandor .leverandor-detaljer a {
+  text-decoration: none;
+}
+
+.leverandor .field--name-field-telefon a,
+.leverandor .field--name-field-e-post a {
+  color: black;
+}
+
+.leverandor .leverandor-region {
+  margin: 10px 0;
+}
+
+.leverandor .leverandor-region .field__item {
+  font-size: 16px;
+  display: inline-block;
+  background: #34AADE;
+  color: white;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  margin: 0 5px 8px 0;
+}
+
+.leverandor .leverandor-navn {
+  display: none;
+}
+
+.leverandor .leverandor-medlem {
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  width: 70px;
+  height: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .leverandor {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .leverandor > div {
+    margin: 0 20px 0 0;
+    -ms-flex: 1;
+        flex: 1;
+  }
+  .leverandor .leverandor-logo {
+    width: 200px;
+  }
+  .leverandor .leverandor-details {
+    width: 200px;
+  }
+  .leverandor .leverandor-navn {
+    display: block;
+  }
+  .leverandor .leverandor-medlem {
+    position: static;
+    width: 140px;
+    height: 140px;
+    -ms-flex: 0.5;
+        flex: 0.5;
+  }
+}
+
 .primary-nav {
   background-color: #363636;
 }

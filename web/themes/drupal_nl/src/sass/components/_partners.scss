@@ -55,3 +55,87 @@
 .partner__uri {
   font-weight: bold;
 }
+
+.leverandor {
+  position: relative;
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: 1px solid #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .leverandor-logo {
+    text-align: center;
+  }
+
+  .leverandor-detaljer {
+    margin-bottom: 20px;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .field--name-field-telefon,
+  .field--name-field-e-post {
+    a {
+      color: black;
+    }
+  }
+
+  .leverandor-region {
+    margin: 10px 0;
+    .field__item {
+      font-size: 16px;
+      display: inline-block;
+      background: #34AADE;
+      color: white;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      margin: 0 5px 8px 0;
+    }
+  }
+
+  .leverandor-navn {
+    display: none;
+  }
+
+  .leverandor-medlem {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    width: 70px;
+    height: 70px;
+  }
+
+  @media screen and (min-width: $b-medium) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    > div {
+      margin: 0 20px 0 0;
+      flex: 1;
+    }
+
+    .leverandor-logo {
+      width: 200px;
+    }
+
+    .leverandor-details {
+      width: 200px;
+    }
+
+    .leverandor-navn {
+      display: block;
+    }
+
+    .leverandor-medlem {
+      position: static;
+      width: 140px;
+      height: 140px;
+      flex: 0.5;
+    }
+  }
+}

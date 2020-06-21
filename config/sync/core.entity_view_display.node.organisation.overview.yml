@@ -45,7 +45,7 @@ content:
     region: content
   field_level:
     type: entity_reference_entity_view
-    weight: 5
+    weight: 4
     region: content
     label: visually_hidden
     settings:
