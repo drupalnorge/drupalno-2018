@@ -14,7 +14,6 @@ regions:
 
 libraries:
   - 'drupal_nl/base'
-  - 'drupal_nl/fonts-com'
   - 'drupal_nl/responsive-nav'
   - 'core/normalize'
 
