@@ -2,10 +2,19 @@
 /drush/contrib/
 /vendor/
 /web/core/
-/web/modules/contrib/
-/web/themes/contrib/
-/web/profiles/contrib/
 /web/libraries/
+/web/modules/contrib/
+/web/modules/README.txt
+/web/profiles/contrib/
+/web/profiles/README.txt
+/web/themes/contrib/
+/web/themes/README.txt
+/web/sites/default/default.services.yml
+/web/sites/default/default.settings.php
+/web/sites/development.services.yml
+/web/sites/example.settings.local.php
+/web/sites/example.sites.php
+/web/sites/README.txt
 
 # Ignore sensitive information
 /web/sites/*/settings.local.php
@@ -38,5 +47,5 @@
 #Ignore npm folders
 node_modules/
 
-# Ingore Lando-files
-/app
+/.editorconfig
+/.gitattributes
