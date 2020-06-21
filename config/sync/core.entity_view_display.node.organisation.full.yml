@@ -95,5 +95,6 @@ hidden:
   field_administrators: true
   field_partner_content: true
   field_qualities: true
+  field_region: true
   langcode: true
   links: true

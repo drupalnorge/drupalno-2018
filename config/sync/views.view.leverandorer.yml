@@ -28,8 +28,12 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
-        options: {  }
+        type: time
+        options:
+          results_lifespan: 0
+          results_lifespan_custom: 86400
+          output_lifespan: 0
+          output_lifespan_custom: 86400
       query:
         type: views_query
         options:
@@ -137,15 +141,15 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
+          order: DESC
           exposed: false
           expose:
             label: ''
           plugin_id: standard
-        title:
-          id: title
-          table: node_field_data
-          field: title
+        random:
+          id: random
+          table: views
+          field: random
           relationship: none
           group_type: group
           admin_label: ''
@@ -153,9 +157,7 @@ display:
           exposed: false
           expose:
             label: ''
-          entity_type: node
-          entity_field: title
-          plugin_id: standard
+          plugin_id: random
       title: Leverandører
       header: {  }
       footer: {  }
@@ -164,7 +166,7 @@ display:
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -178,9 +180,9 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: leverandorer
+      path: leverandører
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
