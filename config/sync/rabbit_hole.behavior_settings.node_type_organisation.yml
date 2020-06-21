@@ -5,7 +5,7 @@ dependencies:
   config:
     - node.type.organisation
 id: node_type_organisation
-action: page_not_found
-allow_override: 1
+action: display_page
+allow_override: 0
 redirect: ''
 redirect_code: 301
