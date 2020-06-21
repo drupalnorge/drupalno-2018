@@ -1,0 +1,7 @@
+prod:
+  host: 91.242.200.63
+  user: deploy
+  root: /home/deploy/public_html/dev.drupal.no/web
+  uri: http://dev.drupal.no
+  paths:
+    drush-script: '/home/deploy/public_html/dev.drupal.no/vendor/drush/drush/drush'

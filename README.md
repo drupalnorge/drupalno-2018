@@ -17,13 +17,22 @@ If you want a database dump, here is one: [http://dev.drupal.no/sanitized.db](ht
 
 3. Install drupal. You can do this however you want. One way is to use drush: `drush site-install --db-url=mysql://USER:PASS@HOST/DATABASE`
 
-### b) Using *Lando* as a development environment
+### b) Using *DDEV* as a development environment
 
-We have a ready configuration file for _[Lando development environment](https://docs.devwithlando.io)_ for you. However, you can change the configuration `.lando.yml`-file you want.
+We have a ready configuration file for _[DDEV development environment](https://ddev.readthedocs.io)_ for you. However, you can modify the DDEV-configuration on `.ddev/.config.yaml`-file.
 
-1. Clone this repository. For example with: `git clone git@github.com:drupalnorge/drupalno.git`
+```bash
+git clone git clone git@github.com:drupalnorge/drupalno.git drupalno
+cd drupalno
+ddev auth ssh && ddev start && ddev composer install
+```
 
-2. `cd` into the repository root and start the development environment by `lando start && lando ssh`.
+# Copy database or files from the production environment.
+*Only for the maintainers*
+- Database: `drush sql-sync @prod @self -y` or use the sanitized database above. 
+- Files: `drush rsync @prod:%files @self:%files -y`
+
+Or you can spin up as a new one by Drush: `ddev drush site-install -y`
 
 ## Upgrading the site/modules
 *Only for the maintainers*
