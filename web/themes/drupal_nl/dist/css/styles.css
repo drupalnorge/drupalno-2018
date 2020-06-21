@@ -273,6 +273,11 @@ img {
   color: #000;
 }
 
+.card .card__text a,
+.card-small .card__text a {
+  color: #000;
+}
+
 .card a,
 .card-small a {
   color: #FFF;
