@@ -1,3 +1,113 @@
+@font-face {
+  font-family: 'Avenir LT Pro 45 Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Pro 45 Book'), url('/themes/drupal_nl/fonts/AvenirLTProBook.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Pro 45 Book';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Avenir LT Pro 45 Book Oblique'), url('/themes/drupal_nl/fonts/AvenirLTProBookOblique.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Pro 55 Roman'), url('/themes/drupal_nl/fonts/AvenirLTProRoman.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Pro';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Avenir LT Pro 55 Oblique'), url('/themes/drupal_nl/fonts/AvenirLTProOblique.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Pro 35 Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Pro 35 Light'), url('/themes/drupal_nl/fonts/AvenirLTProLight.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Pro 35 Light';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Avenir LT Pro 35 Light Oblique'), url('/themes/drupal_nl/fonts/AvenirLTProLightOblique.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Pro 65 Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Pro 65 Medium'), url('/themes/drupal_nl/fonts/AvenirLTProMedium.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Pro 65 Medium';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Avenir LT Pro 65 Medium Oblique'), url('/themes/drupal_nl/fonts/AvenirLTProMediumOblique.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Pro 85 Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Pro 85 Heavy'), url('/themes/drupal_nl/fonts/AvenirLTProHeavy.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Pro 85 Heavy';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Avenir LT Pro 85 Heavy Oblique'), url('/themes/drupal_nl/fonts/AvenirLTProHeavyOblique.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Pro';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Avenir LT Pro 85 Heavy'), url('/themes/drupal_nl/fonts/AvenirLTProHeavy.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Pro';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Avenir LT Pro 85 Heavy Oblique'), url('/themes/drupal_nl/fonts/AvenirLTProHeavyOblique.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Pro 95 Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir LT Pro 95 Black'), url('/themes/drupal_nl/fonts/AvenirLTProBlack.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Avenir LT Pro 95 Black';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Avenir LT Pro 95 Black Oblique'), url('/themes/drupal_nl/fonts/AvenirLTProBlackOblique.woff') format('woff');
+}
 a {
   color: $summer-blue;
 }
@@ -15,8 +125,8 @@ html {
 
 body {
   font-family: $font-default;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -10,6 +10,104 @@
   padding-bottom: 100px;
 }
 
+@font-face {
+  font-family: 'Avenir LT Pro 45 Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir LT Pro 45 Book"), url("/themes/drupal_nl/fonts/AvenirLTProBook.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Avenir LT Pro 45 Book';
+  font-style: italic;
+  font-weight: normal;
+  src: local("Avenir LT Pro 45 Book Oblique"), url("/themes/drupal_nl/fonts/AvenirLTProBookOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Avenir LT Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir LT Pro 55 Roman"), url("/themes/drupal_nl/fonts/AvenirLTProRoman.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Avenir LT Pro';
+  font-style: italic;
+  font-weight: normal;
+  src: local("Avenir LT Pro 55 Oblique"), url("/themes/drupal_nl/fonts/AvenirLTProOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Avenir LT Pro 35 Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir LT Pro 35 Light"), url("/themes/drupal_nl/fonts/AvenirLTProLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Avenir LT Pro 35 Light';
+  font-style: italic;
+  font-weight: normal;
+  src: local("Avenir LT Pro 35 Light Oblique"), url("/themes/drupal_nl/fonts/AvenirLTProLightOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Avenir LT Pro 65 Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir LT Pro 65 Medium"), url("/themes/drupal_nl/fonts/AvenirLTProMedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Avenir LT Pro 65 Medium';
+  font-style: italic;
+  font-weight: normal;
+  src: local("Avenir LT Pro 65 Medium Oblique"), url("/themes/drupal_nl/fonts/AvenirLTProMediumOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Avenir LT Pro 85 Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir LT Pro 85 Heavy"), url("/themes/drupal_nl/fonts/AvenirLTProHeavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Avenir LT Pro 85 Heavy';
+  font-style: italic;
+  font-weight: normal;
+  src: local("Avenir LT Pro 85 Heavy Oblique"), url("/themes/drupal_nl/fonts/AvenirLTProHeavyOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Avenir LT Pro';
+  font-style: normal;
+  font-weight: bold;
+  src: local("Avenir LT Pro 85 Heavy"), url("/themes/drupal_nl/fonts/AvenirLTProHeavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Avenir LT Pro';
+  font-style: italic;
+  font-weight: bold;
+  src: local("Avenir LT Pro 85 Heavy Oblique"), url("/themes/drupal_nl/fonts/AvenirLTProHeavyOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Avenir LT Pro 95 Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avenir LT Pro 95 Black"), url("/themes/drupal_nl/fonts/AvenirLTProBlack.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Avenir LT Pro 95 Black';
+  font-style: italic;
+  font-weight: normal;
+  src: local("Avenir LT Pro 95 Black Oblique"), url("/themes/drupal_nl/fonts/AvenirLTProBlackOblique.woff") format("woff");
+}
+
 a {
   color: #34AADE;
 }
@@ -26,13 +124,13 @@ html {
 }
 
 body {
-  font-family: "Avenir LT W01_55 Roman1475520", sans-serif;
-  font-size: 24px;
-  line-height: 32px;
+  font-family: "Avenir LT Pro", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Avenir LT W01_45 Book1475508", sans-serif;
+  font-family: "Avenir LT Pro 45 Book", sans-serif;
   margin-top: 0;
 }
 
@@ -142,7 +240,7 @@ img {
   background-color: #FD9827;
   text-decoration: none;
   transition: background-color .35s;
-  font-family: "Avenir LT W01_85 Heavy1475544", sans-serif;
+  font-family: "Avenir LT Pro 85 Heavy", sans-serif;
 }
 
 .btn--cta > a:hover, .btn--cta > a:focus {
@@ -150,7 +248,7 @@ img {
 }
 
 .button {
-  font-family: "Avenir LT W01_85 Heavy1475544", sans-serif;
+  font-family: "Avenir LT Pro 85 Heavy", sans-serif;
   border: none;
   padding: 10px 15px;
   color: #FFF;
@@ -261,12 +359,19 @@ img {
   height: 50px;
 }
 
+@media screen and (min-width: 640px) {
+  .cta__home-link {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 960px) {
   .cta__home-link {
+    display: block;
     top: 80px;
     background-image: url("../../logo-large.png");
-    height: 300px;
-    width: 360px;
+    height: 100%;
+    width: 17vw;
   }
   .toolbar-tray-open .cta__home-link {
     top: 40px;
@@ -285,7 +390,7 @@ img {
 .footer {
   background-color: #363636;
   color: #FFF;
-  font-family: "Avenir LT W01_45 Book1475508", sans-serif;
+  font-family: "Avenir LT Pro 45 Book", sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -305,7 +410,7 @@ img {
 .field--type-string label,
 .field--type-link label {
   display: block;
-  font-family: "Avenir LT W01_45 Book1475508", sans-serif;
+  font-family: "Avenir LT Pro 45 Book", sans-serif;
 }
 
 .field--type-string input,
@@ -315,11 +420,11 @@ img {
 
 .field--type-string .description,
 .field--type-link .description {
-  font-family: "Avenir LT W01_35 Light_1475502", sans-serif;
+  font-family: "Avenir LT Pro 35 Light", sans-serif;
 }
 
 .introduction {
-  font-family: "Avenir LT W01_65 Medium1475532", sans-serif;
+  font-family: "Avenir LT Pro 65 Medium", sans-serif;
 }
 
 .join-drupal {
