@@ -24,7 +24,7 @@ display:
             next: 'Neste ›'
             first: '« Første'
             last: 'Siste »'
-    display_title: Hoved
+    display_title: Master
   feed_1:
     display_title: Strøm
   page_1:

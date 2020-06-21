@@ -10,17 +10,16 @@ dependencies:
 _core:
   default_config_hash: Ea3cxQo9FjYVScZDVackg-6ID_GgTkdKORm_APgV-5I
 id: archive
-label: Archief
+label: Arkiv
 module: node
-description: 'Alle inhoud, op maand.'
+description: 'Alt innhold, etter måned'
 tag: default
 base_table: node_field_data
 base_field: nid
-core: '8'
 display:
   default:
     id: default
-    display_title: Master
+    display_title: Hoved
     display_plugin: default
     position: 0
     display_options:
@@ -32,7 +31,7 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      title: 'Maandelijks archief'
+      title: 'Månedlig arkiv'
       access:
         type: perm
         options:
@@ -43,13 +42,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Bruk
           reset_button: false
           reset_button_label: Nullstill
-          exposed_sorts_label: 'Sort by'
+          exposed_sorts_label: 'Sortér etter'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
       pager:
         type: mini
         options:
@@ -59,12 +58,12 @@ display:
           total_pages: 0
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Offset
+            offset_label: Forskyving
           tags:
             previous: ‹‹
             next: ››
@@ -113,6 +112,8 @@ display:
           group: 0
           expose:
             operator: '0'
+            operator_limit_selection: false
+            operator_list: {  }
           plugin_id: boolean
           entity_type: node
           entity_field: status
@@ -141,6 +142,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -184,7 +187,7 @@ display:
       tags: {  }
   block_1:
     id: block_1
-    display_title: Blok
+    display_title: Blokk
     display_plugin: block
     position: 1
     display_options:
@@ -223,7 +226,7 @@ display:
       tags: {  }
   page_1:
     id: page_1
-    display_title: Page
+    display_title: Side
     display_plugin: page
     position: 2
     display_options:

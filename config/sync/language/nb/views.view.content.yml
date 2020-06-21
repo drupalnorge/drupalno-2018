@@ -58,7 +58,7 @@ display:
       empty:
         area_text_custom:
           content: 'Intet innhold tilgjengelig.'
-    display_title: Hoved
+    display_title: Master
   page_1:
     display_options:
       menu:

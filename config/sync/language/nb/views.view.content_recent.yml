@@ -2,7 +2,7 @@ label: 'Siste innlegg'
 description: 'Innhold som er nylig lagt til'
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:

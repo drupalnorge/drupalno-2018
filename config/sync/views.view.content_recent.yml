@@ -8,18 +8,17 @@ dependencies:
 _core:
   default_config_hash: tDcmzGfShE0XJbfwJzyA6lJTUYC6X4iVu887dgoFfDg
 id: content_recent
-label: 'Recente inhoud'
+label: 'Siste innlegg'
 module: node
-description: 'Recente inhoud.'
+description: 'Innhold som er nylig lagt til'
 tag: default
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Hoved
     position: 0
     display_options:
       access:
@@ -40,13 +39,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Bruk
           reset_button: false
           reset_button_label: Nullstill
-          exposed_sorts_label: 'Sort by'
+          exposed_sorts_label: 'Sortér etter'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
       pager:
         type: some
         options:
@@ -188,6 +187,8 @@ display:
             multiple: false
             remember_roles:
               authenticated: authenticated
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -227,6 +228,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -258,7 +261,7 @@ display:
           entity_type: node
           entity_field: changed
           plugin_id: date
-      title: 'Recente inhoud'
+      title: 'Siste innlegg'
       header: {  }
       footer: {  }
       empty:
@@ -271,7 +274,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No content available.'
+          content: 'Intet innhold tilgjengelig.'
           plugin_id: text_custom
       relationships:
         uid:
@@ -289,7 +292,7 @@ display:
       display_extenders: {  }
       use_more: false
       use_more_always: false
-      use_more_text: Meer
+      use_more_text: Mer
       link_url: ''
       link_display: '0'
     cache_metadata:
@@ -304,7 +307,7 @@ display:
   block_1:
     display_plugin: block
     id: block_1
-    display_title: Blok
+    display_title: Blokk
     position: 1
     display_options:
       display_extenders: {  }

@@ -2,7 +2,7 @@ label: 'Bibliotek med egendefinerte blokker'
 description: 'Finn og administrer egendefinerte blokker.'
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:

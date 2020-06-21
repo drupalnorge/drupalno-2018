@@ -2,7 +2,7 @@ label: Ordliste
 description: 'Alt innhold, etter tegn'
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:
