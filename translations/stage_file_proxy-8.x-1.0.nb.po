@@ -1,0 +1,24 @@
+# Norwegian Bokmål translation of Stage File Proxy (8.x-1.0)
+# Copyright (c) 2020 by the Norwegian Bokmål translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Stage File Proxy (8.x-1.0)\n"
+"POT-Creation-Date: 2020-04-03 19:39+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Norwegian Bokmål\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Development"
+msgstr "Utvikling"
+msgid "Your settings have been saved."
+msgstr "Dine innstillinger er lagret."
+msgid "Origin"
+msgstr "Opprinnelse"
+msgid "@remote could not be saved to @path."
+msgstr "Klarte ikke lagre @remote til @path."
+msgid "HTTP error @errorcode occurred when trying to fetch @remote."
+msgstr "HTTP-feil @errorcode oppstod når Drupal prøvde å hente @remote."
