@@ -1,10 +1,12 @@
 <?php
 
+$config['config_split.config_split.development']['status'] = FALSE;
 $settings['config_sync_directory'] = $app_root . '/../config/sync';
 
 // Automatically generated include for settings managed by ddev.
 if (file_exists($app_root . '/' . $site_path . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 'true') {
   include $app_root . '/' . $site_path . '/settings.ddev.php';
+  $config['config_split.config_split.development']['status'] = TRUE;
 }
 
 $settings['trusted_host_patterns'] = [
