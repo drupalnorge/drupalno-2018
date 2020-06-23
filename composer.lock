@@ -4077,37 +4077,32 @@
         },
         {
             "name": "drupal/menu_block",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/menu_block.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/menu_block-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "b3ac3e23e426f702974d88cc8bf93bf2a0b6236b"
+                "url": "https://ftp.drupal.org/files/projects/menu_block-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "3da96af15c3a5f5f1966e28b6e87b74228617998"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1525200184",
+                    "version": "8.x-1.6",
+                    "datestamp": "1587721600",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
-                "patches_applied": {
-                    "Add option to make the starting level follow the active menu item": "https://www.drupal.org/files/issues/2018-07-02/menu_block-follow-2756675-51.patch"
-                }
+                "patches_applied": []
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
@@ -4138,7 +4133,7 @@
             "description": "Provides configurable blocks of menu links.",
             "homepage": "https://www.drupal.org/project/menu_block",
             "support": {
-                "source": "http://cgit.drupalcode.org/menu_block"
+                "source": "https://git.drupalcode.org/project/menu_block"
             }
         },
         {
@@ -5532,12 +5527,12 @@
             "version": "0.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/njh/easyrdf.git",
+                "url": "https://github.com/easyrdf/easyrdf.git",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/njh/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
+                "url": "https://api.github.com/repos/easyrdf/easyrdf/zipball/acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "reference": "acd09dfe0555fbcfa254291e433c45fdd4652566",
                 "shasum": ""
             },
@@ -5970,6 +5965,7 @@
                     "email": "jakub.onderka@gmail.com"
                 }
             ],
+            "abandoned": "php-parallel-lint/php-console-color",
             "time": "2018-09-29T17:23:10+00:00"
         },
         {
@@ -6016,6 +6012,7 @@
                 }
             ],
             "description": "Highlight PHP code in terminal",
+            "abandoned": "php-parallel-lint/php-console-highlighter",
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
@@ -11732,5 +11729,6 @@
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.1.17"
-    }
+    },
+    "plugin-api-version": "1.1.0"
 }
