@@ -1,7 +1,7 @@
 settings:
   default_status: open
   default_page_base_path: form
-  default_form_open_message: 'This form has not yet been opened to submissions.'
+  default_form_open_message: 'Dit formulier is nog niet geopend voor inzendingen.'
   default_form_close_message: 'Sorry, dit formulier is gesloten. Geen nieuwe inzendingen meer mogelijk.'
   default_form_exception_message: 'Unable to display this form. Please contact the site administrator.'
   default_submit_button_label: Verzenden
@@ -27,7 +27,7 @@ settings:
   default_preview_next_button_label: Preview
   default_preview_prev_button_label: '< Vorige'
   default_preview_label: Preview
-  default_preview_title: '[webform:title]: Preview'
+  default_preview_title: '[webform:title]: Voorbeeldweergave'
   default_preview_message: 'Controleer uw inzending. Uw inzending is niet voltooid, totdat u klikt op de &#39;Indienen&#39;-knop.'
   default_draft_button_label: 'Conceptversie opslaan'
   default_draft_saved_message: 'Inzending opgeslagen. U kunt op een later tijdstip naar dit formulier terugkeren waarbij de huidige waardes zullen worden hersteld.'
@@ -117,7 +117,7 @@ element:
   classes: "container-inline clearfix\r\nform--inline clearfix\r\nmessages messages--error\r\nmessages messages--warning\r\nmessages messages--status\r\n"
   horizontal_rule_classes: "webform-horizontal-rule--solid\r\nwebform-horizontal-rule--dashed\r\nwebform-horizontal-rule--dotted\r\nwebform-horizontal-rule--gradient\r\nwebform-horizontal-rule--thin\r\nwebform-horizontal-rule--medium\r\nwebform-horizontal-rule--thick\r\nwebform-horizontal-rule--flaired\r\nwebform-horizontal-rule--glyph\r\n"
   default_description_display: ''
-  default_more_title: Meer
+  default_more_title: Mer
   default_section_title_tag: h2
   default_empty_option: false
   default_empty_option_required: ''

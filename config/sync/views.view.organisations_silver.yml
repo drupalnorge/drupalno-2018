@@ -8,8 +8,6 @@ dependencies:
     - image.style.partner_logo
     - node.type.organisation
     - taxonomy.vocabulary.partner_level
-  content:
-    - 'taxonomy_term:partner_level:d9e24490-2e8b-4ff3-bfec-5ff0a6429f2b'
   module:
     - image
     - link
@@ -23,7 +21,6 @@ description: 'Organisation overview.'
 tag: Partners
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -281,6 +278,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         type:
           id: type
@@ -291,6 +290,9 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
         field_level_target_id:
           id: field_level_target_id
           table: node__field_level
@@ -316,6 +318,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''

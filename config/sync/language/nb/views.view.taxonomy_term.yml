@@ -2,7 +2,7 @@ label: Taksonomi-termer
 description: 'Innhold som tilhører et bestemt taksonomi-ord.'
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:

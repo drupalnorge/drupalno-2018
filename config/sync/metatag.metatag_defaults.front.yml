@@ -7,9 +7,9 @@ _core:
 id: front
 label: 'Front page'
 tags:
-  canonical_url: '[site:url]'
-  description: 'Drupal is het open source platform voor het creëeren van veelzijdige online toepassingen'
   referrer: unsafe-url
-  shortlink: '[site:url]'
   title: '[site:name] | [site:slogan]'
+  description: 'Drupal er ledende open source-plattform for å ambisiøse digitale opplevelser.'
+  canonical_url: '[site:url]'
   google: 6CmbOWuDNL7pDc9VkpbxKxBNuSXb2813i-SB7utI96s
+  shortlink: '[site:url]'

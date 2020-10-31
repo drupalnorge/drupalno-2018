@@ -1,7 +1,7 @@
 label: Videresending
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:
@@ -34,6 +34,26 @@ display:
         redirect_redirect__uri:
           expose:
             label: Til
+        status_code:
+          expose:
+            label: Statuskode
+          group_info:
+            label: Statuskode
+            group_items:
+              1:
+                title: '300 Flere valg'
+              2:
+                title: '301 Flyttet permanent'
+              3:
+                title: '302 Funnet'
+              4:
+                title: '303 Se annet'
+              5:
+                title: '304 Ikke endret'
+              6:
+                title: '305 Bruk proxy'
+              7:
+                title: '307 Midlertidig omdirigering'
         language:
           expose:
             label: Originalspråk

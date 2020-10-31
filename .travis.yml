@@ -24,7 +24,7 @@ mysql:
 before_install:
   # Composer Configurations.
   # Make sure have latest composer
-  - composer self-update --verbose
+  - composer self-update --verbose 1.10.17
   - composer --version
   # Set php memory limit to -1 so composer update will not fail
   - export COMPOSER_MEMORY_LIMIT=-1

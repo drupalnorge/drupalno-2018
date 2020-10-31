@@ -6,12 +6,15 @@ dependencies:
     - core.entity_form_mode.node.inline_form
     - field.field.node.organisation.body
     - field.field.node.organisation.field_administrators
+    - field.field.node.organisation.field_e_post
     - field.field.node.organisation.field_image
     - field.field.node.organisation.field_level
     - field.field.node.organisation.field_partner_content
     - field.field.node.organisation.field_partner_uri
     - field.field.node.organisation.field_qualities
+    - field.field.node.organisation.field_region
     - field.field.node.organisation.field_services
+    - field.field.node.organisation.field_telefon
     - image.style.thumbnail
     - node.type.organisation
   module:
@@ -50,6 +53,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
   field_image:
     type: image_image
@@ -96,9 +100,12 @@ content:
 hidden:
   created: true
   field_administrators: true
+  field_e_post: true
   field_partner_content: true
   field_qualities: true
+  field_region: true
   field_services: true
+  field_telefon: true
   langcode: true
   path: true
   promote: true

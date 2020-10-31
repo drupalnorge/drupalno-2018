@@ -48,6 +48,6 @@ Or you can spin up as a new one by Drush: `ddev drush site-install -y`
 5. You have to verify that GIT is cloned and Drupal Configurations are imported and executed without any error. If no error, please add the labels `Verified cloned` and `Verified composer imported` on the GitHub issue/PR.
 
 ## Maintainers
- - [Eirik Falster (falster)](https://www.drupal.org/u/falster)
  - [Eirik S. Morland (eiriksm)](https://www.drupal.org/u/eiriksm)
+ - [Sven Berg Ryen (svenryen)](https://www.drupal.org/u/svenryen) 
  - [Truls S. Yggeseth (truls1502)](https://drupal.org/u/truls1502)
