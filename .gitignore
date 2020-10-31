@@ -17,7 +17,7 @@
 /web/libraries/
 
 # Ignore sensitive information
-/web/sites/*/settings.local.php
+/web/sites/*/settings.*.php
 
 # Ignore local settings.php
 /web/sites/default/settings.local.php
@@ -47,5 +47,5 @@
 #Ignore npm folders
 node_modules/
 
-# Ingore Lando-files
-/app
+/.editorconfig
+/.gitattributes
