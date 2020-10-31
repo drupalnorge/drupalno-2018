@@ -3,8 +3,17 @@
 /vendor/
 /web/core/
 /web/modules/contrib/
+/web/modules/README.txt
 /web/themes/contrib/
+/web/themes/README.txt
 /web/profiles/contrib/
+/web/profiles/README.txt
+/web/sites/default/default.services.yml
+/web/sites/default/default.settings.php
+/web/sites/development.services.yml
+/web/sites/example.settings.local.php
+/web/sites/example.sites.php
+/web/sites/README.txt
 /web/libraries/
 
 # Ignore sensitive information
