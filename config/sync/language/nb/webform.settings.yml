@@ -16,5 +16,6 @@ settings:
 element:
   default_more_title: Mer
 mail:
+  default_from_name: '[site:name]'
   default_body_text: "Sendt inn [webform_submission:created]\r\nSendt inn av: [webform_submission:user]\r\n\r\nInnsendte verdier er:\r\n[webform_submission:values]\n"
   default_body_html: "<p>Sendt inn [webform_submission:created]</p>\r\n<p>Send inn av: [webform_submission:user]</p>\r\n<p>Innsendte verdier er:</p>\r\n[webform_submission:values]\n"
