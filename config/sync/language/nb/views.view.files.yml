@@ -2,7 +2,7 @@ label: Filer
 description: 'Finn og administrer filer.'
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:

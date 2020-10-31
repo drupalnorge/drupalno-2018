@@ -2,7 +2,7 @@ label: 'Nye brukere'
 description: 'Viser en liste over de sist registrerte brukerkontoene på nettstedet.'
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:

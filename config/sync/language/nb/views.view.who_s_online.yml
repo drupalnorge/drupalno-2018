@@ -2,7 +2,7 @@ label: 'Blokk som viser hvem er pålogget'
 description: 'Viser brukernavnene til de sist aktive brukere, og det totale antallet aktive brukere.'
 display:
   default:
-    display_title: Hoved
+    display_title: Master
     display_options:
       exposed_form:
         options:

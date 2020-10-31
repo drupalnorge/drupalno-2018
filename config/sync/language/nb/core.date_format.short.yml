@@ -1,2 +1,2 @@
 label: 'Stadard kort dato'
-pattern: 'd/m/Y - H:i'
+pattern: 'd.m.Y  H:i'

@@ -14,12 +14,11 @@ description: 'Finn og administrer filer.'
 tag: default
 base_table: file_managed
 base_field: fid
-core: 8.x
 display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Hoved
     position: 0
     display_options:
       access:
@@ -43,10 +42,10 @@ display:
           submit_button: Filtrer
           reset_button: false
           reset_button_label: Nullstill
-          exposed_sorts_label: 'Sort by'
+          exposed_sorts_label: 'Sortér etter'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
       pager:
         type: mini
         options:
@@ -55,16 +54,16 @@ display:
           id: 0
           total_pages: 0
           tags:
-            previous: '‹ Vorige'
-            next: 'Volgende ›'
+            previous: '‹ Forrige'
+            next: 'Neste ›'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Offset
+            offset_label: Forskyving
       style:
         type: table
         options:
@@ -302,7 +301,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Size
+          label: Størrelse
           exclude: false
           alter:
             alter_text: false
@@ -599,6 +598,8 @@ display:
               anonymous: '0'
               administrator: '0'
             placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -640,6 +641,8 @@ display:
               anonymous: '0'
               administrator: '0'
             placeholder: ''
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -681,6 +684,8 @@ display:
               anonymous: '0'
               administrator: '0'
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -796,16 +801,16 @@ display:
           id: 0
           total_pages: 0
           tags:
-            previous: '‹ Vorige'
-            next: 'Volgende ›'
+            previous: '‹ Forrige'
+            next: 'Neste ›'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementer per side'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Alle -'
             offset: false
-            offset_label: Offset
+            offset_label: Forskyving
       filters: {  }
       filter_groups:
         operator: AND
@@ -1030,7 +1035,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Alle
           title_enable: true
           title: 'Brukinformasjon for file for {{ arguments.fid }}'
           default_argument_type: fixed
