@@ -2614,29 +2614,26 @@
         },
         {
             "name": "drupal/contact_ajax",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/contact_ajax.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/contact_ajax-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "327653244f891facdb5a27b9828e7ec9b1fcfa7b"
+                "url": "https://ftp.drupal.org/files/projects/contact_ajax-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "c49d61dcb9a80edaa3e241be4bf63486e6b4563a"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1543417084",
+                    "version": "8.x-1.5",
+                    "datestamp": "1607179793",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2656,7 +2653,7 @@
             "description": "Submit contact form using ajax.",
             "homepage": "https://www.drupal.org/project/contact_ajax",
             "support": {
-                "source": "http://cgit.drupalcode.org/contact_ajax"
+                "source": "https://git.drupalcode.org/project/contact_ajax"
             }
         },
         {
