@@ -53,15 +53,15 @@
         "drupal/simple_sitemap": "^3.0",
         "drupal/site_verify": "1.x-dev",
         "drupal/smtp": "^1.0@beta",
-        "drupal/stage_file_proxy": "^1.0@alpha",
         "drupal/webform": "^5.0",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4"
     },
     "require-dev": {
+        "drupal/config_exclude": "1.x-dev",
         "drupal/core-dev": "^8.9.6",
         "drupal/drupal-extension": "~3.0",
-        "drupal/stage_file_proxy": "^1.0@alpha",
+        "drupal/stage_file_proxy": "^1.1",
         "eiriksm/wait-for-listen": "^1.0"
     },
     "conflict": {
@@ -70,6 +70,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
+        "bin-dir": "bin/",
         "sort-packages": true,
         "platform": {
             "php": "7.1"
