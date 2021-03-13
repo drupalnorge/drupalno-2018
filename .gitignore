@@ -21,6 +21,7 @@ web/themes/contrib
 # Ignore configuration files that may contain sensitive information.
 web/sites/*/settings.*.php
 web/sites/*/services.*.yml
+!web/sites/*/settings.platformsh.php
 
 # Ignore Drupal's file directory
 web/sites/*/files

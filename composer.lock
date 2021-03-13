@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "351fd553d432863ec55c31713d871cfc",
+    "content-hash": "716b51c16e76d4ca472f0f1b78580679",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4610,6 +4610,62 @@
             }
         },
         {
+            "name": "drupal/redis",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/redis.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/redis-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "4283333dc2bf405045765b83ca662acc409a6543"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "suggest": {
+                "predis/predis": "^1.1.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1609972488",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\redis\\": "src"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "pounard",
+                    "homepage": "https://www.drupal.org/user/240164"
+                }
+            ],
+            "description": "Integration of Drupal with the Redis key-value store.",
+            "homepage": "https://www.drupal.org/project/redis",
+            "support": {
+                "source": "https://git.drupalcode.org/project/redis"
+            }
+        },
+        {
             "name": "drupal/reroute_email",
             "version": "1.1.0",
             "source": {
@@ -6511,6 +6567,45 @@
             "description": "A library to read, parse, export and make subsets of different types of font files.",
             "homepage": "https://github.com/PhenX/php-font-lib",
             "time": "2017-02-11T10:58:43+00:00"
+        },
+        {
+            "name": "platformsh/config-reader",
+            "version": "2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/platformsh/config-reader-php.git",
+                "reference": "9951de0f1b3a12792113621238bc31a0524d6e52"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/platformsh/config-reader-php/zipball/9951de0f1b3a12792113621238bc31a0524d6e52",
+                "reference": "9951de0f1b3a12792113621238bc31a0524d6e52",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Platformsh\\ConfigReader\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Larry Garfield",
+                    "email": "larry@platform.sh"
+                }
+            ],
+            "description": "Small helper to access Platform.sh environment variables",
+            "time": "2019-11-05T19:56:33+00:00"
         },
         {
             "name": "psr/container",
@@ -10236,7 +10331,8 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/config_exclude",
                 "issues": "https://www.drupal.org/project/issues/config_exclude"
-            }
+            },
+            "time": "2017-12-07T21:31:19+00:00"
         },
         {
             "name": "drupal/core-dev",

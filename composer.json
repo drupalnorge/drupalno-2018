@@ -27,8 +27,8 @@
         "drupal/console": "^1.0.2",
         "drupal/contact_ajax": "^1.4@RC",
         "drupal/contact_block": "^1.4",
-        "drupal/core-recommended": "^8.9.6",
         "drupal/core-composer-scaffold": "^8.9.6",
+        "drupal/core-recommended": "^8.9.6",
         "drupal/devel": "^2.1",
         "drupal/ds": "^3.1",
         "drupal/entity_browser": "^2.1.0",
@@ -48,6 +48,7 @@
         "drupal/rabbit_hole": "^1.0@beta",
         "drupal/recaptcha": "^2.0",
         "drupal/redirect": "^1.0@beta",
+        "drupal/redis": "^1.5",
         "drupal/reroute_email": "^1.1",
         "drupal/seckit": "^1.0@alpha",
         "drupal/simple_sitemap": "^3.0",
@@ -55,6 +56,7 @@
         "drupal/smtp": "^1.0@beta",
         "drupal/webform": "^5.0",
         "drush/drush": "^9.0.0",
+        "platformsh/config-reader": "^2.3",
         "vlucas/phpdotenv": "^2.4"
     },
     "require-dev": {
@@ -132,7 +134,7 @@
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"]
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
         },
         "composer-exit-on-patch-failure": true,
         "enable-patching": true,

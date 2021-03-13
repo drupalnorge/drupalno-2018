@@ -25,6 +25,7 @@ We have a ready configuration file for _[DDEV development environment](https://d
 git clone git clone git@github.com:drupalnorge/drupalno.git drupalno
 cd drupalno
 ddev auth ssh && ddev start && ddev composer install
+pushd web/themes/drupal_nl && chmod +x ./build.sh && ./build.sh && popd
 pushd web/sites/default && ln -s settings.local.php.example settings.local.php && popd
 ```
 

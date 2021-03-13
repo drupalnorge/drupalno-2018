@@ -1,0 +1,20 @@
+# Compiled files
+dist/
+
+# OS generated files
+*.swp
+.DS_Store
+.DS_Store?
+._.DS_Store
+._.DS_Store?
+
+# Dependencies
+node_modules
+
+#IDE plugins
+.idea
+.vscode
+
+# Errors
+npm-debug.log
+php_errors.log
