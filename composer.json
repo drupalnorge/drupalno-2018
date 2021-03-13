@@ -128,6 +128,16 @@
                 "web-root": "web/"
             }
         },
+        "violinist": {
+            "bundled_packages": {
+                "drupal/core-recommended": [
+                    "drupal/core-composer-scaffold",
+                    "drupal/core-dev"
+                ]
+            },
+            "one_pull_request_per_package": 1,
+            "check_only_direct_dependencies": 0
+        },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
