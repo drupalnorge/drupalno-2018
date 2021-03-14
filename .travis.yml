@@ -1,7 +1,7 @@
 language: php
 
 php:
-  - 7.1
+  - 7.4
 
 sudo: false
 
@@ -14,11 +14,10 @@ mysql:
   encoding: utf8
 
 before_install:
-  - composer self-update --verbose --1
+  - composer self-update --verbose --2
   - composer --version
   - export COMPOSER_MEMORY_LIMIT=-1
   - export COMPOSER_EXIT_ON_PATCH_FAILURE=1
-  - composer global require hirak/prestissimo
   - mysql -e "create database IF NOT EXISTS test;"
   - wget --no-check-certificate https://www.drupal.no/sanitized.db
 install:
