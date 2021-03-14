@@ -25,12 +25,14 @@ We have a ready configuration file for _[DDEV development environment](https://d
 git clone git clone git@github.com:drupalnorge/drupalno.git drupalno
 cd drupalno
 ddev auth ssh && ddev start && ddev composer install
+pushd web/themes/drupal_nl && chmod +x ./build.sh && ./build.sh && popd
+pushd web/sites/default && ln -s settings.local.php.example settings.local.php && popd
 ```
 
 # Copy database or files from the production environment.
 *Only for the maintainers*
-- Database: `drush sql-sync @prod @self -y` or use the sanitized database above. 
-- Files: `drush rsync @prod:%files @self:%files -y`
+- Database: `drush sql-sync @prod @self -y` or use the sanitized database above.
+- Files: `drush sfp-en`
 
 Or you can spin up as a new one by Drush: `ddev drush site-install -y`
 
@@ -41,7 +43,7 @@ Or you can spin up as a new one by Drush: `ddev drush site-install -y`
 
 2. Clone the git from the latest update from master
 
-3. Make sure you have database backup in case trouble after step 4. 
+3. Make sure you have database backup in case trouble after step 4.
 
 4. Run command `composer import` to import the configurations.
 
@@ -49,5 +51,5 @@ Or you can spin up as a new one by Drush: `ddev drush site-install -y`
 
 ## Maintainers
  - [Eirik S. Morland (eiriksm)](https://www.drupal.org/u/eiriksm)
- - [Sven Berg Ryen (svenryen)](https://www.drupal.org/u/svenryen) 
+ - [Sven Berg Ryen (svenryen)](https://www.drupal.org/u/svenryen)
  - [Truls S. Yggeseth (truls1502)](https://drupal.org/u/truls1502)
