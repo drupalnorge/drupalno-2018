@@ -1,8 +1,8 @@
 country:
-  default: NL
+  default: 'NO'
 first_day: 1
 timezone:
-  default: Europe/Amsterdam
+  default: Europe/Oslo
   user:
     configurable: false
     warn: false

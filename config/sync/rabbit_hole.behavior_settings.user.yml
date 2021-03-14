@@ -1,0 +1,12 @@
+uuid: 218ec46e-d9e1-4939-b057-3d54ccd41565
+langcode: nb
+status: true
+dependencies: {  }
+id: user
+entity_type_id: user
+entity_id: null
+action: null
+allow_override: null
+redirect: null
+redirect_code: null
+redirect_fallback_action: null

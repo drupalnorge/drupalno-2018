@@ -4,6 +4,8 @@ display:
   default:
     display_options:
       empty:
+        area_text_custom:
+          content: 'Er is nog geen inhoud voor de voorpagina aangemaakt.'
         title:
           title: 'Velkommen til [site:name]'
       exposed_form:

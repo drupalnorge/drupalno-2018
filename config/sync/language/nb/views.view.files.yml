@@ -41,6 +41,7 @@ display:
           label: 'Endret dato'
         count:
           label: 'Brukt i'
+          format_plural_string: !!binary MSBwbGFhdHMDQGNvdW50IHBsYWF0c2Vu
       filters:
         filename:
           expose:
