@@ -1,67 +1,35 @@
 language: php
+
 php:
   - 7.1
 
 sudo: false
 
-addons:
-  chrome: stable
-
 services:
   - mysql
 
-env:
-  global:
-    - DATABASE='drupal'
-    - DB_USERNAME='root'
-    - DB_ENCODE='utf8'
-
 mysql:
-  database: $DATABASE
-  username: $DB_USERNAME
-  encoding: $DB_ENCODE
+  database: test
+  username: root
+  encoding: utf8
 
 before_install:
-  # Composer Configurations.
-  # Make sure have latest composer
-  - composer self-update --verbose 1.10.17
+  - composer self-update --verbose --1
   - composer --version
-  # Set php memory limit to -1 so composer update will not fail
   - export COMPOSER_MEMORY_LIMIT=-1
-  # To enforce throwing an error and stopping package installation/update immediately
   - export COMPOSER_EXIT_ON_PATCH_FAILURE=1
-  # Installing hirak/prestissimo allows composer to parallelise downloads which speeds up the composer install.
   - composer global require hirak/prestissimo
-  - composer dl-db
-
-stages:
-  - installation checks
-  - Ready to deploy without dev
-
-jobs:
-  include:
-    - stage: installation checks
-      name: Verify installation
-      install:
-        - composer install
-        - touch web/sites/default/settings.local.php
-        - ./vendor/bin/drush si minimal --db-url="mysql://$DB_USERNAME@127.0.0.1/$DATABASE" -y --verbose
-        - ./vendor/bin/drush cset system.site uuid c431d00d-fe18-4aeb-9140-5e439ac2f365 -y
-        - composer import
-    - stage: installation checks
-      name: Verify update
-      install:
-        - composer install
-        - touch web/sites/default/settings.local.php
-        - ./vendor/bin/drush si minimal --db-url="mysql://$DB_USERNAME@127.0.0.1/$DATABASE" -y --verbose
-        - ./vendor/bin/drush sql-cli < sanitized.db
-        - ./vendor/bin/drush updb -y
-    - stage: deploy
-      name: Verify deploying
-      install:
-        - composer install --no-dev
-        - touch web/sites/default/settings.local.php
-        - ./vendor/bin/drush si minimal --db-url="mysql://$DB_USERNAME@127.0.0.1/$DATABASE" -y --verbose
-        - ./vendor/bin/drush sql-cli < sanitized.db
-      script:
-        - composer build
+  - mysql -e "create database IF NOT EXISTS test;"
+  - wget --no-check-certificate https://www.drupal.no/sanitized.db
+install:
+  - composer install
+  - cd ${TRAVIS_BUILD_DIR}/web/themes/drupal_nl && ./build.sh && rm -rf node_modules && cd ${TRAVIS_BUILD_DIR}/web
+  - touch sites/default/settings.local.php
+  - ./../vendor/drush/drush/drush si minimal --verbose --yes --db-url=mysql://root@127.0.0.1/test
+script:
+  - cd ${TRAVIS_BUILD_DIR}/web
+  - ./../vendor/drush/drush/drush sql-cli < ../sanitized.db
+  - ./../vendor/drush/drush/drush cr
+  - ./../vendor/drush/drush/drush updb -y
+  - ./../vendor/drush/drush/drush cim -y
+  - ./../vendor/drush/drush/drush cr

@@ -1,0 +1,16 @@
+<?php
+
+$config['system.logging']['error_level'] = 'verbose';
+
+// Set this to TRUE or comment out in production
+$config['system.performance']['css']['preprocess'] = FALSE;
+$config['system.performance']['js']['preprocess'] = FALSE;
+
+// Configuration split
+$config['config_split.config_split.development']['status'] = TRUE;
+
+
+$settings['redis.connection']['host'] = 'redis';
+$settings['redis.connection']['port'] = NULL;
+$settings['cache']['default'] = 'cache.backend.redis';
+$settings['redis.connection']['base'] = 101;
