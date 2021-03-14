@@ -27,8 +27,8 @@
         "drupal/console": "^1.0.2",
         "drupal/contact_ajax": "^1.4@RC",
         "drupal/contact_block": "^1.4",
-        "drupal/core-recommended": "^8.9.6",
         "drupal/core-composer-scaffold": "^8.9.6",
+        "drupal/core-recommended": "^8.9.6",
         "drupal/devel": "^2.1",
         "drupal/ds": "^3.1",
         "drupal/entity_browser": "^2.1.0",
@@ -48,20 +48,22 @@
         "drupal/rabbit_hole": "^1.0@beta",
         "drupal/recaptcha": "^2.0",
         "drupal/redirect": "^1.0@beta",
+        "drupal/redis": "^1.5",
         "drupal/reroute_email": "^1.1",
         "drupal/seckit": "^1.0@alpha",
         "drupal/simple_sitemap": "^3.0",
         "drupal/site_verify": "1.x-dev",
         "drupal/smtp": "^1.0@beta",
-        "drupal/stage_file_proxy": "^1.0@alpha",
         "drupal/webform": "^5.0",
         "drush/drush": "^9.0.0",
+        "platformsh/config-reader": "^2.3",
         "vlucas/phpdotenv": "^2.4"
     },
     "require-dev": {
+        "drupal/config_exclude": "1.x-dev",
         "drupal/core-dev": "^8.9.6",
         "drupal/drupal-extension": "~3.0",
-        "drupal/stage_file_proxy": "^1.0@alpha",
+        "drupal/stage_file_proxy": "^1.1",
         "eiriksm/wait-for-listen": "^1.0"
     },
     "conflict": {
@@ -70,6 +72,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
+        "bin-dir": "bin/",
         "sort-packages": true,
         "platform": {
             "php": "7.1"
@@ -125,13 +128,23 @@
                 "web-root": "web/"
             }
         },
+        "violinist": {
+            "bundled_packages": {
+                "drupal/core-recommended": [
+                    "drupal/core-composer-scaffold",
+                    "drupal/core-dev"
+                ]
+            },
+            "one_pull_request_per_package": 1,
+            "check_only_direct_dependencies": 0
+        },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"]
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
         },
         "composer-exit-on-patch-failure": true,
         "enable-patching": true,
