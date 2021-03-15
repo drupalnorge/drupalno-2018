@@ -16,29 +16,27 @@
         }
     },
     "require": {
-        "composer/installers": "^1.2",
+        "composer/installers": "^1.7",
         "cweagans/composer-patches": "^1.6",
-        "drupal/admin_toolbar": "^2.0",
-        "drupal/better_exposed_filters": "^3.0@alpha",
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/better_exposed_filters": "^5.0@beta",
         "drupal/cer": "^4.0@alpha",
         "drupal/coffee": "^1.0",
         "drupal/config_ignore": "^2.1",
         "drupal/config_split": "^1.0",
-        "drupal/console": "^1.0.2",
-        "drupal/contact_ajax": "^1.4@RC",
+        "drupal/contact_ajax": "^1.4",
         "drupal/contact_block": "^1.4",
-        "drupal/core-composer-scaffold": "^8.9.6",
-        "drupal/core-recommended": "^8.9.6",
-        "drupal/devel": "^2.1",
+        "drupal/core-composer-scaffold": "^8.9.13",
+        "drupal/core-recommended": "^8.9.13",
         "drupal/ds": "^3.1",
         "drupal/entity_browser": "^2.1.0",
         "drupal/field_group": "^3.0",
         "drupal/google_analytics": "^3.0",
-        "drupal/honeypot": "^1.23",
-        "drupal/image_effects": "^2.0",
-        "drupal/inline_entity_form": "^1.0@beta",
+        "drupal/honeypot": "^2.0",
+        "drupal/image_effects": "^3.1",
+        "drupal/inline_entity_form": "^1.0@rc",
         "drupal/menu_block": "^1.5",
-        "drupal/menu_link_attributes": "^1.0@beta",
+        "drupal/menu_link_attributes": "^1.0",
         "drupal/metatag": "^1.9",
         "drupal/page_manager": "^4.0@beta",
         "drupal/panels": "^4.2",
@@ -46,25 +44,31 @@
         "drupal/paragraphs_jquery_ui_accordion": "^1.2",
         "drupal/pathauto": "^1.6",
         "drupal/rabbit_hole": "^1.0@beta",
-        "drupal/recaptcha": "^2.0",
-        "drupal/redirect": "^1.0@beta",
+        "drupal/recaptcha": "^3.0",
+        "drupal/redirect": "^1.0",
         "drupal/redis": "^1.5",
-        "drupal/reroute_email": "^1.1",
-        "drupal/seckit": "^1.0@alpha",
+        "drupal/reroute_email": "^2.0",
+        "drupal/seckit": "^2.0",
         "drupal/simple_sitemap": "^3.0",
         "drupal/site_verify": "1.x-dev",
-        "drupal/smtp": "^1.0@beta",
-        "drupal/webform": "^5.0",
-        "drush/drush": "^9.0.0",
-        "platformsh/config-reader": "^2.3",
-        "vlucas/phpdotenv": "^2.4"
+        "drupal/smtp": "^1.0",
+        "drupal/webform": "^6.0.2",
+        "drush/drush": "^10.4",
+        "oomphinc/composer-installers-extender": "^1.1 || ^2.0",
+        "platformsh/config-reader": "^2.3"
     },
     "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0",
         "drupal/config_exclude": "1.x-dev",
-        "drupal/core-dev": "^8.9.6",
-        "drupal/drupal-extension": "~3.0",
+        "drupal/console": "^1.9",
+        "drupal/core-dev": "^8.9.13",
+        "drupal/devel": "^4.1",
+        "drupal/drupal-extension": "^4.1",
         "drupal/stage_file_proxy": "^1.1",
-        "eiriksm/wait-for-listen": "^1.0"
+        "drupal/upgrade_rector": "^1.0@alpha",
+        "drupal/upgrade_status": "^3.4",
+        "eiriksm/wait-for-listen": "^1.0",
+        "mglaman/drupal-check": "^1.1"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -75,52 +79,8 @@
         "bin-dir": "bin/",
         "sort-packages": true,
         "platform": {
-            "php": "7.1"
+            "php": "7.4"
         }
-    },
-    "scripts": {
-        "import": [
-            "./vendor/bin/drush --root=$(pwd)/web cc drush",
-            "./vendor/bin/drush --root=$(pwd)/web cim -y",
-            "./vendor/bin/drush cr"
-        ],
-        "export": [
-            "./vendor/bin/drush --root=$(pwd)/web cex -y",
-            "./vendor/bin/drush cr"
-        ],
-        "build": [
-            "git pull",
-            "@composer install --no-dev",
-            "./vendor/bin/drush --root=$(pwd)/web updb -y",
-            "@composer import",
-            "./vendor/bin/drush --root=$(pwd)/web cr"
-        ],
-        "dl-files": [
-            "scp -rv deploy@dev.drupal.no:public_html/dev.drupal.no/web/sites/default/files ./web/sites/default"
-        ],
-        "dl-db": [
-            "wget --no-check-certificate http://dev.drupal.no/sanitized.db"
-        ],
-        "up-db": [
-            "./vendor/bin/drush sql-drop --yes",
-            "wget --no-check-certificate http://dev.drupal.no/sanitized.db",
-            "./vendor/bin/drush sql-cli < /app/sanitized.db",
-            "rm /app/sanitized.db",
-            "./vendor/bin/drush cr"
-        ],
-        "install-site": [
-            "@composer install",
-            "@composer up-db"
-        ],
-        "uplock": [
-            "@composer update --lock"
-        ],
-        "upnothing": [
-            "@composer update nothing"
-        ],
-        "resetadmin": [
-            "./vendor/bin/drush uli"
-        ]
     },
     "extra": {
         "drupal-scaffold": {
@@ -135,8 +95,7 @@
                     "drupal/core-dev"
                 ]
             },
-            "one_pull_request_per_package": 1,
-            "check_only_direct_dependencies": 0
+            "one_pull_request_per_package": 1
         },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
@@ -154,12 +113,6 @@
         "patches": {
             "drupal/core": {
                 "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
-            },
-            "drupal/menu_block": {
-                "#2756675 - Add option to make the starting level follow the active menu item": "https://www.drupal.org/files/issues/2018-07-02/menu_block-follow-2756675-51.patch"
-            },
-            "drupal/ds": {
-                "#2904575 - Fix layout warning": "https://www.drupal.org/files/issues/invalid_argument_in_ds_module-2904575-2.patch"
             }
         }
     }

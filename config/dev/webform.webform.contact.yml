@@ -1,5 +1,6 @@
+uuid: 9223fa21-5abf-47c3-9292-adf62a45938d
 langcode: nl
-status: open
+status: closed
 dependencies:
   enforced:
     module:
@@ -14,24 +15,28 @@ id: contact
 title: 'Partner worden'
 description: 'Aanmelden als drupal.nl partner formulier'
 category: ''
-elements: "'#attributes':\n  class:\n    - l-container\ncolumns:\n  '#type': webform_flexbox\n  col1:\n    '#type': container\n    intro:\n      '#type': webform_markup\n      '#markup': \"<p>Hierboven staan de bedrijven en individuen die zich&nbsp;aan Stichting Drupal Nederland hebben verbonden middels een financiele ondersteuning. Dankzij deze fantastische partners kunnen wij ook dit jaar weer veel evenementen organiseren.</p>\\n\\n<p>Wil je ook iets terugdoen voor Drupal in Nederland? Word dan ook partner!</p>\\n\"\n  col2:\n    '#type': container\n    name_organisation:\n      '#type': textfield\n      '#title': 'Naam organisatie'\n      '#description': 'Naam organisatie'\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': 'Naam organisatie'\n      '#required': true\n    name:\n      '#type': textfield\n      '#title': Naam\n      '#description': Naam\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': Naam\n      '#required': true\n    email:\n      '#type': email\n      '#title': E-mailadres\n      '#description': E-mailadres\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': E-mailadres\n      '#required': true\n    adres:\n      '#type': textfield\n      '#title': Adres\n      '#description': Adres\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': Adres\n    postcode:\n      '#type': textfield\n      '#title': Postcode\n      '#description': Postcode\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': Postcode\n    plaats:\n      '#type': textfield\n      '#title': Plaats\n      '#description': Plaats\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': Plaats\n    telefoon:\n      '#type': tel\n      '#title': Telefoon\n      '#description': Telefoonnummer\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': Telefoonnummer\n    twitter_handle:\n      '#type': url\n      '#title': 'Twitter handle'\n      '#description': 'Twitter handle'\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': 'Twitter handle'\n  col3:\n    '#type': container\n    type_partnerschap:\n      '#type': radios\n      '#title': 'Type partnerschap'\n      '#default_value': goud\n      '#options':\n        goud: Goud\n        zilver: Zilver\n        individueel: Individueel\n      '#required': true\n    description:\n      '#type': textarea\n      '#title': Description\n      '#description': 'Korte beschrijving van uw organisatie'\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': 'Korte beschrijving van uw organisatie'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Aanmelden\n"
+elements: "'#attributes':\n  class:\n    - l-container\ncolumns:\n  '#type': webform_flexbox\n  col1:\n    '#type': container\n    intro:\n      '#type': webform_markup\n      '#markup': |\n        <p>Hierboven staan de bedrijven en individuen die zich&nbsp;aan Stichting Drupal Nederland hebben verbonden middels een financiele ondersteuning. Dankzij deze fantastische partners kunnen wij ook dit jaar weer veel evenementen organiseren.</p>\n        \n        <p>Wil je ook iets terugdoen voor Drupal in Nederland? Word dan ook partner!</p>\n        \n  col2:\n    '#type': container\n    name_organisation:\n      '#type': textfield\n      '#title': 'Naam organisatie'\n      '#description': 'Naam organisatie'\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': 'Naam organisatie'\n      '#required': true\n    name:\n      '#type': textfield\n      '#title': Naam\n      '#description': Naam\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': Naam\n      '#required': true\n    email:\n      '#type': email\n      '#title': E-mailadres\n      '#description': E-mailadres\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': E-mailadres\n      '#required': true\n    adres:\n      '#type': textfield\n      '#title': Adres\n      '#description': Adres\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': Adres\n    postcode:\n      '#type': textfield\n      '#title': Postcode\n      '#description': Postcode\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': Postcode\n    plaats:\n      '#type': textfield\n      '#title': Plaats\n      '#description': Plaats\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': Plaats\n    telefoon:\n      '#type': tel\n      '#title': Telefoon\n      '#description': Telefoonnummer\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': Telefoonnummer\n    twitter_handle:\n      '#type': url\n      '#title': 'Twitter handle'\n      '#description': 'Twitter handle'\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': 'Twitter handle'\n  col3:\n    '#type': container\n    type_partnerschap:\n      '#type': radios\n      '#title': 'Type partnerschap'\n      '#default_value': goud\n      '#options':\n        goud: Goud\n        zilver: Zilver\n        individueel: Individueel\n      '#required': true\n    description:\n      '#type': textarea\n      '#title': Description\n      '#description': 'Korte beschrijving van uw organisatie'\n      '#title_display': invisible\n      '#description_display': invisible\n      '#placeholder': 'Korte beschrijving van uw organisatie'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': Aanmelden"
 css: ''
 javascript: ''
 settings:
   ajax: false
   ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  form_title: both
+  page_theme_name: ''
+  form_title: source_entity_webform
   form_submit_once: true
   form_exception_message: ''
   form_open_message: ''
-  form_close_message: null
+  form_close_message: ''
   form_previous_submissions: true
   form_confidential: false
   form_confidential_message: ''
-  form_remote_addr: true
+  form_disable_remote_addr: false
   form_convert_anonymous: false
   form_prepopulate: false
   form_prepopulate_source_entity: false
@@ -52,6 +57,11 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
   submission_label: ''
   submission_log: false
   submission_views: {  }
@@ -76,11 +86,20 @@ settings:
   wizard_progress_pages: false
   wizard_progress_percentage: false
   wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
   wizard_start_label: ''
   wizard_preview_link: false
   wizard_confirmation: true
   wizard_confirmation_label: ''
   wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -94,6 +113,8 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
   confirmation_type: url_message
   confirmation_title: ''
   confirmation_message: 'Your message has been sent.'
@@ -104,6 +125,7 @@ settings:
   confirmation_back_attributes: {  }
   confirmation_exclude_query: false
   confirmation_exclude_token: false
+  confirmation_update: false
   limit_total: null
   limit_total_interval: null
   limit_total_message: ''
@@ -120,7 +142,11 @@ settings:
   purge_days: null
   results_disabled: false
   results_disabled_ignore: false
+  results_customize: false
+  token_view: false
   token_update: false
+  token_delete: false
+  serial_disabled: false
 access:
   create:
     roles:
@@ -172,6 +198,7 @@ handlers:
   email_confirmation:
     id: email
     label: E-mailbevestiging
+    notes: ''
     handler_id: email_confirmation
     status: true
     conditions: {  }
@@ -179,7 +206,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: '[webform_submission:values:email:raw]'
+      to_mail: '[current-user:mail]'
       to_options: {  }
       cc_mail: ''
       cc_options: {  }
@@ -194,6 +221,7 @@ handlers:
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
+      exclude_attachments: false
       html: true
       attachments: false
       twig: false
@@ -203,9 +231,11 @@ handlers:
       sender_mail: ''
       sender_name: ''
       theme_name: ''
+      parameters: {  }
   email_notification:
     id: email
     label: E-mailmelding
+    notes: ''
     handler_id: email_notification
     status: true
     conditions: {  }
@@ -228,6 +258,7 @@ handlers:
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
+      exclude_attachments: false
       html: true
       attachments: false
       twig: false
@@ -237,6 +268,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       theme_name: ''
-uuid: 9223fa21-5abf-47c3-9292-adf62a45938d
+      parameters: {  }
+variants: {  }
 _core:
   default_config_hash: JD-fKiEs22szoXqnfgBNWlA8JkGS24DfvLYrkWJoVk0
