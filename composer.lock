@@ -2576,6 +2576,9 @@
                         "[web-root]/profiles/README.txt": "assets/scaffold/files/profiles.README.txt",
                         "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
                     }
+                },
+                "patches_applied": {
+                    "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
                 }
             },
             "autoload": {
@@ -2831,17 +2834,17 @@
         },
         {
             "name": "drupal/ds",
-            "version": "3.10.0",
+            "version": "3.12.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ds.git",
-                "reference": "8.x-3.10"
+                "reference": "8.x-3.12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ds-8.x-3.10.zip",
-                "reference": "8.x-3.10",
-                "shasum": "c35b87ad8e96a3a893af197678ce34dfeea82f99"
+                "url": "https://ftp.drupal.org/files/projects/ds-8.x-3.12.zip",
+                "reference": "8.x-3.12",
+                "shasum": "0df49ccc28af94186a6c08aa4233f435c539b273"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -2853,8 +2856,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.10",
-                    "datestamp": "1614505794",
+                    "version": "8.x-3.12",
+                    "datestamp": "1615995335",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4896,7 +4899,8 @@
             "homepage": "https://www.drupal.org/project/site_verify",
             "support": {
                 "source": "https://git.drupalcode.org/project/site_verify"
-            }
+            },
+            "time": "2020-11-16T14:54:55+00:00"
         },
         {
             "name": "drupal/smtp",
@@ -11020,7 +11024,8 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/config_exclude",
                 "issues": "https://www.drupal.org/project/issues/config_exclude"
-            }
+            },
+            "time": "2017-12-07T21:31:19+00:00"
         },
         {
             "name": "drupal/console",
@@ -15266,5 +15271,5 @@
     "platform-overrides": {
         "php": "7.4"
     },
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }
