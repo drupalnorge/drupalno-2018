@@ -39,6 +39,9 @@ display:
           expose:
             label: Blokktype
       title: 'Bibliotek med egendefinerte blokker'
+      empty:
+        area_text_custom:
+          content: 'Er zijn geen aagepaste blokken beschikbaar. '
   page_1:
     display_title: Side
     display_options:
