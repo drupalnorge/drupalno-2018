@@ -4871,10 +4871,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/site_verify.git",
-                "reference": "011b68dbbf2efd79c9f00582328de37656c3baec"
+                "reference": "6be12b625fde865217f7ae81f59292f9905f8176"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8.7.7 || ^9"
             },
             "type": "drupal-module",
             "extra": {
@@ -4937,7 +4937,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/site_verify"
             },
-            "time": "2018-03-07T07:39:48+00:00"
+            "time": "2020-11-16T14:54:55+00:00"
         },
         {
             "name": "drupal/smtp",
