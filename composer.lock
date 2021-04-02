@@ -6224,16 +6224,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.10.2",
+            "version": "v4.10.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "658f1be311a230e0907f5dfe0213742aff0596de"
+                "reference": "c6d052fc58cb876152f89f532b95a8d7907e7f0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/658f1be311a230e0907f5dfe0213742aff0596de",
-                "reference": "658f1be311a230e0907f5dfe0213742aff0596de",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/c6d052fc58cb876152f89f532b95a8d7907e7f0e",
+                "reference": "c6d052fc58cb876152f89f532b95a8d7907e7f0e",
                 "shasum": ""
             },
             "require": {
@@ -6272,7 +6272,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-09-26T10:30:38+00:00"
+            "time": "2020-12-20T10:01:03+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -6755,16 +6755,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.10.4",
+            "version": "v0.10.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "a8aec1b2981ab66882a01cce36a49b6317dc3560"
+                "reference": "a395af46999a12006213c0c8346c9445eb31640c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/a8aec1b2981ab66882a01cce36a49b6317dc3560",
-                "reference": "a8aec1b2981ab66882a01cce36a49b6317dc3560",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/a395af46999a12006213c0c8346c9445eb31640c",
+                "reference": "a395af46999a12006213c0c8346c9445eb31640c",
                 "shasum": ""
             },
             "require": {
@@ -6793,7 +6793,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.10.x-dev"
+                    "dev-main": "0.10.x-dev"
                 }
             },
             "autoload": {
@@ -6823,7 +6823,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2020-05-03T19:32:03+00:00"
+            "time": "2021-03-14T02:14:56+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -8954,7 +8954,7 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v3.4.46",
+            "version": "v3.4.47",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
