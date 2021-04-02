@@ -1,6 +1,0 @@
-title: Kontakt
-settings:
-  confirmation_message: 'Din melding har blitt sendt.'
-handlers:
-  email_notification:
-    label: E-postvarsling
