@@ -58,7 +58,7 @@
         "platformsh/config-reader": "^2.3"
     },
     "require-dev": {
-        "dealerdirect/phpcodesniffer-composer-installer": "^0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1",
         "drupal/config_exclude": "1.x-dev",
         "drupal/console": "^1.9",
         "drupal/core-dev": "^8.9.13",
@@ -80,6 +80,14 @@
         "sort-packages": true,
         "platform": {
             "php": "7.4"
+        },
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/console-extend-plugin": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "oomphinc/composer-installers-extender": true
         }
     },
     "extra": {
@@ -88,18 +96,10 @@
                 "web-root": "web/"
             }
         },
-        "violinist": {
-            "bundled_packages": {
-                "drupal/core-recommended": [
-                    "drupal/core-composer-scaffold",
-                    "drupal/core-dev"
-                ]
-            },
-            "one_pull_request_per_package": 1
-        },
+        "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
             "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
@@ -114,6 +114,22 @@
             "drupal/core": {
                 "Keep setting.php intact, add local config to settings.local.php": "https://github.com/zaporylie/drupal/commit/6f0b4e95f28ae945c6fa2bf0e5e81850d3e695f8.patch"
             }
+        },
+        "patches-ignore": {
+
+        },
+        "violinist": {
+            "bundled_packages": {
+                "drupal/core-recommended": [
+                    "drupal/core-composer-scaffold",
+                    "drupal/core-dev"
+                ]
+            },
+            "blocklist": [
+                "drupal/core-composer-scaffold",
+                "drupal/core-dev"
+            ],
+            "one_pull_request_per_package": 1
         }
     }
 }
