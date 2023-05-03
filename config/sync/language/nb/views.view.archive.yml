@@ -1,5 +1,5 @@
 label: Arkiv
-description: 'Alt innhold, etter måned'
+description: 'Alt innhold, etter måned.'
 display:
   default:
     display_title: Master

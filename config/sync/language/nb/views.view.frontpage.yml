@@ -1,5 +1,5 @@
 label: Forside
-description: 'Alt innhold som er forfremmet til forsiden'
+description: 'Alt innhold som er forfremmet til forsiden.'
 display:
   default:
     display_options:

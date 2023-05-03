@@ -1,5 +1,5 @@
 label: 'Siste innlegg'
-description: 'Innhold som er nylig lagt til'
+description: 'Innhold som er nylig lagt til.'
 display:
   default:
     display_title: Master

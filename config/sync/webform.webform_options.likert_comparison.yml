@@ -11,4 +11,4 @@ id: likert_comparison
 label: 'Likertschaal: Vergelijking'
 category: Likert
 likert: true
-options: "1: Helemaal oneens\r\n2: Oneens\r\n3: Neutraal\r\n4: Eens\r\n5: Helemaal eens\n"
+options: "1: Veel slechter\r\n2: Slechter\r\n3: Hetzelfde\r\n4: Beter\r\n5: Veel beter\n"

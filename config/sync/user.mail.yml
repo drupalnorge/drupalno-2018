@@ -1,6 +1,6 @@
 cancel_confirm:
-  body: "[user:display-name],\r\n\r\nEen verzoek om uw gebruikersaccount te annuleren is ingediend bij [site:name].\r\n\r\nU kunt nu uw account annuleren op [site:url-brief] door op onderstaande link te klikken of deze te knippen en plakken in uw browser:\r\n\r\n[user:cancel-url]\r\n\r\nLet op: Het annuleren van uw account kan niet ongedaan worden gemaakt!\r\n\r\nDeze link verloopt binnen één dag. Er gebeurt niets als deze link niet binnen één dag wordt gebruikt.\r\n\r\n--  [site:name] team"
-  subject: 'Verzoek om account te annuleren van [user:display-name] op [site:name]'
+  body: "[user:display-name],\r\n\r\nEen verzoek om uw gebruikersaccount op te heffen is ingediend bij [site:name].\r\n\r\nU kunt nu uw account opheffen op [site:url-brief] door op onderstaande link te klikken of deze te knippen en plakken in uw browser:\r\n\r\n[user:cancel-url]\r\n\r\nLet op: Het opheffen van uw account kan niet ongedaan worden gemaakt!\r\n\r\nDeze link verloopt binnen één dag. Er gebeurt niets als deze link niet binnen één dag wordt gebruikt.\r\n\r\n--  [site:name] team"
+  subject: 'Verzoek om account op te heffen van [user:display-name] op [site:name]'
 password_reset:
   body: "[user:display-name],\r\n\r\nOp [site:name] is een verzoek gedaan voor een nieuw wachtwoord van uw account.\r\n\r\nU kunt nu inloggen door op onderstaande link te klikken of deze te kopiëren en te plakken in de adresbalk van uw browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nDeze link kan slechts één keer gebruikt worden en zal u doorverwijzen naar een pagina waar u uw wachtwoord opnieuw kunt instellen. De geldigheid van de link zal na één dag verlopen. Er zal niets gebeuren wanneer de link niet wordt gebruikt.\r\n\r\n--  [site:name] team"
   subject: 'Vervangende logininformatie voor [user:display-name] op [site:name]'
@@ -17,7 +17,7 @@ register_pending_approval_admin:
   body: "[user:display-name] heeft een account aangevraagd.\r\n\r\n[user:edit-url]"
   subject: 'Accountgegevens voor [user:display-name] op [site:name] (wachtend op de goedkeuring van de beheerder)'
 status_activated:
-  body: "[user:display-name],\r\n\r\nUw account op [site:name] is geactiveerd.\r\n\r\nU kunt nu inloggen door op de onderstaande link te klikken of deze in uw browser te kopiëren:\r\n\r\n[user:one-time-login-url]\r\n\r\nDit is een eenmalige login en u wordt doorgestuurd naar een pagina waar u uw wachtwoord kunt instellen.\r\n\r\nNadat u uw wachtwoord heeft gewijzigd, kunt u in de toekomst inloggen op [site:login-url] met:\r\n\r\ngebruikersnaam: [user:account-name]\r\nwachtwoord: Uw wachtwoord\r\n\r\n--  [site:name] team"
+  body: "[user:display-name],\r\n\r\nUw account op [site:name] is geactiveerd.\r\n\r\nU kunt nu inloggen door op de onderstaande link te klikken of deze in uw browser te kopiëren:\r\n\r\n[user:one-time-login-url]\r\n\r\nDit is een eenmalige login en u wordt doorgestuurd naar een pagina waar u uw wachtwoord kunt instellen.\r\n\r\nNadat u uw wachtwoord heeft gewijzigd, kunt u in de toekomst inloggen op [site:login-url] met:\r\n\r\ngebruikersnaam: [user:account-name]\r\nwachtwoord: Uw ingestelde wachtwoord\r\n\r\n--  [site:name] team"
   subject: 'Accountgegevens voor [user:display-name] op [site:name] (goedgekeurd)'
 status_blocked:
   body: "[user:display-name],\r\n\r\nYour account on [site:name] has been blocked.\r\n\r\n--  [site:name] team"

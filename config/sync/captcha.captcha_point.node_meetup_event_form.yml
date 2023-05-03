@@ -4,4 +4,4 @@ status: false
 dependencies: {  }
 formId: node_meetup_event_form
 captchaType: default
-label: null
+label: node_meetup_event_form

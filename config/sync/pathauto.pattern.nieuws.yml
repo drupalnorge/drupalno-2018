@@ -10,7 +10,7 @@ type: 'canonical_entities:node'
 pattern: 'nieuws/[node:title]'
 selection_criteria:
   a95a2f05-3ec5-4445-9052-18bbc1b6b69d:
-    id: node_type
+    id: 'entity_bundle:node'
     bundles:
       news_article: news_article
     negate: false

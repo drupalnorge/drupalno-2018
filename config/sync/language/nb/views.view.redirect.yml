@@ -1,4 +1,4 @@
-label: Videresending
+label: Viderekobling
 display:
   default:
     display_title: Master
@@ -57,6 +57,6 @@ display:
         language:
           expose:
             label: Originalspråk
-      title: Videresending
+      title: Viderekobling
   page_1:
     display_title: Side

@@ -1,11 +1,13 @@
 settings:
   default_form_open_message: 'Dit formulier is nog niet geopend voor inzendingen.'
+  default_form_close_message: 'Sorry, dit formulier is gesloten. Geen nieuwe inzendingen meer mogelijk.'
   default_form_exception_message: 'Unable to display this form. Please contact the site administrator.'
   default_submit_button_label: Send
   default_reset_button_label: Nullstill
   default_delete_button_label: Slett
   default_form_confidential_message: 'Dit formulier is vertrouwelijk en kan pas na <a href="[site:login-url]/logout?destination=[current-page:url:relative]">uitloggen</a> worden gebruikt.'
   default_wizard_prev_button_label: '< Vorige'
+  default_wizard_next_button_label: 'Volgende pagina >'
   default_wizard_start_label: Start
   default_wizard_confirmation_label: Fullført
   default_preview_next_button_label: Forhåndsvisning
@@ -29,6 +31,7 @@ element:
   default_more_title: Mer
 mail:
   default_from_name: '[site:name]'
+  default_subject: 'Form submission from: [webform_submission:source-title]'
   default_body_text: "Sendt inn [webform_submission:created]\r\nSendt inn av: [webform_submission:user]\r\n\r\nInnsendte verdier er:\r\n[webform_submission:values]\n"
   default_body_html: "<p>Sendt inn [webform_submission:created]</p>\r\n<p>Send inn av: [webform_submission:user]</p>\r\n<p>Innsendte verdier er:</p>\r\n[webform_submission:values]\n"
 test:

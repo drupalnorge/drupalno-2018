@@ -7,3 +7,4 @@ enabled_entity_types:
   - menu_link_content
 langcode: nl
 default_variant: default
+entities_per_queue_item: 50
