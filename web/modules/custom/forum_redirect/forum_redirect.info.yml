@@ -1,5 +1,5 @@
 name: Forum Redirect
 type: module
 description: Redirects old forum links to new page.
-core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
 package: Drupal.nl

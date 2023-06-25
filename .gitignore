@@ -26,6 +26,7 @@ web/sites/*/services.*.yml
 # Ignore Drupal's file directory
 web/sites/*/files
 web/sites/*/private
+/.drush
 
 # Ignore paths that contain user-generated content.
 web/sites/*/files
@@ -52,7 +53,7 @@ web/.eslintrc.json
 web/.ht.router.php
 web/.htaccess
 web/INSTALL.txt
-web/README.txt
+web/README.md
 web/autoload.php
 web/example.gitignore
 web/index.php
