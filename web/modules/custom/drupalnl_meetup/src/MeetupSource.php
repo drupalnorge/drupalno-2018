@@ -2,6 +2,7 @@
 
 namespace Drupal\drupalnl_meetup;
 
+use Drupal\datetime\Plugin\Field\FieldType\DateTimeItemInterface;
 use Exception;
 use Drupal;
 use Drupal\Core\Datetime\DrupalDateTime;
@@ -177,8 +178,8 @@ class MeetupSource {
     $item->updated = $item->updated / 1000;
 
     // Convert time value to date.
-    $item->time = DrupalDateTime::createFromTimestamp($item->time, DATETIME_STORAGE_TIMEZONE)
-      ->format(DATETIME_DATETIME_STORAGE_FORMAT);
+    $item->time = DrupalDateTime::createFromTimestamp($item->time, DateTimeItemInterface::STORAGE_TIMEZONE)
+      ->format(DateTimeItemInterface::DATETIME_STORAGE_FORMAT);
 
     // Mapping.
     $entity->field_meetup_id = $item->id;

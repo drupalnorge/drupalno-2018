@@ -1,19 +1,25 @@
 <?php
 
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Field\FieldDefinitionInterface;
+use Drupal\Core\Field\FieldItemListInterface;
+use Drupal\Core\Form\FormStateInterface;
 define('DRUPALNL_PARTNER_ADMIN_ROLE', 'partner');
 define('DRUPALNL_PARTNER_GOLD_NAME', 'Firmamedlem');
 
 /**
  * Implements hook_ENTITY_TYPE_access().
  */
-function drupalnl_partners_node_access(\Drupal\Core\Entity\EntityInterface $entity, $operation, \Drupal\Core\Session\AccountInterface $account) {
+function drupalnl_partners_node_access(EntityInterface $entity, $operation, AccountInterface $account) {
 
   // Allow administrators with an organisation to edit their organisation Node.
   if ($entity->bundle() == 'organisation' && $operation == 'update') {
 
     foreach ($entity->field_administrators as $admin) {
       if ($admin->__get('target_id') == $account->id()) {
-        return \Drupal\Core\Access\AccessResult::allowedIf(_drupalnl_partners_user_is_partner($account));
+        return AccessResult::allowedIf(_drupalnl_partners_user_is_partner($account));
       }
     }
   }
@@ -30,34 +36,34 @@ function drupalnl_partners_node_access(\Drupal\Core\Entity\EntityInterface $enti
 //    }
   }
 
-  return \Drupal\Core\Access\AccessResult::neutral();
+  return AccessResult::neutral();
 }
 
 /**
  * Implements hook_entity_field_access().
  */
-function drupalnl_partners_entity_field_access($operation, \Drupal\Core\Field\FieldDefinitionInterface $field_definition, \Drupal\Core\Session\AccountInterface $account, \Drupal\Core\Field\FieldItemListInterface $items = NULL) {
+function drupalnl_partners_entity_field_access($operation, FieldDefinitionInterface $field_definition, AccountInterface $account, FieldItemListInterface $items = NULL) {
   if ($field_definition->getTargetEntityTypeId() != 'node') {
-    return \Drupal\Core\Access\AccessResult::neutral()->addCacheContexts(['user.roles']);
+    return AccessResult::neutral()->addCacheContexts(['user.roles']);
   }
 
   if ($field_definition->getTargetBundle() != 'organisation') {
-    return \Drupal\Core\Access\AccessResult::neutral()->addCacheContexts(['user.roles']);
+    return AccessResult::neutral()->addCacheContexts(['user.roles']);
   }
 
   if (!in_array($operation, ['view', 'edit'])) {
-    return \Drupal\Core\Access\AccessResult::neutral()->addCacheContexts(['user']);
+    return AccessResult::neutral()->addCacheContexts(['user']);
   }
 
   if ($operation == 'edit') {
     if ($account->hasPermission('create organisation content')) {
-      return \Drupal\Core\Access\AccessResult::neutral()->cachePerPermissions();
+      return AccessResult::neutral()->cachePerPermissions();
     }
   }
 
   if ($operation == 'view') {
     if ($field_definition->getName() == 'field_level') {
-      return \Drupal\Core\Access\AccessResult::neutral()->addCacheContexts(['user']);
+      return AccessResult::neutral()->addCacheContexts(['user']);
     }
   }
 
@@ -76,7 +82,7 @@ function drupalnl_partners_entity_field_access($operation, \Drupal\Core\Field\Fi
 //    }
 //  }
 
-  return \Drupal\Core\Access\AccessResult::neutral()->addCacheContexts(['user']);
+  return AccessResult::neutral()->addCacheContexts(['user']);
 }
 
 /**
@@ -86,7 +92,7 @@ function drupalnl_partners_entity_field_access($operation, \Drupal\Core\Field\Fi
  *
  * @return bool
  */
-function _drupalnl_partners_user_is_partner(\Drupal\Core\Session\AccountInterface $account) {
+function _drupalnl_partners_user_is_partner(AccountInterface $account) {
   $roles = $account->getRoles(TRUE);
 
   return (bool) in_array(DRUPALNL_PARTNER_ADMIN_ROLE, $roles);
@@ -95,14 +101,14 @@ function _drupalnl_partners_user_is_partner(\Drupal\Core\Session\AccountInterfac
 /**
  * Implements hook_form_alter().
  */
-function drupalnl_partners_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+function drupalnl_partners_form_alter(&$form, FormStateInterface $form_state, $form_id) {
 //    ksm($form_id);
 }
 
 /**
  * Implements hook_form_FORM_ID_alter() for node_organisation_edit_form.
  */
-function drupalnl_partners_form_node_organisation_edit_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+function drupalnl_partners_form_node_organisation_edit_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   /** @var \Drupal\taxonomy\TermStorageInterface $term_storage */
 
   // I don't think we need this functionality.
@@ -127,7 +133,7 @@ function drupalnl_partners_form_node_organisation_edit_form_alter(&$form, \Drupa
  *
  * @see \Drupal\user\RegisterForm::form()
  */
-function drupalnl_partners_form_user_register_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+function drupalnl_partners_form_user_register_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   _drupalnl_partners_form_alter_field_organisation($form);
 }
 
@@ -136,7 +142,7 @@ function drupalnl_partners_form_user_register_form_alter(&$form, \Drupal\Core\Fo
  *
  * @see \Drupal\user\AccountForm::form()
  */
-function drupalnl_partners_form_user_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+function drupalnl_partners_form_user_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   _drupalnl_partners_form_alter_field_organisation($form);
 }
 

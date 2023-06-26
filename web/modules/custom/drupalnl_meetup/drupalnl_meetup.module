@@ -12,7 +12,7 @@ use Drupal\drupalnl_meetup\Util;
  */
 function drupalnl_meetup_cron() {
   // If run longer than an hour ago.
-  if (\Drupal::state()->get('drupalnl_meetup_last_run') < REQUEST_TIME - 3600) {
+  if (\Drupal::state()->get('drupalnl_meetup_last_run') < \Drupal::time()->getRequestTime() - 3600) {
     // @todo This could use a config form.
     $urls = [
       'https://api.meetup.com/drupalnl/events',
@@ -28,6 +28,6 @@ function drupalnl_meetup_cron() {
     }
 
     // Set when we last ran.
-    \Drupal::state()->set('drupalnl_meetup_last_run', REQUEST_TIME);
+    \Drupal::state()->set('drupalnl_meetup_last_run', \Drupal::time()->getRequestTime());
   }
 }
