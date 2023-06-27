@@ -1,5 +1,0 @@
-name: Drupal.nl Meetup importer
-type: module
-description: Imports meetups from Meetup.com.
-core_version_requirement: ^8 || ^9 || ^10
-package: Drupal.nl
