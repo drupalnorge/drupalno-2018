@@ -5,10 +5,16 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.organisation.body
+    - field.field.node.organisation.field_administrators
+    - field.field.node.organisation.field_e_post
     - field.field.node.organisation.field_image
     - field.field.node.organisation.field_level
+    - field.field.node.organisation.field_partner_content
     - field.field.node.organisation.field_partner_uri
+    - field.field.node.organisation.field_qualities
+    - field.field.node.organisation.field_region
     - field.field.node.organisation.field_services
+    - field.field.node.organisation.field_telefon
     - image.style.partner_logo_greyscale
     - node.type.organisation
   module:
@@ -21,19 +27,26 @@ mode: teaser
 content:
   field_image:
     type: image
-    weight: 0
     label: hidden
     settings:
-      image_style: partner_logo_greyscale
       image_link: content
+      image_style: partner_logo_greyscale
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   body: true
+  field_administrators: true
+  field_e_post: true
   field_level: true
+  field_partner_content: true
   field_partner_uri: true
   field_qualities: true
+  field_region: true
   field_services: true
+  field_telefon: true
   langcode: true
   links: true
   quality_level: true

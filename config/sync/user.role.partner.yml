@@ -1,7 +1,12 @@
 uuid: a27f8187-2758-4a35-a166-edf3a49407d2
 langcode: nl
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.partner_html
+  module:
+    - filter
+    - system
 id: partner
 label: Partner
 weight: 3

@@ -13,6 +13,7 @@ effects:
     weight: -9
     data:
       canvas_size: exact
+      canvas_color: '#FFFFFFFF'
       exact:
         width: '200'
         height: '200'
@@ -24,7 +25,6 @@ effects:
         right: 0
         top: 0
         bottom: 0
-      canvas_color: '#FFFFFFFF'
   65103520-23a9-4774-b1ac-1fefcaba16b2:
     uuid: 65103520-23a9-4774-b1ac-1fefcaba16b2
     id: image_scale

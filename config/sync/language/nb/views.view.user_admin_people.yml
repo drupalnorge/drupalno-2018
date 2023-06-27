@@ -2,26 +2,9 @@ label: Brukere
 description: 'Finn og behandle folk som bruker nettstedet ditt.'
 display:
   default:
-    display_title: Master
+    display_title: Standard
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filtrer
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér etter'
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
-      pager:
-        options:
-          tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
-            first: '« Første'
-            last: 'Siste »'
-          expose:
-            items_per_page_label: 'Elementer per side'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskyving
+      title: Brukere
       fields:
         user_bulk_form:
           label: Masseoppdatering
@@ -30,8 +13,8 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Aktiv
             format_custom_false: Blokkert
+            format_custom_true: Aktiv
         roles_target_id:
           label: Roller
         created:
@@ -42,6 +25,27 @@ display:
           label: Handlinger
         mail:
           separator: ', '
+      pager:
+        options:
+          tags:
+            next: 'Neste ›'
+            previous: '‹ Forrige'
+            first: '« Første'
+            last: 'Siste »'
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér etter'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      empty:
+        area_text_custom:
+          content: 'Ingen folk tilgjengelig.'
       filters:
         combine:
           expose:
@@ -60,10 +64,6 @@ display:
         permission:
           expose:
             label: Tillatelse
-      title: Brukere
-      empty:
-        area_text_custom:
-          content: 'Ingen folk tilgjengelig.'
       use_more_text: mer
   page_1:
     display_title: Side

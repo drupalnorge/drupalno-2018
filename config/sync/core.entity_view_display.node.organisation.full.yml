@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.organisation.field_partner_content
     - field.field.node.organisation.field_partner_uri
     - field.field.node.organisation.field_qualities
+    - field.field.node.organisation.field_region
     - field.field.node.organisation.field_services
     - field.field.node.organisation.field_telefon
     - image.style.partner_logo
@@ -27,39 +28,41 @@ bundle: organisation
 mode: full
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   field_e_post:
     type: basic_string
-    weight: 4
-    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 4
+    region: content
   field_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: partner_logo
       image_link: ''
+      image_style: partner_logo
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   field_level:
-    weight: 1
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: partner_badge
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 1
     region: content
   field_partner_uri:
-    weight: 7
+    type: link
     label: inline
     settings:
       trim_length: 80
@@ -68,29 +71,29 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 7
     region: content
   field_services:
-    weight: 6
+    type: entity_reference_label
     label: above
     settings:
       link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 6
     region: content
   field_telefon:
     type: string
-    weight: 5
-    region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  quality_level:
-    weight: 2
+    weight: 5
     region: content
+  quality_level:
     settings: {  }
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   field_administrators: true
   field_partner_content: true

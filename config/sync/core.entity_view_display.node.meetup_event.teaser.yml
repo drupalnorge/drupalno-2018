@@ -20,16 +20,15 @@ mode: teaser
 content:
   field_datetime:
     type: datetime_default
-    weight: 0
     label: hidden
     settings:
       timezone_override: ''
       format_type: short
     third_party_settings: {  }
+    weight: 0
     region: content
   field_source:
     type: link
-    weight: 1
     label: hidden
     settings:
       trim_length: 80
@@ -38,6 +37,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   field_hash: true

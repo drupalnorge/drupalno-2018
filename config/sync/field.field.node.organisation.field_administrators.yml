@@ -18,15 +18,15 @@ default_value_callback: ''
 settings:
   handler: 'default:user'
   handler_settings:
-    include_anonymous: false
-    filter:
-      type: role
-      role:
-        partner: partner
-        administrator: '0'
     target_bundles: null
     sort:
       field: name
       direction: ASC
     auto_create: true
+    filter:
+      type: role
+      role:
+        partner: partner
+        administrator: '0'
+    include_anonymous: false
 field_type: entity_reference

@@ -11,12 +11,12 @@ pattern: 'partner/[node:title]'
 selection_criteria:
   d64b511d-1506-4fa1-b784-f650690f8bc6:
     id: 'entity_bundle:node'
-    bundles:
-      organisation: organisation
     negate: false
+    uuid: d64b511d-1506-4fa1-b784-f650690f8bc6
     context_mapping:
       node: node
-    uuid: d64b511d-1506-4fa1-b784-f650690f8bc6
+    bundles:
+      organisation: organisation
 selection_logic: and
 weight: -5
 relationships: {  }

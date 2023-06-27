@@ -2,24 +2,9 @@ label: Filer
 description: 'Finn og administrer filer.'
 display:
   default:
-    display_title: Master
+    display_title: Standard
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filtrer
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér etter'
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
-      pager:
-        options:
-          tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
-          expose:
-            items_per_page_label: 'Elementer per side'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskyving
+      title: Filer
       fields:
         fid:
           label: Fid
@@ -42,6 +27,25 @@ display:
         count:
           label: 'Brukt i'
           format_plural_string: !!binary MSBwbGFhdHMDQGNvdW50IHBsYWF0c2Vu
+      pager:
+        options:
+          tags:
+            next: 'Neste ›'
+            previous: '‹ Forrige'
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér etter'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      empty:
+        area_text_custom:
+          content: 'Ingen filer tilgjengelig.'
       filters:
         filename:
           expose:
@@ -52,10 +56,6 @@ display:
         status:
           expose:
             label: Status
-      title: Filer
-      empty:
-        area_text_custom:
-          content: 'Ingen filer tilgjengelig.'
   page_1:
     display_title: 'Oversikt over filer'
     display_options:
@@ -64,15 +64,7 @@ display:
   page_2:
     display_title: Filbruk
     display_options:
-      pager:
-        options:
-          tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
-          expose:
-            items_per_page_label: 'Elementer per side'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskyving
+      title: Filbruk
       fields:
         entity_label:
           label: Entitet
@@ -82,7 +74,15 @@ display:
           label: 'Registrerer modul'
         count:
           label: 'Antall ganger brukt'
-      title: Filbruk
+      pager:
+        options:
+          tags:
+            next: 'Neste ›'
+            previous: '‹ Forrige'
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
       arguments:
         fid:
           exception:

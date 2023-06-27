@@ -1,10 +1,10 @@
+langcode: nl
 max_links: 2000
 cron_generate: true
 remove_duplicates: true
+default_variant: default
 enabled_entity_types:
   - node
   - taxonomy_term
   - menu_link_content
-langcode: nl
-default_variant: default
 entities_per_queue_item: 50

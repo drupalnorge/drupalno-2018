@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
+langcode: nl
 module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
@@ -23,7 +26,6 @@ module:
   drupalnl_partners: 0
   dynamic_page_cache: 0
   editor: 0
-  entity_reference: 0
   entity_reference_revisions: 0
   field: 0
   field_group: 0
@@ -51,6 +53,7 @@ module:
   menu_ui: 0
   metatag: 0
   metatag_verification: 0
+  mysql: 0
   node: 0
   options: 0
   page_cache: 0
@@ -83,13 +86,9 @@ module:
   pathauto: 1
   views: 10
   minimal: 1000
-profile: minimal
 theme:
   stable: 0
-  classy: 0
   bartik: 0
   seven: 0
   drupal_nl: 0
-_core:
-  default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
-langcode: nl
+profile: minimal

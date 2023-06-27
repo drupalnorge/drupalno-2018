@@ -24,9 +24,6 @@ settings:
     target_bundles:
       text_image: text_image
     target_bundles_drag_drop:
-      text_image:
-        enabled: true
-        weight: 7
       image:
         weight: 8
         enabled: false
@@ -39,6 +36,9 @@ settings:
       text:
         weight: 11
         enabled: false
+      text_image:
+        weight: 7
+        enabled: true
       text_images:
         weight: 12
         enabled: false

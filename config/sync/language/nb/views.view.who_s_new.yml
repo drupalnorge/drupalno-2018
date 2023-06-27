@@ -2,8 +2,9 @@ label: 'Nye brukere'
 description: 'Viser en liste over de sist registrerte brukerkontoene på nettstedet.'
 display:
   default:
-    display_title: Master
+    display_title: Standard
     display_options:
+      title: 'Nye brukere'
       exposed_form:
         options:
           submit_button: Bruk
@@ -11,7 +12,6 @@ display:
           exposed_sorts_label: 'Sortér etter'
           sort_asc_label: Stigende
           sort_desc_label: Synkende
-      title: 'Nye brukere'
   block_1:
     display_title: 'Nye brukere'
     display_options:
