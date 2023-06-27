@@ -2,12 +2,19 @@ label: Forside
 description: 'Alt innhold som er forfremmet til forsiden.'
 display:
   default:
+    display_title: Standard
     display_options:
-      empty:
-        area_text_custom:
-          content: 'Er is nog geen inhoud voor de voorpagina aangemaakt.'
-        title:
-          title: 'Velkommen til [site:name]'
+      pager:
+        options:
+          tags:
+            next: 'Neste ›'
+            previous: '‹ Forrige'
+            first: '« Første'
+            last: 'Siste »'
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
       exposed_form:
         options:
           submit_button: Bruk
@@ -15,18 +22,9 @@ display:
           exposed_sorts_label: 'Sortér etter'
           sort_asc_label: Stigende
           sort_desc_label: Synkende
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Elementer per side'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskyving
-          tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
-            first: '« Første'
-            last: 'Siste »'
-    display_title: Master
+      empty:
+        area_text_custom:
+          content: 'Er is nog geen inhoud voor de voorpagina aangemaakt.'
   feed_1:
     display_title: Strøm
   page_1:

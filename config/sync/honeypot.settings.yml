@@ -1,3 +1,4 @@
+langcode: nl
 protect_all_forms: false
 log: false
 element_name: url
@@ -10,4 +11,3 @@ form_settings:
   contact_message_personal_form: true
   node_type_node_form: false
   comment_comment_form: false
-langcode: nl

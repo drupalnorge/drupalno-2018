@@ -20,19 +20,21 @@ mode: teaser
 content:
   field_image:
     type: image
-    weight: 0
     label: hidden
     settings:
-      image_style: node_teaser
       image_link: content
+      image_style: node_teaser
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
+    weight: 0
     region: content
   field_teaser:
     type: basic_string
-    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   field_content: true

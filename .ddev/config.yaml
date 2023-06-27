@@ -1,5 +1,5 @@
 name: drupalno
-type: drupal8
+type: drupal9
 docroot: web
 php_version: "7.4"
 webserver_type: nginx-fpm
@@ -16,8 +16,8 @@ mutagen_enabled: false
 use_dns_when_possible: true
 composer_version: "2"
 web_environment:
-  - PLATFORM_PROJECT=oju3o65bcjtl6
-  - PLATFORM_ENVIRONMENT=master
+    - PLATFORM_PROJECT=oju3o65bcjtl6
+    - PLATFORM_ENVIRONMENT=master
 nodejs_version: "16"
 
 # Key features of ddev's config.yaml:

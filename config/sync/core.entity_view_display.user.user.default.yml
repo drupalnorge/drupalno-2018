@@ -15,11 +15,11 @@ bundle: user
 mode: default
 content:
   field_organisation:
-    weight: 0
+    type: entity_reference_partner
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: entity_reference_partner
+    weight: 0
     region: content
 hidden:
   langcode: true

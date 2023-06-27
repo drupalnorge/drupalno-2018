@@ -1,17 +1,20 @@
 uuid: 526187ee-0f33-4c66-a41e-95b439611b90
 langcode: nl
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - cta
+    - filter
+    - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
-label: 'Anonieme gebruiker'
+label: 'Anonym bruker'
 weight: 0
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
-  - 'access site-wide contact form'
-  - 'search content'
   - 'use text format restricted_html'
   - 'view published call to action entities'

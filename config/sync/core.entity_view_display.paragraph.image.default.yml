@@ -16,16 +16,18 @@ bundle: image
 mode: default
 content:
   field_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: node_teaser
       image_link: ''
+      image_style: node_teaser
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   field_link:
-    weight: 1
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -34,7 +36,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 1
     region: content
 hidden:
   created: true

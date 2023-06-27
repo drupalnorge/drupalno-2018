@@ -2,7 +2,8 @@ name: Drupal NL
 type: theme
 description: 'A custom theme for Drupal.nl'
 package: Drupal NL
-core: '8.x'
+core_version_requirement: ^8 || ^9 || ^10
+base theme: stable
 
 regions:
   navigation: 'Navigation'

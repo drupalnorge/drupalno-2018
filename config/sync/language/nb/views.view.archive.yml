@@ -2,9 +2,18 @@ label: Arkiv
 description: 'Alt innhold, etter måned.'
 display:
   default:
-    display_title: Master
+    display_title: Standard
     display_options:
       title: 'Månedlig arkiv'
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 'Elementer per side'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Forskyving
       exposed_form:
         options:
           submit_button: Bruk
@@ -12,15 +21,6 @@ display:
           exposed_sorts_label: 'Sortér etter'
           sort_asc_label: Stigende
           sort_desc_label: Synkende
-      pager:
-        options:
-          expose:
-            items_per_page_label: 'Elementer per side'
-            items_per_page_options_all_label: '- Alle -'
-            offset_label: Forskyving
-          tags:
-            previous: ‹‹
-            next: ››
       arguments:
         created_year_month:
           title: '{{ arguments.created_year_month }}'

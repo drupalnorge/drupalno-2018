@@ -17,7 +17,7 @@ bundle: cta
 mode: default
 content:
   field_cta_button:
-    weight: 2
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -26,24 +26,26 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 2
     region: content
   field_cta_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: header_image
       image_link: ''
+      image_style: header_image
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   field_cta_text:
     type: string
-    weight: 1
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   name: true

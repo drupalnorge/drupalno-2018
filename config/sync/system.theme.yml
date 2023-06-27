@@ -1,5 +1,5 @@
-admin: seven
-default: drupal_nl
 _core:
   default_config_hash: fOjer9hADYYnbCJVZMFZIIM1azTFWyg84ZkFDHfAbUg
 langcode: nl
+admin: gin
+default: drupal_nl

@@ -2,8 +2,12 @@ label: 'Siste innlegg'
 description: 'Innhold som er nylig lagt til.'
 display:
   default:
-    display_title: Master
+    display_title: Standard
     display_options:
+      title: 'Siste innlegg'
+      fields:
+        changed:
+          separator: ', '
       exposed_form:
         options:
           submit_button: Bruk
@@ -11,10 +15,6 @@ display:
           exposed_sorts_label: 'Sortér etter'
           sort_asc_label: Stigende
           sort_desc_label: Synkende
-      fields:
-        changed:
-          separator: ', '
-      title: 'Siste innlegg'
       empty:
         area_text_custom:
           content: 'Intet innhold tilgjengelig.'

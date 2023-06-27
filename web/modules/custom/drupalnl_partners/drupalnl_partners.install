@@ -1,5 +1,6 @@
 <?php
 
+use Drupal\taxonomy\Entity\Term;
 /**
  * Implements hook_install().
  */
@@ -38,7 +39,7 @@ function _drupalnl_partners_partner_default_field_access() {
     /** @var \Drupal\taxonomy\TermInterface $term */
     $terms = $term_storage->loadByProperties(['name' => $term_name]);
     if (empty($terms)) {
-      $terms[] = \Drupal\taxonomy\Entity\Term::create([
+      $terms[] = Term::create([
         'vid' => 'partner_level',
         'name' => $term_name,
       ]);

@@ -31,13 +31,13 @@ class CallToActionForm extends ContentEntityForm {
 
     switch ($status) {
       case SAVED_NEW:
-        drupal_set_message($this->t('Created the %label Call to Action.', [
+        $this->messenger()->addStatus($this->t('Created the %label Call to Action.', [
           '%label' => $entity->label(),
         ]));
         break;
 
       default:
-        drupal_set_message($this->t('Saved the %label Call to Action.', [
+        $this->messenger()->addStatus($this->t('Saved the %label Call to Action.', [
           '%label' => $entity->label(),
         ]));
     }

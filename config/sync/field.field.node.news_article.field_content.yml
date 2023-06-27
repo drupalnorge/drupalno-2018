@@ -30,22 +30,22 @@ settings:
       images: images
       text_images: text_images
     target_bundles_drag_drop:
-      intro:
-        enabled: true
-        weight: -13
-      text:
-        enabled: true
-        weight: -12
-      images:
-        enabled: true
-        weight: -11
-      text_images:
-        enabled: true
-        weight: -10
       image:
         weight: -9
         enabled: false
+      images:
+        weight: -11
+        enabled: true
+      intro:
+        weight: -13
+        enabled: true
+      text:
+        weight: -12
+        enabled: true
       text_image:
         weight: -8
         enabled: false
+      text_images:
+        weight: -10
+        enabled: true
 field_type: entity_reference_revisions

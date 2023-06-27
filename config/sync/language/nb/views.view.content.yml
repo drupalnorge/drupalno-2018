@@ -2,21 +2,9 @@ label: Innhold
 description: 'Finne og behandle innhold.'
 display:
   default:
+    display_title: Standard
     display_options:
-      exposed_form:
-        options:
-          submit_button: Filtrer
-          reset_button_label: Nullstill
-          exposed_sorts_label: 'Sortér etter'
-          sort_asc_label: Stigende
-          sort_desc_label: Synkende
-      pager:
-        options:
-          tags:
-            previous: '‹ Forrige'
-            next: 'Neste ›'
-            first: '« Første'
-            last: 'Siste »'
+      title: Innhold
       fields:
         title:
           label: Tittel
@@ -28,12 +16,29 @@ display:
         status:
           label: Status
           settings:
-            format_custom_true: Publisert
             format_custom_false: Upublisert
+            format_custom_true: Publisert
         changed:
           label: Oppdatert
         operations:
           label: Handlinger
+      pager:
+        options:
+          tags:
+            next: 'Neste ›'
+            previous: '‹ Forrige'
+            first: '« Første'
+            last: 'Siste »'
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Nullstill
+          exposed_sorts_label: 'Sortér etter'
+          sort_asc_label: Stigende
+          sort_desc_label: Synkende
+      empty:
+        area_text_custom:
+          content: 'Intet innhold tilgjengelig.'
       filters:
         title:
           expose:
@@ -54,16 +59,11 @@ display:
         langcode:
           expose:
             label: Språk
-      title: Innhold
-      empty:
-        area_text_custom:
-          content: 'Intet innhold tilgjengelig.'
-    display_title: Master
   page_1:
+    display_title: Side
     display_options:
       menu:
         title: Innhold
       tab_options:
         title: Innhold
         description: 'Finn og administrer innhold'
-    display_title: Side

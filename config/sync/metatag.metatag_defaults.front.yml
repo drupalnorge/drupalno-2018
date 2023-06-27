@@ -5,11 +5,11 @@ dependencies: {  }
 _core:
   default_config_hash: yBqw6UD3j0MM1yoDSVDif7nw4SNdoS2e385nw--3ysk
 id: front
-label: 'Front page'
+label: Forside
 tags:
   referrer: unsafe-url
   title: '[site:name] | [site:slogan]'
   description: 'Drupal er ledende open source-plattform for å ambisiøse digitale opplevelser.'
   canonical_url: '[site:url]'
-  google: 6CmbOWuDNL7pDc9VkpbxKxBNuSXb2813i-SB7utI96s
   shortlink: '[site:url]'
+  google_site_verification: 6CmbOWuDNL7pDc9VkpbxKxBNuSXb2813i-SB7utI96s

@@ -18,6 +18,7 @@ effects:
     weight: -9
     data:
       canvas_size: exact
+      canvas_color: '#FFFFFFFF'
       exact:
         width: '406'
         height: '230'
@@ -29,7 +30,6 @@ effects:
         right: 0
         top: 0
         bottom: 0
-      canvas_color: '#FFFFFFFF'
   bdc45522-ca4e-41da-bcc5-b3b96d487239:
     uuid: bdc45522-ca4e-41da-bcc5-b3b96d487239
     id: image_scale
