@@ -194,7 +194,7 @@ display:
         type: basic
         options:
           submit_button: Filtrer
-          reset_button: false
+          reset_button: true
           reset_button_label: Nullstill
           exposed_sorts_label: 'Sortér etter'
           expose_sort_order: true
