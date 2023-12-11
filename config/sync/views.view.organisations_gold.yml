@@ -10,7 +10,7 @@ dependencies:
     - node.type.organisation
     - taxonomy.vocabulary.partner_level
   content:
-    - 'taxonomy_term:partner_level:7d091e4c-04ba-43c4-b004-36fbd7db39c8'
+    - 'taxonomy_term:partner_level:877b7b72-de8c-4048-af6b-ec4e9265799f'
   module:
     - better_exposed_filters
     - image
