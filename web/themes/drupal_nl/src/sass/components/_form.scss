@@ -16,3 +16,20 @@
   }
 }
 
+form.webform-submission-form {
+  max-width: 1180px;
+  margin: auto;
+
+  .form-item {
+    display: flex;
+    margin: 10px;
+
+    label {
+      width: 200px;
+    }
+  }
+
+  .form-no-label {
+    display: block;
+  }
+}
