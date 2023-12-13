@@ -32,4 +32,23 @@ form.webform-submission-form {
   .form-no-label {
     display: block;
   }
+
+  legend {
+    width: 200px;
+    float:  left;
+  }
+
+  .fieldset-wrapper {
+    input {
+      margin: 0 8px 0 0;
+    }
+  }
+
+  .form-item-description {
+    display: block;
+
+    label {
+      float: left;
+    }
+  }
 }
